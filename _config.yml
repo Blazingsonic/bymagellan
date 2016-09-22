@@ -1,0 +1,15 @@
+ga_id: UA-XXXXXXXX-1
+
+source: app
+destination: public
+url: http://example.com
+
+compress_html:
+  clippings: all
+  comments: all
+
+exclude:
+  - _assets
+
+keep_files:
+  - assets
