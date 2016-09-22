@@ -12,10 +12,10 @@
 		padding: 0 vr(2);
 	}
 	@include mappy-bp(wide) {
-		padding: 0 vr(3);
+		// padding: 0 vr(2);
 	}
-	@include mappy-bp(wide) {
-		//padding: 0 vr(4);
+	@include mappy-bp(mega) {
+		padding: 0 vr(3);
 	}
 }
 
