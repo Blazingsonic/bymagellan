@@ -127,6 +127,24 @@ $(window).scroll(function (event) {
 
 
 // ==========================================================================
+// Projects Module
+// ==========================================================================
+
+// Set variables
+let $bulletItemImpr = $('#impressionen .o-bullet__item');
+
+// Update Project Cards on click
+$(document).ready(function() {
+  $bulletItemImpr.click(function() {
+    let id = $(this).attr('id');
+    $bulletItemImpr.removeClass('is-active');
+    $(this).addClass('is-active');
+    updateProjectCards(id);
+  });
+});
+
+
+// ==========================================================================
 // Contact Module
 // ==========================================================================
 
