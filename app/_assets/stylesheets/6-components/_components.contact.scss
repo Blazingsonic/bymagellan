@@ -1,0 +1,28 @@
+
+@import "../1-settings/_settings.colors.scss";
+
+.c-contact {
+  position: relative;
+  max-width: 34rem;
+  padding-bottom: vr(2.5);
+}
+
+  .c-contact__item {
+    width: 100%;
+    margin-bottom: vr(2);
+    cursor: pointer;
+    color: $grey;
+
+    @include mappy-bp(595px) { // tweakpoint
+      width: initial;
+      margin-bottom: 0;
+    }
+
+    &.is-active {
+      color: black;
+    }
+
+    &:hover {
+      color: $color-link-hover;
+    }
+  }

@@ -1,0 +1,37 @@
+
+/* Descriptive Color Variables -------------------- */
+
+$white          : #fff;
+$black          : #000;
+
+$grey-dark      : rgba(0, 0, 0, 0.8);
+$grey-darkest   : rgba(0, 0, 0, 0.65);
+$grey           : #818181;
+$grey-light		  : rgba(0, 0, 0, 0.5); // weiß verwenden?
+$grey-lightest  : rgba(0, 0, 0, 0.375);
+
+$vanilla        : rgba(0, 0, 0, 0.04);
+
+$red 			: #ea655f;
+
+/* Functional Color Variables -------------------- */
+
+// Main
+$color-prim         : red;
+$color-sec          : blue;
+$color-ter          : grey;
+
+$grey-light-no-trans: #b3b3b1;
+$grey-lightest-no-trans: #cacaca;
+$blue-light         : #89b0c7;
+
+// Text
+$color-text-light   : $white;
+$color-text-base    : $grey;
+$color-text-dark    : $black;
+
+// Links
+$color-link-default : $black;
+$color-link-visited : $grey-lightest;
+$color-link-hover 	: $blue-light;
+

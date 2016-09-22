@@ -1,0 +1,39 @@
+<svg id="form" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.81 484.3">
+  <title>form</title>
+  <g id="form-top-top">
+    <rect width="458.81" height="25.49"/>
+  </g>
+  <g id="form-top-bottom">
+    <rect y="76.47" width="458.81" height="25.49"/>
+  </g>
+  <g id="form-middle-top">
+    <rect y="135.95" width="458.81" height="25.49"/>
+  </g>
+  <g id="form-middle-bottom">
+    <rect y="212.41" width="458.81" height="25.49"/>
+  </g>
+  <g id="form-bottom-top">
+    <rect y="271.89" width="458.81" height="25.49"/>
+  </g>
+  <g id="form-bottom-bottom">
+    <rect y="458.81" width="458.81" height="25.49"/>
+  </g>
+  <g id="form-bottom-right">
+    <rect x="433.32" y="271.89" width="25.49" height="212.41"/>
+  </g>
+  <g id="form-bottom-left">
+    <rect y="271.89" width="25.49" height="212.41"/>
+  </g>
+  <g id="form-middle-right">
+    <rect x="433.32" y="135.95" width="25.49" height="101.96"/>
+  </g>
+  <g id="form-middle-left">
+    <rect y="135.95" width="25.49" height="101.96"/>
+  </g>
+  <g id="form-top-right">
+    <rect x="433.32" width="25.49" height="101.96"/>
+  </g>
+  <g id="form-top-left">
+    <rect width="25.49" height="101.96"/>
+  </g>
+</svg>

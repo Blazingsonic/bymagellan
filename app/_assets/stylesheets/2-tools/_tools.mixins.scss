@@ -1,0 +1,29 @@
+
+// ==========================================================================
+// General Mixins
+// ==========================================================================
+
+// Web Fonts
+@mixin font-face($family, $file) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$path-font}/#{$file}-webfont.eot');
+		src: url('#{$path-font}/#{$file}-webfont.eot?#iefix') format('embedded-opentype'),
+			url('#{$path-font}/#{$file}-webfont.woff') format('woff'),
+			url('#{$path-font}/#{$file}-webfont.ttf') format('truetype');
+	}
+}
+
+// Background Gradient
+@mixin hero-gradient() {
+	background: rgba(130,115,127,1);
+	background: -webkit-linear-gradient(rgba(130,115,127,1) 0%, rgba(166,105,118,1) 75%);
+	background: -o-linear-gradient(rgba(130,115,127,1) 0%, rgba(166,105,118,1) 75%);
+	background: linear-gradient(rgba(130,115,127,1) 0%, rgba(166,105,118,1) 75%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82737f', endColorstr='#a66976', GradientType=0 );
+}
+
+// Work Card
+@mixin work-card {
+	background: $white;
+}

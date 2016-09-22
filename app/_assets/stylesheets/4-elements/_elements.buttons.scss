@@ -1,0 +1,27 @@
+
+@import "../1-settings/_settings.colors.scss";
+
+button {
+	font-weight: normal;
+	color: $color-link-default;
+	border: 0.2em solid $grey;
+	padding: 0.5rem;
+	background: transparent;
+
+	&:hover {
+		color: $color-link-hover;
+		border-color: $color-link-hover;
+	}
+}
+
+button[type="submit"] {
+	font-size: 1.125rem;
+  line-height: vr(1);
+	letter-spacing: 0.25rem;
+	padding: vr(1/4) vr(1);
+
+	&:hover {
+		color: #af404c;
+		border-color: #af404c;
+	}
+}

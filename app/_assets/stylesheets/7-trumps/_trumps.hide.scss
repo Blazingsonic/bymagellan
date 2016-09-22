@@ -1,0 +1,62 @@
+
+.u-hide {
+	display: none !important;
+}
+
+.u-hide-end-small {
+	@include mappy-bp(0 small) {
+		display: none !important;
+	}
+}
+.u-hide-end-medium {
+	@include mappy-bp(0 medium) { // medium
+		display: none !important;
+	}
+}
+.u-hide-end-large {
+	@include mappy-bp(0 large) { // medium
+		display: none !important;
+	}
+}
+.u-hide-end-wide {
+	@include mappy-bp(0 wide) { // medium
+		display: none !important;
+	}
+}
+.u-hide-end-mega {
+	@include mappy-bp(0 mega) { // medium
+		display: none !important;
+	}
+}
+
+.u-hide-start-small {
+	@include mappy-bp(small) {
+		display: none !important;
+	}
+}
+.u-hide-start-medium {
+	@include mappy-bp(medium) {
+		display: none !important;
+	}
+}
+.u-hide-start-large {
+	@include mappy-bp(large) {
+		display: none !important;
+	}
+}
+.u-hide-start-wide {
+	@include mappy-bp(wide) {
+		display: none !important;
+	}
+}
+.u-hide-start-mega {
+	@include mappy-bp(mega) {
+		display: none !important;
+	}
+}
+
+
+
+
+
+

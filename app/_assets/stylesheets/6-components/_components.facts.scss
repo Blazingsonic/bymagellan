@@ -1,0 +1,18 @@
+
+.c-facts {
+  max-width: 58rem;
+}
+
+.c-facts__item {
+  width: 100%;
+  margin-bottom: vr(2);
+
+  @include mappy-bp(large) {
+    width: initial;
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: vr(4);
+    }
+  }
+}

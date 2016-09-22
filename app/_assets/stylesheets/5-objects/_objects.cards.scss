@@ -1,0 +1,12 @@
+
+@import "../1-settings/_settings.colors.scss";
+
+.o-card {
+	position: relative;
+	margin-left: 1rem;
+	margin-right: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 54px 1px rgba(0,0,0,0.18);
+	z-index: 20;
+}
+

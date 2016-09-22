@@ -1,0 +1,5 @@
+<svg id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.12 19.66">
+  <title>search</title>
+  <circle id="search-glass" cx="11.34" cy="7.78" r="6.78" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+  <rect id="search-stick" x="-0.24" y="15.1" width="8.89" height="2" transform="translate(-10.51 7.39) rotate(-45)"/>
+</svg>

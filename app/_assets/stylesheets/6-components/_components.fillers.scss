@@ -1,0 +1,64 @@
+
+@import "../1-settings/_settings.colors.scss";
+
+// Dots
+.c-dot {
+  display: none;
+
+  @include mappy-bp(450px) {
+    display: flex;
+  }
+}
+
+// Separators
+.c-global-sep,
+.c-global-sep--small,
+.c-global-sep--tiny {
+  height: 2px;
+  background-color: $vanilla;
+}
+
+.c-global-sep {
+  width: 100%;
+}
+
+.c-global-sep--small {
+  width: 60%;
+}
+
+.c-global-sep--tiny {
+  width: 15%;
+}
+
+  .pushy .c-global-sep--tiny {
+
+  }
+
+// Gradients
+.c-gradient-top {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.32) 0%, rgba(40,33,43,0) 100%);
+  z-index: 10;
+}
+
+.c-gradient-bottom {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.32) 0%, rgba(40,33,43,0) 100%);
+  z-index: 10;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+<svg id="performance" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 388.75 446.65">
+  <title>performance</title>
+  <path id="perf-1" d="M95.9,446.6V314.3" transform="translate(-0.02 -0.02)" fill="none" stroke="#3c3c3c" stroke-miterlimit="10" stroke-width="25" opacity="0.8" style="isolation: isolate"/>
+  <path id="perf-2" d="M162,446.6v-215" transform="translate(-0.02 -0.02)" fill="none" stroke="#3c3c3c" stroke-miterlimit="10" stroke-width="25" opacity="0.8" style="isolation: isolate"/>
+  <path id="perf-3" d="M228,446.6V347.4" transform="translate(-0.02 -0.02)" fill="none" stroke="#3c3c3c" stroke-miterlimit="10" stroke-width="25" opacity="0.8" style="isolation: isolate"/>
+  <path id="perf-4" d="M294.2,432.5V273" transform="translate(-0.02 -0.02)" fill="none" stroke="#3c3c3c" stroke-miterlimit="10" stroke-width="25" opacity="0.8" style="isolation: isolate"/>
+  <path id="perf-frame" d="M12.4,12.4h364V434.3H12.4Z" transform="translate(-0.02 -0.02)" fill="none" stroke="#3c3c3c" stroke-miterlimit="10" stroke-width="24.75"/>
+</svg>

@@ -1,0 +1,10 @@
+
+// General Transitions
+li, a, svg, .i-menu span, .c-hero, .c-hero--fixed, .g-underline:after, .i-instagram, .i-dribbble, .c-contact__item {
+	transition: all 200ms ease-in-out;
+}
+
+// Component Transitions
+.c-sub-service, .c-display-service {
+	transition: all 200ms ease-in-out;
+}

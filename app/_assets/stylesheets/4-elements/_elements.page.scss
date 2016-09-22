@@ -1,0 +1,22 @@
+
+@import "../1-settings/_settings.colors.scss";
+
+html {
+	font-family: 'Playfair Display', Helvetica, Arial, serif;
+	@include typi-base();
+	font-weight: normal;
+	letter-spacing: 0.12rem;
+	color: $color-text-base;
+}
+
+body {	
+	background: #fff;
+	position: relative;
+}
+
+// Vertical Rythm Setup
+ul, ol, dd, figure, pre, table, fieldset, hr, button, input, textarea {
+	margin: 0;
+	margin-bottom: vr(1);
+	padding: 0;
+}

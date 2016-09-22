@@ -1,0 +1,5 @@
+<svg id="desktop" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.06 45.5">
+  <title>desktop</title>
+      <path id="desktop-frame" stroke-width="6" d="M104.13,246.75H40.06V207.56h64.06v39.19Zm-63.06-1h62.06V208.56H41.06v37.19Z" transform="translate(-40.06 -207.56)"/>
+      <rect id="desktop-stand" x="25.38" y="44.5" width="14" height="1"/>
+</svg>

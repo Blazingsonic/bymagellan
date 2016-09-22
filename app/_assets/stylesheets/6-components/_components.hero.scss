@@ -1,0 +1,23 @@
+
+@import "../1-settings/_settings.colors.scss";
+
+.c-hero {
+	position: absolute;
+  width: 90%; /* fallback if needed */
+  width: calc(100% - 4rem);
+  // max-width: 80rem;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 99;
+
+  @include mappy-bp(medium) {
+    width: calc(100% - 6rem);
+    top: 3rem;
+  }
+  @include mappy-bp(wide) {
+    width: calc(100% - 8rem);
+    top: 3.25rem;
+  }
+}
+

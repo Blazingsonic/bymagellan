@@ -3,50 +3,176 @@ layout: compress
 ---
 <!doctype html>
 <html>
-  <head>
-    <title>{{ page.title }}</title>
 
-    <meta charset='utf-8'>
-    <meta name='description' content='{{ page.description }}'/>
-    <meta name='keywords' content=''>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
-    <meta property='og:url' content='{{ site.url }}'/>
-    <meta property='og:image' content='/og-image.png'/>
-    <meta property='og:title' content='{{ page.title }}'/>
-    <meta property='og:description' content='{{ page.description }}'/>
+  <!-- Head goes here -->
+  {% include head.html %}
 
-    <link rel='shortcut icon' href='/favicon.png'/>
-    <link rel='manifest' href='/manifest.json'/>
-
-    <meta name='mobile-web-app-capable' content='yes'/>
-    <meta name='apple-mobile-web-app-capable' content='yes'/>
-    <meta name='apple-mobile-web-app-title' content='{{ page.title }}'/>
-
-    <link href='/apple-touch-icon-180x180-precomposed.png' sizes='180x180' rel='apple-touch-icon'/>
-    <link href='/apple-touch-icon-152x152-precomposed.png' sizes='152x152' rel='apple-touch-icon'/>
-    <link href='/apple-touch-icon-144x144-precomposed.png' sizes='144x144' rel='apple-touch-icon'/>
-    <link href='/apple-touch-icon-120x120-precomposed.png' sizes='120x120' rel='apple-touch-icon'/>
-    <link href='/apple-touch-icon-114x114-precomposed.png' sizes='114x114' rel='apple-touch-icon'/>
-    <link href='/apple-touch-icon-76x76-precomposed.png' sizes='76x76' rel='apple-touch-icon'/>
-    <link href='/apple-touch-icon-72x72-precomposed.png' sizes='72x72' rel='apple-touch-icon'/>
-    <link href='/apple-touch-icon-60x60-precomposed.png' sizes='60x60' rel='apple-touch-icon'/>
-    <link href='/apple-touch-icon-57x57-precomposed.png' sizes='57x57' rel='apple-touch-icon'/>
-    <link href='/apple-touch-icon-precomposed.png' rel='apple-touch-icon'/>
-
-    <meta name='msapplication-config' content='/browserconfig.xml'/>
-    <meta name='application-name' content='{{ site.title }}'/>
-    <meta name='msapplication-tooltip' content='Get the latest updates!'/>
-    <meta name='msapplication-window' content='width=1024;height=768'/>
-    <meta name='msapplication-navbutton-color' content='#ff3300'/>
-    <meta name='msapplication-starturl' content='/'/>
-
-    <script>(function(e,t,n,r,i,s){e.GoogleAnalyticsObject=r;e[r]||(e[r]=function(){(e[r].q=e[r].q||[]).push(arguments)});e[r].l=+(new Date);i=t.createElement(n);s=t.getElementsByTagName(n)[0];i.src='//www.google-analytics.com/analytics.js';s.parentNode.insertBefore(i,s)})(window,document,'script','ga');ga('create','{{ site.ga_id }}');ga('send','pageview')</script>
-
-    <link rel='stylesheet' href='/assets/stylesheets/main.css'>
-
-    <script src='/assets/javascripts/vendor.js'></script>
-  </head>
   <body>
+
+    <!-- Begin Pushy Menu -->
+    <nav class="pushy pushy-right">
+        <div class="pushy__inner">
+          <ul>
+            <li class="pushy-link"><h1 class="u-mb-vr-1 u-txt-center">Menü</h1></li>
+            <li class="pushy-link"><a class="u-link-grey-light" href="#skills">Kompetenzen</a></li>
+            <li class="pushy-link"><a class="u-link-grey-light" href="#impressionen">Impressionen</a></li>
+            <li class="pushy-link"><a class="u-link-grey-light" href="#team">Team</a></li>
+            <li class="pushy-link"><a class="u-link-grey-light" href="#contact">Kontakt</a></li>
+        </ul>
+        <div class="c-global-sep--tiny u-centered u-mb-vr-1 u-bg-grey"></div>
+        <section class="o-flex-center--center has-wrap">
+          <a class="o-flex-center--center o-ref__item" href="http://instagram.com" target="_blank">
+            <svg class="i-instagram">
+              <use xlink:href="#instagram"></use>
+            </svg>
+          </a>
+          <a href="http://github.com">
+            <svg class="i-github">
+              <use xlink:href="#github"></use>
+            </svg>
+          </a>
+          <a class="o-flex-center--center o-ref__item" href="http://instagram.com" target="_blank">
+            <svg class="i-dribbble">
+              <use xlink:href="#dribbble"></use>
+            </svg>
+          </a>
+        </section>
+        </div>
+    </nav>
+    <!-- End Pushy Menu -->
+
+    <div class="c-nav-fixed">
+      <!-- Begin Header Nav -->
+      <nav class="o-flex-between--start c-nav-fixed__inner u-centered">
+
+        <!-- Logo -->
+        <div class="c-nav-left">
+          <svg class="i-logo">
+            <use xlink:href="#logo-klein"></use>
+          </svg>
+        </div>
+
+        <!-- Main Nav -->
+        <ul class="o-flex-between--center c-main-nav">
+          <li class="c-main-nav__item"><a class="u-link-white g-petel" href="#start"><span class="g-petel__item"></span>START</a></li>
+          <li class="c-main-nav__item"><a class="u-link-white g-petel" href="#skills"><span class="g-petel__item"></span>KOMPETENZEN</a></li>
+          <li class="c-main-nav__item"><a class="u-link-white g-petel" href="#impressionen"><span class="g-petel__item"></span>IMPRESSIONEN</a></li>
+          <li class="c-main-nav__item"><a class="u-link-white g-petel" href="#team"><span class="g-petel__item"></span>TEAM</a></li>
+          <li class="c-main-nav__item"><a class="u-link-white g-petel" href="#contact"><span class="g-petel__item"></span>KONTAKT</a></li>
+        </ul>
+
+        <!-- Nav Right -->
+        <div class="o-flex-end--center c-nav-right">
+          <svg class="i-search--mobile u-mr-vr-1 u-transparent">
+            <use xlink:href="#search"></use>
+          </svg>
+          <div class="o-flex-center--center c-nav-right__menu-wrap u-bg-black">
+            <a class="i-menu--mobile menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <svg class="i-search u-mr-vr-1">
+            <use xlink:href="#search"></use>
+          </svg>
+          <a class="i-menu menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </nav>
+      <!-- End Header Nav -->
+    </div>
+
+    <div class="site-overlay"></div>
+
+    <!-- Begin Page Content -->
+    <!-- <div id="container"> -->
+
+    <!-- Begin Page Header -->
+    <header id="start"class="e-header js-min-height">
+
+      <!-- Begin Slick Slider -->
+      <div class="o-slick js-slick js-min-height">
+
+        <div class="js-min-height oculus">
+          <div class="o-slick-slide">
+            <div class="o-slick-slide__title">
+              <h1>Oculus Experience Travel</h1>
+              <h3 class="u-txt-white">Ein Frontend-Design &amp; Konzeptions Projekt</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="js-min-height letter">
+          <div class="o-slick-slide">
+            <div class="c-gradient-top"></div>
+            <div class="c-gradient-bottom"></div>
+            <div class="o-slick-slide__title">
+              <h1>Messmer Pen GmbH - Karriere</h1>
+              <h3 class="u-txt-white">Gestaltung &amp; Technik in perfektem Einklang</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="js-min-height oculus">
+          <div class="o-slick-slide">
+            <div class="o-slick-slide__title">
+              <h1>Oculus Experience Travel</h1>
+              <h3 class="u-txt-white">Ein Frontend-Design &amp; Konzeptions Projekt</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Slick Slider -->
+
+      <!-- Begin Hero -->
+      <section class="c-hero">
+
+          <!-- Begin Header Nav -->
+          <nav class="o-flex-between--start">
+
+            <!-- Logo -->
+            <div class="c-nav-left">
+              <svg class="i-logo">
+                <use xlink:href="#logo-klein"></use>
+              </svg>
+            </div>
+
+            <!-- Main Nav -->
+            <ul class="o-flex-between--center c-main-nav">
+              <li class="c-main-nav__item"><a class="u-link-white g-petel" href="#start">START</a></li>
+              <li class="c-main-nav__item"><a class="u-link-white g-petel" href="#skills">KOMPETENZEN</a></li>
+              <li class="c-main-nav__item"><a class="u-link-white g-petel" href="#impressionen">IMPRESSIONEN</a></li>
+              <li class="c-main-nav__item"><a class="u-link-white g-petel" href="#team">TEAM</a></li>
+              <li class="c-main-nav__item"><a class="u-link-white g-petel" href="#contact">KONTAKT</a></li>
+            </ul>
+
+            <!-- Nav Right -->
+            <div class="o-flex-end--center c-nav-right">
+              <svg class="i-search u-mr-vr-1">
+                <use xlink:href="#search"></use>
+              </svg>
+              <a class="i-menu menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+          </nav>
+          <!-- End Header Nav -->
+      </section>
+      <!-- End Hero -->
+    </header>
+    <!-- End Page Header -->
+
+    <!-- Content goes here -->
     {{ content }}
+
+    <!-- Footer goes here -->
+    {% include footer.html %}
+
   </body>
 </html>
