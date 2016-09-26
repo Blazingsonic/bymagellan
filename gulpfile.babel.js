@@ -10,11 +10,13 @@ import webpack from 'webpack';
 import $postcss from 'gulp-postcss';
 import $replace from 'gulp-replace';
 import $rev from 'gulp-rev';
+import $override from 'gulp-rev-css-url';
 import $sass from 'gulp-sass';
 import $size from 'gulp-size';
 import $sourcemaps from 'gulp-sourcemaps';
 import $util from 'gulp-util';
 import _ from 'lodash';
+import pages from 'gulp-gh-pages';
 
 /**
  * Compiles and deploys images.
@@ -182,4 +184,23 @@ gulp.task('default', () => {
 
   sequence.apply(null, seq);
 });
+
+/**
+ * Deploys /public to github.
+ */
+gulp.task('deploy', function() {
+  return gulp.src('public' + '/**/*')
+    .pipe(pages());
+});
+
+
+
+
+
+
+
+
+
+
+
 

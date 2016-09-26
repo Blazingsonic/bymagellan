@@ -2,7 +2,8 @@ ga_id: UA-XXXXXXXX-1
 
 source: app
 destination: public
-url: http://example.com
+baseurl: "/bymagellan" # the subpath of your site, e.g. /blog
+url: ""
 
 compress_html:
   clippings: all
