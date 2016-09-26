@@ -1,5 +1,0 @@
-{
-  "extends": "../.jshintrc",
-  "expr": true,
-  "predef": ["describe", "it", "before", "after", "beforeEach", "afterEach"]
-}
