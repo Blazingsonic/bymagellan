@@ -91,3 +91,24 @@ html.remodal-is-locked {
   /* Disable Anti-FOUC */
   display: inline-block;
 }
+
+// Not available
+.remodal.remodal-not-available {
+  max-width: 32rem;
+  padding: 0;
+
+  button.remodal-close {
+    top: 1.1rem;
+    left: inherit;
+    right: 0;
+    z-index: 100;
+
+    @include mappy-bp(small) {
+      left: 50%;
+    }
+  }
+
+  .o-card {
+    margin: 0;
+  }
+}
