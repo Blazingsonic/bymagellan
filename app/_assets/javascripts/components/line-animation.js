@@ -1,11 +1,17 @@
 
 // import { TweenMax, TimelineMax } from 'gsap';
+import $ from 'jquery';
 
 export function lineAnimationSet(elem) {
 
+  const pageId = $('main').attr('id');
+
   console.log(`line animation set ${elem}`);
-  let length = elem.getTotalLength();
-  TweenMax.set(elem, {strokeDasharray: length, strokeDashoffset: length});
+  let length;
+  if (pageId === 'index-page') {
+    length = elem.getTotalLength();
+    TweenMax.set(elem, {strokeDasharray: length, strokeDashoffset: length});
+  }
 
 }
 

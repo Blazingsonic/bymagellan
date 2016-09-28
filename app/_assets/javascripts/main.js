@@ -19,6 +19,8 @@ import remodal from 'remodal'
 // General
 
 // URL
+const pageId = $('main').attr('id');
+console.log(pageId);
 
 // let currentUrl = document.location.pathname.match(/[^\/]+$/)[0];
 
@@ -108,7 +110,10 @@ $(document).ready(function() {
 
 // Set variables
 let moduleSkillsHeight = $('#skills').height();
-let moduleSkillsOffset = $('#skills').offset().top + 500;
+let moduleSkillsOffset;
+if (pageId === 'index-page') {
+  moduleSkillsOffset = $('#skills').offset().top + 500;
+}
 let skillsScroll = false;
 
 // Set all lines
@@ -140,7 +145,9 @@ $(document).ready(function() {
     let id = $(this).attr('id');
     $bulletItemImpr.removeClass('is-active');
     $(this).addClass('is-active');
-    updateProjectCards(id);
+    if (pageId === 'index-page') {
+      updateProjectCards(id);
+    }
   });
 });
 

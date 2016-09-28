@@ -1,11 +1,17 @@
 
 import $ from 'jquery';
 
+let pageId = $('main').attr('id');
+console.log(pageId);
+
 /* Animate Cards on Scroll -------------------- */
 
 // Vars
 let moduleImpressionenHeight = $('#impressionen').height();
-let moduleImpressionenOffset = $('#impressionen').offset().top;
+let moduleImpressionenOffset;
+if (pageId === 'index-page') {
+  moduleImpressionenOffset = $('#impressionen').offset().top;
+}
 let impressionenScroll = false;
 let $cards = $('#impressionen .o-card');
 let $defaultCards = $('#impressionen .o-card.m-category-web');

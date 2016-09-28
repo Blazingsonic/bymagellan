@@ -21,3 +21,26 @@
   }
 }
 
+.c-hero--static {
+  position: relative;
+  width: 90%; /* fallback if needed */
+  width: calc(100% - 2.5rem);
+  // max-width: 80rem;
+  // height: 100%;
+  top: 1.5rem;
+
+  @include mappy-bp(medium) {
+    width: calc(100% - 4.5rem);
+    top: 2.25rem;
+  }
+  @include mappy-bp(wide) {
+    width: calc(100% - 6.5rem);
+    top: 2.5rem;
+  }
+}
+
+  .c-hero--static__title {
+    position: relative;
+    top: 3rem;
+  }
+

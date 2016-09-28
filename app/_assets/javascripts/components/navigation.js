@@ -1,6 +1,9 @@
 
 import $ from 'jquery';
 
+let pageId = $('main').attr('id');
+console.log(pageId);
+
 /* Animate Menu Icon -------------------- */
 
 export function animateMenuIcon() {
@@ -40,7 +43,10 @@ $('.site-overlay').click(function() {
 TweenMax.set($('.c-nav-fixed'), {y:'-=80px', autoAlpha: 0});
 
 // Animate in fixed nav when user scrolls to a certain point
-let moduleSkillsOffset1 = $('#skills').offset().top + window.innerHeight - 100;
+let moduleSkillsOffset1;
+if (pageId === 'index-page') {
+  moduleSkillsOffset1 = $('#skills').offset().top + window.innerHeight - 100;
+}
 
 $(window).scroll(function (event) {
   let scroll = $(window).scrollTop();

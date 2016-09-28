@@ -146,8 +146,13 @@
 .i-glasses {
     width: 1.5rem;
     height: 0.5rem;
+    padding-top: 0.1rem;
     fill: $grey-light;
 }
+
+  .c-hero--static .i-glasses {
+    fill: $black;
+  }
 
 .i-plane {
     width: 1.1rem;

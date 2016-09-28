@@ -22,8 +22,7 @@ $typi-breakpoint: mappy-breakpoints;
 
 $typi: (
   null: (17px, 1.5),
-  medium: 18px,
-  wide: 19px,
+  wide: 17.5px,
   mega: 19px
 );
 
@@ -69,6 +68,14 @@ $serif-sm-map: (
 // Sans Small Map: Unser Ziel
 $sans-sm-map: (
   null: (0.83rem, vr(1))
+);
+
+/* Unique Maps -------------------- */
+
+// Main Nav Items
+$main-nav-map: (
+  null: (0.72rem, vr(1)),
+  wide: (0.78rem, vr(1))
 );
 
 // Category Map: USER EXPERIENCE DESIGN

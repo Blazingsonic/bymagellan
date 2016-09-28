@@ -1,0 +1,42 @@
+
+.c-showroom {
+  position: relative;
+  width: calc(100% - 6rem);
+  max-width: 80rem;
+  top: -25rem;
+
+  @include mappy-bp(870px) {
+    top: -28rem;
+  }
+  @include mappy-bp(1200px) {
+    width: calc(100% - 12rem);
+    top: -28rem;
+  }
+  @include mappy-bp(mega) {
+    width: calc(100% - 14rem);
+    top: -25rem;
+  }
+}
+
+  .c-showroom__img {
+    width: 100%;
+    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.18);
+
+    @include mappy-bp(870px) {
+      width: 65%;
+    }
+  }
+
+  .c-showroom__sidebar {
+    display: none;
+    width: 35%;
+    padding: 5rem 0 0 2rem;
+
+    @include mappy-bp(870px) {
+      display: block;
+    }
+  }
+
+  .c-showroom__desc {
+
+  }

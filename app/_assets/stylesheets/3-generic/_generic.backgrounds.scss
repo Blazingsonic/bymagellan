@@ -1,4 +1,12 @@
 
+/* Big Backgrounds -------------------- */
+
+.letter-close {
+  background: url($path-img + '/bg/letter-close.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 /* Projekte -------------------- */
 
 .tandem {
@@ -123,6 +131,8 @@
   background-size: cover;
   background-position: center;
 }
+
+
 
 
 

@@ -1,0 +1,9 @@
+
+.btn-white-bg {
+  background-color: $white;
+  padding: 0.25rem;
+
+  &:hover {
+    background-color: $color-link-hover;
+  }
+}
