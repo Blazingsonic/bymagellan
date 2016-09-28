@@ -41,6 +41,38 @@ $('.site-overlay, .i-menu, .i-menu--mobile').click(function() {
   animateMenuIcon();
 });
 
+// ==========================================================================
+// Project Page Showroomm Offset
+// ==========================================================================
+
+if (pageId === 'project-page') {
+  let heroStaticTitleOffset = $('.c-hero--static__title').offset().top;
+  let heroStaticTitleHeight = $('.c-hero--static__title').height();
+  let windowHeightPage = window.innerHeight;
+  let showRoomTop = heroStaticTitleOffset + heroStaticTitleHeight - windowHeightPage * (7/8);
+  console.log(showRoomTop);
+
+  $('.c-showroom').css('top', showRoomTop);
+
+  $(window).resize(function() {
+
+    let windowHeightPage = window.innerHeight;
+
+    if (pageId === 'project-page') {
+      heroStaticTitleOffset = $('.c-hero--static__title').offset().top;
+      heroStaticTitleHeight = $('.c-hero--static__title').height();
+      showRoomTop = heroStaticTitleOffset + heroStaticTitleHeight - windowHeightPage * (7/8);
+      console.log(showRoomTop);
+
+      if (windowHeightPage < 890) {
+        showRoomTop = heroStaticTitleOffset + heroStaticTitleHeight - 810;
+      }
+
+      $('.c-showroom').css('top', showRoomTop);
+    }
+  });
+}
+
 
 // ==========================================================================
 // Document Classes

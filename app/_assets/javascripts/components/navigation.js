@@ -44,13 +44,16 @@ TweenMax.set($('.c-nav-fixed'), {y:'-=80px', autoAlpha: 0});
 
 // Animate in fixed nav when user scrolls to a certain point
 let moduleSkillsOffset1;
+let projectPageImgOffset;
 if (pageId === 'index-page') {
   moduleSkillsOffset1 = $('#skills').offset().top + window.innerHeight - 100;
+} else if (pageId === 'project-page') {
+  projectPageImgOffset = window.innerHeight - 200;
 }
 
 $(window).scroll(function (event) {
   let scroll = $(window).scrollTop();
-  if (scroll > moduleSkillsOffset1) {
+  if (scroll > moduleSkillsOffset1 || scroll > projectPageImgOffset) {
     TweenMax.to($('.c-nav-fixed'), 0.7, {y: '0', autoAlpha: 1, ease: Power3.easeInOut});
 
   } else {
@@ -78,58 +81,64 @@ let isScrolling = false;
 
 $window.scroll(function (event) {
 
-  let skillsOffset = $('#skills').offset().top - 5;
-  let skillsHeight = $('#skills').height();
-  let impressionenOffset = $('#impressionen').offset().top - 5;
-  let impressionenHeight = $('#impressionen').height();
-  let teamOffset = $('#team').offset().top - 5;
-  let teamHeight = $('#team').height();
-  let contactOffset = $('#contact').offset().top - 5;
-  let contactHeight = $('#contact').height();
+  if (pageId === 'index-page') {
 
-  let scroll = $window.scrollTop();
-  let windowHeight = $window.height();
+    // console.log('efwefwefwefewfw');
 
-  if (isScrolling == false) {
+    let skillsOffset = $('#skills').offset().top - 5;
+    let skillsHeight = $('#skills').height();
+    let impressionenOffset = $('#impressionen').offset().top - 5;
+    let impressionenHeight = $('#impressionen').height();
+    let teamOffset = $('#team').offset().top - 5;
+    let teamHeight = $('#team').height();
+    let contactOffset = $('#contact').offset().top - 5;
+    let contactHeight = $('#contact').height();
 
-    if (scroll >= skillsOffset && scroll < (skillsOffset + skillsHeight)) { // First section
+    let scroll = $window.scrollTop();
+    let windowHeight = $window.height();
 
-      $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
-      TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
-      $('.c-nav-fixed .c-main-nav__item:nth-child(2) .g-petel').addClass('is-active');
-      TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
+    if (isScrolling == false) {
 
-    } else if (scroll >= impressionenOffset && scroll < (impressionenOffset + impressionenHeight)) { // Second section
+      if (scroll >= skillsOffset && scroll < (skillsOffset + skillsHeight)) { // First section
 
-      console.log(scroll);
-      console.log(impressionenOffset);
-      console.log(impressionenHeight);
-      $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
-      TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
-      $('.c-nav-fixed .c-main-nav__item:nth-child(3) .g-petel').addClass('is-active');
-      TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
+        $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
+        TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
+        $('.c-nav-fixed .c-main-nav__item:nth-child(2) .g-petel').addClass('is-active');
+        TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
 
-    } else if (scroll >= teamOffset && scroll < (teamOffset + teamHeight)) { // Third section
+      } else if (scroll >= impressionenOffset && scroll < (impressionenOffset + impressionenHeight)) { // Second section
 
-      $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
-      TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
-      $('.c-nav-fixed .c-main-nav__item:nth-child(4) .g-petel').addClass('is-active');
-      TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
+        console.log(scroll);
+        console.log(impressionenOffset);
+        console.log(impressionenHeight);
+        $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
+        TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
+        $('.c-nav-fixed .c-main-nav__item:nth-child(3) .g-petel').addClass('is-active');
+        TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
 
-    } else if (scroll >= contactOffset && scroll < (contactOffset + contactHeight)) { // Third section
+      } else if (scroll >= teamOffset && scroll < (teamOffset + teamHeight)) { // Third section
 
-      $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
-      TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
-      $('.c-nav-fixed .c-main-nav__item:nth-child(5) .g-petel').addClass('is-active');
-      TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
+        $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
+        TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
+        $('.c-nav-fixed .c-main-nav__item:nth-child(4) .g-petel').addClass('is-active');
+        TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
 
-    } else if (scroll >= contactOffset) { // Fourth section
+      } else if (scroll >= contactOffset && scroll < (contactOffset + contactHeight)) { // Third section
 
-      // $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
-      // TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
-      // $('.c-nav-fixed .c-main-nav__item:nth-child(5) .g-petel').addClass('is-active');
-      // TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
+        $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
+        TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
+        $('.c-nav-fixed .c-main-nav__item:nth-child(5) .g-petel').addClass('is-active');
+        TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
 
+      } else if (scroll >= contactOffset) { // Fourth section
+
+        // $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
+        // TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
+        // $('.c-nav-fixed .c-main-nav__item:nth-child(5) .g-petel').addClass('is-active');
+        // TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
+
+      }
     }
   }
+
 });

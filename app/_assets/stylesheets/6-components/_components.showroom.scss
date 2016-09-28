@@ -3,18 +3,19 @@
   position: relative;
   width: calc(100% - 6rem);
   max-width: 80rem;
-  top: -25rem;
+  // top: -25rem;
 
   @include mappy-bp(870px) {
-    top: -28rem;
+    // top: -28rem;
   }
   @include mappy-bp(1200px) {
     width: calc(100% - 12rem);
-    top: -28rem;
+    // top: -28rem;
   }
   @include mappy-bp(mega) {
     width: calc(100% - 14rem);
-    top: -25rem;
+    // top: -25rem;
+
   }
 }
 

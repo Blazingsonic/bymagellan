@@ -1,6 +1,8 @@
 
 import $ from 'jquery';
 
+let pageId = $('main').attr('id');
+
 // Min Height of Screensize
 export function setMinHeight() {
 
@@ -14,6 +16,12 @@ export function setMinHeight() {
   // } else {
  //    minheight = (window.innerHeight * 2/5);
  //  }
-  $('.js-min-height').css('min-height',minheight);
 
+  if (pageId === 'project-page') {
+    if (window.innerHeight < 890) {
+      minheight = 890 * 13/14;
+    }
+  }
+
+  $('.js-min-height').css('min-height',minheight);
 }
