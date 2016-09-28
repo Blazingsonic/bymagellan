@@ -206,6 +206,15 @@
     // }
 }
 
+.i-send-form {
+  width: 1.5rem;
+  height: 1rem;
+}
+
+  .c-contact-form__submit-wrap:hover .i-send-form {
+    fill: $color-link-hover;
+  }
+
 .c-contact__item.is-active .i-email,
 .c-contact__item.is-active .i-form,
 .c-contact__item.is-active .i-phone {

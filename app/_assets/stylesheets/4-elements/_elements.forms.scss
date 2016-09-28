@@ -2,16 +2,16 @@
 @import "../1-settings/_settings.colors.scss";
 
 ::-webkit-input-placeholder {
-   color: $color-text-light;
+   color: $grey-light;
 }
 :-moz-placeholder { /* Firefox 18- */
-   color: $color-text-light;
+   color: $grey-light;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: $color-text-light;
+   color: $grey-light;
 }
-:-ms-input-placeholder {  
-   color: $color-text-light; 
+:-ms-input-placeholder {
+   color: $grey-light;
 }
 
 .form-wrap {
@@ -24,14 +24,14 @@ form {
 
 input,
 textarea {
-	background-color: #af404c;
-	border: none;
-	padding: 1.5rem;
 	width: 100%;
+  color: $black;
+  background-color: transparent;
+  border: none;
 }
 
 input {
-	height: vr(1);
+
 }
 
 textarea {

@@ -1,5 +1,6 @@
 
 import $ from 'jquery';
+import toastr from 'toastr';
 
 // Set variables
 let front = true;
@@ -51,8 +52,8 @@ export function contactItemClick(elem) {
 
     console.log('formular');
     $(cardToChange + ' p:first-of-type').text('Formular');
-    $(cardToChange + ' h4').text('Vom-Stein-Straße');
-    $(cardToChange + ' a p').text('Schreiben Sie uns!');
+    $(cardToChange + ' h4').text('Online-Formular');
+    $(cardToChange + ' a p').text('Jetzt online ausfüllen!');
     $(cardToChange + ' .c-card-proj__right').removeClass('letter-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('telephone-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('formular--contact');
@@ -65,7 +66,7 @@ export function contactItemClick(elem) {
 
 CSSPlugin.defaultTransformPerspective = 1000;
 
-//we set the backface
+// We set the backface
 TweenMax.set($(".c-card-proj--back"), {rotationY:-180});
 
 function flipCard() {
@@ -77,6 +78,16 @@ function flipCard() {
     .to(frontCard, 1, {rotationY: '+=180'})
     .to(backCard, 1, {rotationY: '+=180'}, 0);
 }
+
+// Show Confirmed Message when submit button is clicked
+$('.c-contact-form__submit').click(function(e) {
+
+  let inst = $('[data-remodal-id=modal-contact]').remodal();
+  inst.close();
+  e.preventDefault();
+  toastr.success('Wurde erfolgreich an Magellan verschickt!', 'Online-Formular');
+
+});
 
 
 

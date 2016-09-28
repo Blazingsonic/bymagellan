@@ -54,7 +54,79 @@
 .tandem {
 
   @include mappy-bp(small) {
-    background: url($path-img + '/teaser-tandem.jpg');
+    background: url($path-img + '/projects/teaser-tandem.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.modehaus {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-modehaus.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.architekturbuero {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-architekturbuero.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.eis-triff-kunst {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-eis-trifft-kunst.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.grundschule {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-grundschule.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.msk {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-msk.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.oculus {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-oculus.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.ristorante {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-ristorante.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.roentgenapp {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-roentgenapp.png');
     background-size: cover;
     background-position: center;
   }
@@ -139,7 +211,7 @@
   position: relative;
   width: 32rem;
   height: 14rem;
-  margin-bottom: vr(2);
+  margin-bottom: vr(3);
   /*border: solid 2px #fff;*/
 }
 

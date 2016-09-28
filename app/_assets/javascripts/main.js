@@ -10,6 +10,7 @@ import { animateMenuIcon } from './components/navigation';
 import { setMinHeight } from './components/min-height';
 import { lineAnimationSetAll, lineAnimationExcecuteAll } from './components/skills';
 import { contactItemClick } from './components/contact';
+import remodal from 'remodal'
 
 // ==========================================================================
 // Variables

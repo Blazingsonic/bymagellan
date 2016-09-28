@@ -26,3 +26,27 @@
       color: $color-link-hover;
     }
   }
+
+.c-contact-form {
+}
+
+  .c-contact-form__item-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.18);
+    padding: 1rem;
+  }
+
+  .c-contact-form__input {
+    margin-bottom: 0;
+  }
+
+  .c-contact-form__submit-wrap {
+    display: flex-inline;
+    border-bottom: 1px solid $black;
+
+    &:hover {
+      border-color: $color-link-hover;
+    }
+  }
