@@ -52,6 +52,10 @@ if (pageId === 'project-page') {
   let showRoomTop = heroStaticTitleOffset + heroStaticTitleHeight - windowHeightPage * (7/8);
   console.log(showRoomTop);
 
+  if (windowHeightPage < 890) {
+    showRoomTop = heroStaticTitleOffset + heroStaticTitleHeight - 810;
+  }
+
   $('.c-showroom').css('top', showRoomTop);
 
   $(window).resize(function() {
