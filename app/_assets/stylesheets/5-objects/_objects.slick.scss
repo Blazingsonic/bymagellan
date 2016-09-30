@@ -19,6 +19,7 @@
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  // transition: min-height 0.5s;
 }
 
 .o-slick-slide {
@@ -55,7 +56,7 @@
     }
 
     @include mappy-bp(1200px) {
-      font-size: 5.5rem;
+      font-size: 5.4rem;
     }
   }
 
