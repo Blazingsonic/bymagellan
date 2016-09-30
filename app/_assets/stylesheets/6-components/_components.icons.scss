@@ -19,14 +19,14 @@
 /* Hero -------------------- */
 
 .i-logo {
-  width: 4.25rem;
-  height: 4.25rem;
+  width: 3.8rem;
+  height: 3.8rem;
   // transform-origin: top center;
 
   @include mappy-bp(medium) {
     // transform: scale(1.2);
-    width: 5.25rem;
-    height: 5.25rem;
+    width: 4.8rem;
+    height: 4.8rem;
   }
   @include mappy-bp(wide) {
     // transform: scale(1.2);
@@ -40,8 +40,10 @@
   }
 
 .i-search, .i-search--mobile {
-  width: 1rem;
-  height: 1rem;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  bottom: 1px;
   cursor: pointer;
 
   &:hover {
@@ -71,25 +73,24 @@
 .i-menu, .i-menu--mobile {
   cursor: pointer;
   position: relative;
-  width: 21px;
-  height: 14px;
+  width: 27px;
+  height: 21px;
 
   span {
     background: white;
-    height: 3px;
-    width: 21px;
+    height: 2px;
+    width: 27px;
     position: absolute;
     transition:all 0.5s ease;
 
     &:first-child {
-      bottom: 12px;
+      top: 0px;
     }
     &:nth-child(2) {
       top: 8px;
-      opacity: 0;
     }
     &:nth-child(3) {
-      top: 11px;
+      top: 16px;
     }
   }
 
@@ -105,17 +106,16 @@
   opacity: 0;
 }
 .i-menu .rotate-top {
-  left: 2px;
   transform: rotatez(45deg);
   -webkit-transform-origin: 0%;
+  left: 2px;
 }
 .i-menu--mobile .rotate-top {
-  left: 3px;
   transform: rotatez(45deg);
   -webkit-transform-origin: 0%;
+  left: 2px;
 }
 .rotate-bottom {
-  left: 2px;
   transform: rotatez(-45deg);
   -webkit-transform-origin: 15%;
 }
