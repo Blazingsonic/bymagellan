@@ -41,7 +41,7 @@ layout: compress
     </nav>
     <!-- End Pushy Menu -->
 
-    <div class="c-nav-fixed">
+    <div id="fixed-nav" class="c-nav-fixed">
       <!-- Begin Header Nav -->
       <nav class="o-flex-between--start c-nav-fixed__inner u-centered">
 
@@ -63,24 +63,19 @@ layout: compress
 
         <!-- Nav Right -->
         <div class="o-flex-end--center c-nav-right">
-          <svg class="i-search--mobile u-mr-vr-1">
+          <svg class="i-search">
             <use xlink:href="#search"></use>
           </svg>
           <div class="o-flex-center--center c-nav-right__menu-wrap u-bg-black">
-            <a class="i-menu--mobile menu-btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
+            <button class="gh-svg-wrapper menu-btn">
+              <svg x="0px" y="0px" width="100%" viewBox="0 0 96 96" class="gh-svg gh-svg-top" enable-background="new 0 0 96 96">
+                <rect width="32" height="4" x="32" y="46" class="gh-svg-rect gh-svg-rect-top"></rect>
+              </svg>
+              <svg x="0px" y="0px" width="100%" viewBox="0 0 96 96" class="gh-svg gh-svg-bottom" enable-background="new 0 0 96 96">
+                <rect width="32" height="4" x="32" y="46" class="gh-svg-rect gh-svg-rect-bottom"></rect>
+              </svg>
+            </button>
           </div>
-          <svg class="i-search u-mr-vr-1">
-            <use xlink:href="#search"></use>
-          </svg>
-          <a class="i-menu menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
         </div>
       </nav>
       <!-- End Header Nav -->

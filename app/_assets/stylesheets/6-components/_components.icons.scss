@@ -18,6 +18,7 @@
 
 /* Hero -------------------- */
 
+// Logo
 .i-logo {
   width: 3.8rem;
   height: 3.8rem;
@@ -39,11 +40,14 @@
     height: 0;
   }
 
-.i-search, .i-search--mobile {
+// Search
+.i-search {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 1rem;
+  height: 1rem;
   bottom: 1px;
+  top: 0.02rem;
+  right: 2.7rem;
   cursor: pointer;
 
   &:hover {
@@ -56,74 +60,77 @@
   }
 
 .c-nav-fixed .i-search {
-  display: none;
-
-  @include mappy-bp(1113px) {
-    display: block;
-  }
+  right: 2rem;
 }
 
-.i-search--mobile {
-
-  @include mappy-bp(1113px) {
-    display: none;
-  }
+// Menu
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
 }
 
-.i-menu, .i-menu--mobile {
-  cursor: pointer;
-  position: relative;
-  width: 27px;
-  height: 21px;
+.gh-svg-wrapper {
+  display: block;
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  right: -1.2rem;
+  transform: translateZ(0) rotate(0deg);
+  transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
 
-  span {
-    background: white;
-    height: 2px;
-    width: 27px;
-    position: absolute;
-    transition:all 0.5s ease;
+  .c-nav-fixed .gh-svg-wrapper {
+    left: initial;
+    right: initial;
 
-    &:first-child {
-      top: 0px;
-    }
-    &:nth-child(2) {
-      top: 8px;
-    }
-    &:nth-child(3) {
-      top: 16px;
+    @indclude mappy-bp(1113px) {
+      right: -1.8rem;
     }
   }
 
-  &:hover {
-
-    span {
-      background-color: $color-link-hover;
-    }
-  }
+.gh-svg-wrapper.is-active {
+  transform: translateZ(0) rotate(90deg);
+  transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
 
-.transparent {
-  opacity: 0;
-}
-.i-menu .rotate-top {
-  transform: rotatez(45deg);
-  -webkit-transform-origin: 0%;
-  left: 2px;
-}
-.i-menu--mobile .rotate-top {
-  transform: rotatez(45deg);
-  -webkit-transform-origin: 0%;
-  left: 2px;
-}
-.rotate-bottom {
-  transform: rotatez(-45deg);
-  -webkit-transform-origin: 15%;
+.gh-svg {
+  position: absolute;
+  left: 0rem;
+  top: 0;
+  fill: $white;
+  transform: translateZ(0) rotate(0deg);
+  transition: transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
 
-.c-nav-fixed .i-menu {
-    @include mappy-bp(0 1113px) {
-    display: none;
-  }
+.gh-svg-wrapper.is-active .gh-svg {
+  transform: translateZ(0) rotate(45deg);
+  transition: 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+
+.gh-svg-wrapper.is-active .gh-svg-bottom {
+  transform: translateZ(0) rotate(-45deg);
+}
+
+.gh-svg-rect {
+  left: 0;
+  top: 0;
+  transition: transform 0.2s 0.2s;
+}
+
+.gh-svg-wrapper.is-active .gh-svg-rect {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.2s;
+}
+
+.gh-svg-rect-top {
+  transform: translate3d(0, -8px, 0);
+}
+
+.gh-svg-rect-bottom {
+  transform: translate3d(0, 8px, 0);
 }
 
 /* Service Icons -------------------- */
