@@ -4,10 +4,10 @@ import $ from 'jquery';
 let pageId = $('main').attr('id');
 
 // Min Height of Screensize
-export function setMinHeight() {
+export function setMinHeight(windowHeightInitial) {
 
   let minheight;
-  minheight = (window.innerHeight * 13/14);
+  minheight = (windowHeightInitial * 13/14);
 
   // if (window.innerWidth >= 1300) {
   //  minheight = (window.innerHeight * 13/14);
