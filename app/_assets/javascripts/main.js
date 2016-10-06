@@ -115,8 +115,8 @@ let svgPath;
 
 // Load SVG sprite
 if (pageId === 'index-page') {
-  // svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy
-  svgPath = '../../assets/images/sprite/svg.svg' // local
+  svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy
+  // svgPath = '../../assets/images/sprite/svg.svg' // local
 } else {
   svgPath = '../../assets/images/sprite/svg.svg' // both
 }
