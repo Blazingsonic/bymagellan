@@ -14,3 +14,10 @@ exclude:
 
 keep_files:
   - assets
+
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/

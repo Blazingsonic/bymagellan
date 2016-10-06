@@ -87,11 +87,17 @@ $menu_width: 250px !default;
 }
 
 .pushy__inner {
-    top: 50%;
+    bottom: 0%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
     width: 100%;
+
+    @include mappy-bp(medium) {
+      top: 50%;
+      bottom: initial;
+      transform: translate(-50%, -50%);
+    }
 }
 
 /* Menu Transitions */

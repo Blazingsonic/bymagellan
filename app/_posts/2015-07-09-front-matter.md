@@ -1,6 +1,9 @@
 ---
 layout: post
-title:  "YAML front matter"
+title:  "Unser Logo"
+datumformatiert: 31.07.2016
+teasertext: Wie ist unser Logo entstanden? Wie sind wir ausgerechnet auf "Magellan" gekommen? Ein Einblick in den Kreativprozess.
+lesezeit: 5 Minuten
 date:   2015-07-09
 tags: [jekyll, web design, yaml]
 ---

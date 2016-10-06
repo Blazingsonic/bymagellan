@@ -1,8 +1,11 @@
 ---
 layout: post
-title:  "Deployment Options"
-date:   2015-08-01
-tags:  [jekyll, deployment, github pages, git]
+title:  "Unser Logo"
+datumformatiert: 31.07.2016
+teasertext: Wie ist unser Logo entstanden? Wie sind wir ausgerechnet auf "Magellan" gekommen? Ein Einblick in den Kreativprozess.
+lesezeit: 4 Minuten
+date:   2015-07-09
+tags: [jekyll, web design, yaml]
 ---
 Once you’ve finished building your Jekyll site you’ll need to decide where and how you want to deploy it. Since Jekyll builds static content you can serve it almost anywhere. There are no server-side dependencies, CMS installations, database administrators, or server stacks to worry about. If the server can handle HTML, CSS, and JavaScript, it can serve your site. With that in mind let’s take a look at some of the most common options for deploying Jekyll sites.
 

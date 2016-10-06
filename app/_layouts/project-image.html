@@ -1,0 +1,59 @@
+---
+layout: 'default'
+title: 'Made By Magellan'
+description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleistungen anzubieten. Das erreichen wir durch unsren breiten Wissenschatz und langjähriger Erfahrung sowie ständiger Weiterentwicklung. Wir möchten, dass Sie mit unseren Produkten und Dienstleistungen stets 100% zufrieden sind. Dafür geben wir auch gerne die Extrameile.'
+---
+
+<!-- Begin Hero -->
+<header class="js-min-height">
+
+  <div class="js-min-height {{ page.headerclass }}">
+
+    <div class="u-bg-darken-025 js-min-height">
+
+      <div class="c-hero--static u-centered">
+
+        {% include header-nav.html %}
+
+        <div class="c-hero--static__title u-txt-center">
+          <h1>{{ page.headertitle }}</h1>
+          <h3 class="u-txt-white">{{ page.headersubtitle }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End Hero -->
+
+<!-- Begin Main -->
+<main id="project-page">
+
+  <section class="o-flex-between--start c-showroom u-centered">
+    <img class="c-showroom__img" src="{{ site.baseurl }}/assets/images/projects/{{ page.projectimage }}" alt="project image">
+
+    <article class="c-showroom__sidebar">
+
+      <div class="u-txt-white">
+        <p class="u-serif-sm u-mb-vr-05">{{ page.subtitle }}</p>
+        <h4 class="u-txt-white">{{ page.headerdate }}</h4>
+        <p>{{ page.headertext }}</p>
+        <a href="#modal-not-available" class="o-flex-start--center has-inline-flex btn-white-bg has-no-hover">
+          <svg class="i-glasses u-mr-vr-033">
+            <use xlink:href="#glasses"></use>
+          </svg>
+          <p class="u-mb-0">{{ page.cta }}</p>
+        </a>
+      </div>
+    </article>
+  </section>
+
+  {% include facts.html %}
+
+  {% include remodal-not-available.html %}
+
+</main>
+<!-- End Main -->
+
+<script src='{{ site.baseurl }}/assets/javascripts/main.js'></script>
+
+

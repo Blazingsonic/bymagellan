@@ -110,8 +110,17 @@ if (pageId === 'project-page') {
 // SVG
 // ==========================================================================
 
+let svgPath;
+
 // Load SVG sprite
-$.get('assets/images/sprite/svg.svg', function(data) {
+if (pageId === 'index-page') {
+  // svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy
+  svgPath = '../../assets/images/sprite/svg.svg' // local
+} else {
+  svgPath = '../../assets/images/sprite/svg.svg' // both
+}
+
+$.get(svgPath, function(data) {
     let div = document.createElement('div');
     div.className += 'hide-svg-defs';
     div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);

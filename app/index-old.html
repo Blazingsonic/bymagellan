@@ -157,27 +157,194 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
       <!-- Cards Wrapper -->
       <section class="o-flex-center--center has-wrap u-centered u-mb-vr-2">
 
+        <article class="o-card c-card-proj u-txt-left js-card m-category-web">
+          <div class="c-card-proj__left">
+            <p class="u-category u-txt-green u-mb-vr-033">Studentisches Projekt</p>
+            <h4>Tandem Network</h4>
+            <p class="u-mb-vr-05">Tandem - better together
+            <br>
+            Seit Sommer 2015 in der Entwicklung ist dies unser bis dato Größtes Vorhaben und unser ganzer Stolz!
+            </p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="project.html">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Beitrag lesen</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right tandem"></div>
+        </article>
 
-        {% for project in site.projects %}
+        <article class="o-card c-card-proj u-txt-left js-card m-category-gestaltung">
+          <div class="c-card-proj__left">
+            <p class="u-category u-mb-vr-033"><span class="u-txt-pink">Gestaltung</span><span class="u-txt-grey-light"> Für: Profi-Homepage.de</span></p>
+            <h4>Modehaus</h4>
+            <p class="u-mb-vr-05">Eine Symphonie aus kontemporärer und klassischer UI, beeindruckende Bilderwelt und fein abgestimmte Farbwahl &amp; Details.</p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="#modal-not-available">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Konzepte betrachten</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right modehaus"></div>
+        </article>
 
-          <article class="o-card c-card-proj u-txt-left js-card {{ project.category }}">
-            <div class="c-card-proj__left">
-              <p class="u-category {{ project.color }} u-mb-vr-033">{{ project.subtitle }}<span class="u-txt-grey-light">{{ project.client }}</span></p>
-              <h4>{{ project.title }}</h4>
-              <p class="u-mb-vr-05">{{ project.teasertext }}</p>
-              <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="{% if project.link == 'project-detail' %}{{ site.url }}{{ site.baseurl }}/{{ project.url }}{% else %}{{ project.link }}{% endif %}">
-                <svg class="i-glasses u-mr-vr-033">
-                  <use xlink:href="#glasses"></use>
-                </svg>
-                <p class="u-mb-0">{{ project.cta }}</p>
-              </a>
-            </div>
-            <div class="c-card-proj__right {{ project.teaserimage }}"></div>
-          </article>
+        <article class="o-card c-card-proj u-txt-left js-card m-category-gestaltung">
+          <div class="c-card-proj__left">
+            <p class="u-category u-mb-vr-033"><span class="u-txt-gold">Gestaltung</span><span class="u-txt-grey-light"> Für: Profi-Homepage.de</span></p>
+            <h4>Möbelhaus</h4>
+            <p class="u-mb-vr-05">Aufeinanderfolgend werden Produkt&shy;kategorien sowie Produkthightlights übersichtlich per Slider vorgestellt. Verschiedene Farbkombinationen.</p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="#modal-not-available">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Gestaltung betrachten</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right moebelhaus"></div>
+        </article>
 
-        {% endfor %}
+        <article class="o-card c-card-proj u-txt-left js-card m-category-gestaltung">
+          <div class="c-card-proj__left">
+            <p class="u-category u-mb-vr-033"><span class="u-txt-gold">Gestaltung</span><span class="u-txt-grey-light"> Für: Profi-Homepage.de</span></p>
+            <h4>Ristorante</h4>
+            <p class="u-mb-vr-05">Typographie &amp; großflächiger Einsatz von Bilder sowie edle Farb&shy;wahl ergeben ein stimmiges, durchdachtes Gesamtbild.</p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="#modal-not-available">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Gestaltung betrachten</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right ristorante"></div>
+        </article>
 
+        <article class="o-card c-card-proj u-txt-left js-card m-category-web m-category-gestaltung">
+          <div class="c-card-proj__left">
+            <p class="u-category u-txt-business-blue u-mb-vr-033">Gestaltung &amp; Entwicklung</p>
+            <h4>Grundschule</h4>
+            <p class="u-mb-vr-05">Modern, flach sowie benutzer&shy;freundlich und mobiltauglich informiert diese WordPress&shy;-Seite täglich Eltern &amp; Interessierte.</p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="#modal-not-available">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Online ansehen</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right grundschule"></div>
+        </article>
 
+        <article class="o-card c-card-proj u-txt-left js-card m-category-web m-category-gestaltung">
+          <div class="c-card-proj__left">
+            <p class="u-category u-txt-carbon u-mb-vr-033">Gestaltung, Text &amp; Entwicklung</p>
+            <h4>MSK Snow Tech.</h4>
+            <p class="u-mb-vr-05">Durch besonderen Stil soll der neue Webauftritt Premium-Kunden weltweit ansprechen und über die einzigartigen Produkte informieren.</p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="#modal-not-available">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Beitrag lesen</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right msk"></div>
+        </article>
+
+        <article class="o-card c-card-proj u-txt-left js-card m-category-web m-category-gestaltung">
+          <div class="c-card-proj__left">
+            <p class="u-category u-txt-turquoise u-mb-vr-033">Gestlatung &amp; Entwicklung</p>
+            <h4>Eis trifft Kunst</h4>
+            <p class="u-mb-vr-05">Modern, flach sowie benutzer&shy;freundlich und mobiltauglich informiert diese WordPress&shy;-Seite täglich Eltern &amp; Interessierte.</p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="#modal-not-available">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Online ansehen</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right eis-triff-kunst"></div>
+        </article>
+
+        <article class="o-card c-card-proj u-txt-left js-card m-category-web m-category-gestaltung">
+          <div class="c-card-proj__left">
+            <p class="u-category u-txt-dark-blue u-mb-vr-033">Gestlatung &amp; Entwicklung</p>
+            <h4>KBKN</h4>
+            <p class="u-mb-vr-05">Modern, flach sowie benutzer&shy;freundlich und mobiltauglich informiert diese WordPress&shy;-Seite täglich Eltern &amp; Interessierte.</p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="#modal-not-available">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Online ansehen</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right architekturbuero"></div>
+        </article>
+
+        <article class="o-card c-card-proj u-txt-left js-card m-category-print">
+          <div class="c-card-proj__left">
+            <p class="u-category u-txt-green u-mb-vr-033">User experience design</p>
+            <h4>Tandem Network</h4>
+            <p class="u-mb-vr-05">Tandem - better together
+            <br>
+            Seit Sommer 2015 in der Entwicklung ist dies unser bis dato Größtes Vorhaben und unser ganzer Stolz!
+            </p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="#modal-not-available">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Beitrag lesen</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right tandem"></div>
+        </article>
+
+        <article class="o-card c-card-proj u-txt-left js-card m-category-print">
+          <div class="c-card-proj__left">
+            <p class="u-category u-txt-green u-mb-vr-033">User experience design</p>
+            <h4>Tandem Network</h4>
+            <p class="u-mb-vr-05">Tandem - better together
+            <br>
+            Seit Sommer 2015 in der Entwicklung ist dies unser bis dato Größtes Vorhaben und unser ganzer Stolz!
+            </p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="#modal-not-available">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Beitrag lesen</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right tandem"></div>
+        </article>
+
+        <article class="o-card c-card-proj u-txt-left js-card m-category-web">
+          <div class="c-card-proj__left">
+            <p class="u-category u-txt-grey u-mb-vr-033">Studentisches Projekt</p>
+            <h4>App: Röntgen</h4>
+            <p class="u-mb-vr-05">Im Rahmen der Veranstaltung "Ambient Media an der Hochschule Furtwangen University ist das App-Konzept "Röntgen" entstanden</p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="#modal-not-available">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Screendesigns entdecken</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right roentgenapp"></div>
+        </article>
+
+        <article class="o-card c-card-proj u-txt-left js-card m-category-web">
+          <div class="c-card-proj__left">
+            <p class="u-category u-txt-grey u-mb-vr-033">Studentisches Projekt</p>
+            <h4>Oculus For Travel</h4>
+            <p class="u-mb-vr-05">Im Rahmen einer Veranstaltung an der Hochschule Furtwangen Uni. ist das Konzept "Oculus Rift &amp; Virtual Reality für Reisebüros" entstanden.</p>
+            <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="http://blazingsonic.github.io/website-prototyping">
+              <svg class="i-glasses u-mr-vr-033">
+                <use xlink:href="#glasses"></use>
+              </svg>
+              <p class="u-mb-0">Online ansehen</p>
+            </a>
+          </div>
+          <div class="c-card-proj__right oculus"></div>
+        </article>
       </section>
 
       <section class="o-flex-center--center has-column">
@@ -390,43 +557,120 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
       <!-- Blog Articles Preview -->
       <section class="o-flex-center--center has-wrap u-centered">
 
-
-        {% for post in site.posts %}
-
-          <article class="o-card c-card-blog u-txt-left">
-            <div class="c-card-blog__img--magellan"></div>
-            <section class="c-card-blog__body">
-              <p class="u-mb-vr-05">{{ post.datumformatiert }}</p>
-              <h3 class="u-txt-black u-bold u-mb-vr-05"><i>{{ post.title }}</i></h3>
-              <p>{{ post.teasertext }}</p>
-              <section class="o-flex-between--center c-card-blog__bottom">
-                <a class="o-flex-start--center has-inline-flex u-link-grey g-underline" href="#modal-not-available">
-                  <p class="u-mr-vr-025 u-mb-0">Lesen</p>
-                  <svg class="i-glasses">
-                    <use xlink:href="#glasses"></use>
-                  </svg>
-                </a>
-                <div class="o-flex-start--center">
-                  <svg class="i-clock u-mr-vr-025">
-                    <use xlink:href="#clock"></use>
-                  </svg>
-                  <p class="u-mb-0">{{ post.lesezeit }}</p>
-                </div>
-              </section>
+        <article class="o-card c-card-blog u-txt-left">
+          <div class="c-card-blog__img--magellan"></div>
+          <section class="c-card-blog__body">
+            <p class="u-mb-vr-05">31.07.2016</p>
+            <h3 class="u-txt-black u-bold u-mb-vr-05"><i>Unser Logo</i></h3>
+            <p>Wie ist unser Logo entstanden? Wie sind wir ausgerechnet auf "Magellan" gekommen? Ein Einblick in den Kreativprozess.</p>
+            <section class="o-flex-between--center c-card-blog__bottom">
+              <a class="o-flex-start--center has-inline-flex u-link-grey g-underline" href="#modal-not-available">
+                <p class="u-mr-vr-025 u-mb-0">Lesen</p>
+                <svg class="i-glasses">
+                  <use xlink:href="#glasses"></use>
+                </svg>
+              </a>
+              <div class="o-flex-start--center">
+                <svg class="i-clock u-mr-vr-025">
+                  <use xlink:href="#clock"></use>
+                </svg>
+                <p class="u-mb-0">5 Minuten</p>
+              </div>
             </section>
-          </article>
+          </section>
+        </article>
 
-        {% endfor %}
+        <article class="o-card c-card-blog u-txt-left">
+          <div class="c-card-blog__img--magellan"></div>
+          <section class="c-card-blog__body">
+            <p class="u-mb-vr-05">31.07.2016</p>
+            <h3 class="u-txt-black u-bold u-mb-vr-05"><i>Unser Logo</i></h3>
+            <p>Wie ist unser Logo entstanden? Wie sind wir ausgerechnet auf "Magellan" gekommen? Ein Einblick in den Kreativprozess.</p>
+            <section class="o-flex-between--center c-card-blog__bottom">
+              <a class="o-flex-start--center has-inline-flex u-link-grey g-underline" href="#modal-not-available">
+                <p class="u-mr-vr-025 u-mb-0">Lesen</p>
+                <svg class="i-glasses">
+                  <use xlink:href="#glasses"></use>
+                </svg>
+              </a>
+              <div class="o-flex-start--center">
+                <svg class="i-clock u-mr-vr-025">
+                  <use xlink:href="#clock"></use>
+                </svg>
+                <p class="u-mb-0">5 Minuten</p>
+              </div>
+            </section>
+          </section>
+        </article>
 
-
+        <article class="o-card c-card-blog u-txt-left">
+          <div class="c-card-blog__img--magellan"></div>
+          <section class="c-card-blog__body">
+            <p class="u-mb-vr-05">31.07.2016</p>
+            <h3 class="u-txt-black u-bold u-mb-vr-05"><i>Unser Logo</i></h3>
+            <p>Wie ist unser Logo entstanden? Wie sind wir ausgerechnet auf "Magellan" gekommen? Ein Einblick in den Kreativprozess.</p>
+            <section class="o-flex-between--center c-card-blog__bottom">
+              <a class="o-flex-start--center has-inline-flex u-link-grey g-underline" href="#modal-not-available">
+                <p class="u-mr-vr-025 u-mb-0">Lesen</p>
+                <svg class="i-glasses">
+                  <use xlink:href="#glasses"></use>
+                </svg>
+              </a>
+              <div class="o-flex-start--center">
+                <svg class="i-clock u-mr-vr-025">
+                  <use xlink:href="#clock"></use>
+                </svg>
+                <p class="u-mb-0">5 Minuten</p>
+              </div>
+            </section>
+          </section>
+        </article>
       </section>
     </article>
   </div>
   <!-- End Blog -->
 
-  {% include facts.html %}
+  <!-- Begin Facts -->
+  <div id="facts" class="o-wrapper u-txt-center u-bg-vanilla">
 
-  {% include remodal-not-available.html %}
+    <article class="o-wrapper__module ">
+
+      <!-- trying to use flexbox grid -->
+      <section class="o-flex-center--center has-wrap c-facts u-centered">
+        <article class="c-facts__item">
+          <p class="e-serif-big u-txt-black u-mb-vr-05">12</p>
+          <h3 class="u-txt-grey u-mb-0">Zufriedene <br> Kunden</h3>
+        </article>
+        <article class="c-facts__item">
+          <p class="e-serif-big u-txt-black u-mb-vr-05">34</p>
+          <h3 class="u-txt-grey u-mb-0">Abgeschlossene <br> Projekte</h3>
+        </article>
+        <article class="c-facts__item">
+          <p class="e-serif-big u-txt-black u-mb-vr-05">24 / 7</p>
+          <h3 class="u-txt-grey u-mb-0">Erreichbarkeit <br> &amp; Service</h3>
+        </article>
+      </section>
+    </article>
+  </div>
+  <!-- End Facts -->
+
+  <div class="remodal remodal-not-available" data-remodal-id="modal-not-available">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <article class="o-card c-card-proj u-txt-left js-card m-category-web">
+      <div class="c-card-proj__left">
+        <p class="u-category u-txt-grey u-mb-vr-033">Notiz</p>
+        <h4>Diese Funktion folgt in Kürze!</h4>
+        <p class="u-mb-vr-05">Diese Unterseite/Funktion steht<br>in Kürze zur Verfügung!<br>Versprochen!</p>
+        <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="#">
+          <svg class="i-github u-mr-vr-033">
+            <use xlink:href="#github"></use>
+          </svg>
+          <p class="u-mb-0">Letztes Update: 28.09.16</p>
+        </a>
+      </div>
+      <div class="c-card-proj__right table-flip"></div>
+    </article>
+  </div>
 
 </main>
 <!-- End Main -->
