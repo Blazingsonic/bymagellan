@@ -69,17 +69,17 @@ $(window).resize(function() {
 TweenMax.set($('.c-nav-fixed'), {y:'-=80px', autoAlpha: 0});
 
 // Animate in fixed nav when user scrolls to a certain point
-let moduleSkillsOffset1;
+let moduleSkillsOffset;
 let projectPageImgOffset;
 if (pageId === 'index-page') {
-  moduleSkillsOffset1 = $('#skills').offset().top + window.innerHeight - 100;
+  moduleSkillsOffset = $('#skills').offset().top + window.innerHeight - 60;
 } else if (pageId === 'project-page') {
   projectPageImgOffset = window.innerHeight - 200;
 }
 
 $(window).scroll(function (event) {
   let scroll = $(window).scrollTop();
-  if (scroll > moduleSkillsOffset1 || scroll > projectPageImgOffset) {
+  if (scroll > moduleSkillsOffset || scroll > projectPageImgOffset) {
     TweenMax.to($('.c-nav-fixed'), 0.7, {y: '0', autoAlpha: 1, ease: Power3.easeInOut});
 
   } else {
@@ -90,14 +90,14 @@ $(window).scroll(function (event) {
 /* Petel Hover -------------------- */
 
 // Set default petel item on first nav item
-TweenMax.set($('.c-nav-fixed .c-main-nav__item:first-child .g-petel__item'), {y: 0, autoAlpha: 1});
+TweenMax.set($('.c-main-nav__item:first-child .g-petel__item'), {y: 0, autoAlpha: 1});
 
 // Change change petel when nav item is clicked
-$('.g-petel').click(function() {
-  $('.g-petel').removeClass('is-active');
-  TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
+$('.c-nav-fixed .g-petel').click(function() {
+  $('.c-nav-fixed .g-petel').removeClass('is-active');
+  TweenMax.to($('.c-nav-fixed .g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
   $(this).addClass('is-active');
-  TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
+  TweenMax.to($('.c-nav-fixed .g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
 });
 
 /* Adjust active nav item according to scroll current scroll position -------------------- */
@@ -128,9 +128,9 @@ $window.scroll(function (event) {
       if (scroll >= skillsOffset && scroll < (skillsOffset + skillsHeight)) { // First section
 
         $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
-        TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
+        TweenMax.to($('.c-nav-fixed .g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
         $('.c-nav-fixed .c-main-nav__item:nth-child(2) .g-petel').addClass('is-active');
-        TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
+        TweenMax.to($('.c-nav-fixed .g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
 
       } else if (scroll >= impressionenOffset && scroll < (impressionenOffset + impressionenHeight)) { // Second section
 
@@ -138,23 +138,23 @@ $window.scroll(function (event) {
         console.log(impressionenOffset);
         console.log(impressionenHeight);
         $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
-        TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
+        TweenMax.to($('.c-nav-fixed .g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
         $('.c-nav-fixed .c-main-nav__item:nth-child(3) .g-petel').addClass('is-active');
-        TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
+        TweenMax.to($('.c-nav-fixed .g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
 
       } else if (scroll >= teamOffset && scroll < (teamOffset + teamHeight)) { // Third section
 
         $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
-        TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
+        TweenMax.to($('.c-nav-fixed .g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
         $('.c-nav-fixed .c-main-nav__item:nth-child(4) .g-petel').addClass('is-active');
-        TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
+        TweenMax.to($('.c-nav-fixed .g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
 
       } else if (scroll >= contactOffset && scroll < (contactOffset + contactHeight)) { // Third section
 
         $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
-        TweenMax.to($('.g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
+        TweenMax.to($('.c-nav-fixed .g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
         $('.c-nav-fixed .c-main-nav__item:nth-child(5) .g-petel').addClass('is-active');
-        TweenMax.to($('.g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
+        TweenMax.to($('.c-nav-fixed .g-petel.is-active .g-petel__item'), 0.3, {y: 0, autoAlpha: 1, ease: Power3.easeInOut});
 
       } else if (scroll >= contactOffset) { // Fourth section
 

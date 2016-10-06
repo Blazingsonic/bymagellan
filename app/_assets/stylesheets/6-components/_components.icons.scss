@@ -231,6 +231,15 @@ button {
     fill: $color-link-hover;
   }
 
+.i-double-tick-indicator {
+  width: 1.5rem;
+  height: 0.6rem;
+}
+
+  .c-card-proj a:hover .i-double-tick-indicator {
+    fill: $color-link-hover;
+  }
+
 .c-contact__item.is-active .i-email,
 .c-contact__item.is-active .i-form,
 .c-contact__item.is-active .i-phone {

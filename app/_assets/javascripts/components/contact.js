@@ -28,6 +28,8 @@ export function contactItemClick(elem) {
     $(cardToChange + ' p:first-of-type').text('e-mail');
     $(cardToChange + ' h4').text('mail@magellan.de');
     $(cardToChange + ' a p').text('Schreiben Sie uns eine Mail!');
+    // $(cardToChange + svg).removeClass('i-double-tick-indicator');
+    // $(cardToChange + svg).addClass('i-glasses');
     $(cardToChange + ' .c-card-proj__right').removeClass('letter-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('telephone-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('formular-contact');

@@ -10,7 +10,8 @@ import { animateMenuIcon } from './components/navigation';
 import { setMinHeight } from './components/min-height';
 import { lineAnimationSetAll, lineAnimationExcecuteAll } from './components/skills';
 import { contactItemClick } from './components/contact';
-import remodal from 'remodal'
+import remodal from 'remodal';
+// import stickykit from 'sticky-kit';
 
 // ==========================================================================
 // Variables
@@ -250,6 +251,13 @@ $('.c-contact__item').on('click', function() {
 //    teamScroll = true;
 //  }
 // });
+
+
+// ==========================================================================
+// Fixed Widget
+// ==========================================================================
+
+// $("#widget-font").stick_in_parent();
 
 
 // ==========================================================================
