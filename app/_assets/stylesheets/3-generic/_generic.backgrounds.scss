@@ -90,6 +90,15 @@
   }
 }
 
+.moebelhaus {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-moebelhaus.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 /* Team -------------------- */
 
 .sebastian {

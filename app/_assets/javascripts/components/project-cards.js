@@ -34,7 +34,7 @@ $('#all-items-of-category').text(numItemsDefault);
 // Animate when user scrolls to a certain point
 $(window).scroll(function (event) {
   let scroll = $(window).scrollTop();
-  if (scroll > moduleImpressionenOffset && !impressionenScroll) {
+  if (scroll > moduleImpressionenOffset + 300 && !impressionenScroll) {
     TweenMax.staggerTo($defaultCards, 1,  {x: '0', autoAlpha: 1}, 0.25);
     impressionenScroll = true;
   }
