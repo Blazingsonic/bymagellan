@@ -18,4 +18,20 @@ cta: Online ansehen
 date: 2016-010-06
 tags: [jekyll, liquid, templates]
 ---
-Getting started with Jekyll is relatively simple, although perhaps not *quite* as simple as their documentation would have you believe. There are a number of dependencies and requirements you have to satisfy before installing and using Jekyll. Let’s explore those dependencies and talk about the process of getting started with Jekyll.
+<!-- Widgets -->
+<section id="widget-font" class="o-flex-center--center has-column c-widget">
+  <p class="c-widget__heading u-txt-grey-lightest u-uppercase">Schriftfamilie</p>
+  <span class="c-widget__aa u-txt-black">Aa</span>
+  <p class="c-widget__subtitle u-txt-black">Frutiger</p>
+</section>
+
+<section id="widget-color" class="o-flex-center--center has-column c-widget">
+  <p class="c-widget__heading u-txt-grey-lightest u-uppercase">Farbkomposition</p>
+  <div class="o-flex-center--center c-widget__palette u-txt-black">
+    <span class="c-widget__color is-red"></span>
+    <span class="c-widget__color is-black"></span>
+    <span class="c-widget__color is-blue"></span>
+    <span class="c-widget__color is-grey"></span>
+    <span class="c-widget__color is-grey-light"></span>
+  </div>
+</section>
