@@ -72,7 +72,7 @@ TweenMax.set($('.c-nav-fixed'), {y:'-=80px', autoAlpha: 0});
 let moduleSkillsOffset;
 let projectPageImgOffset;
 if (pageId === 'index-page') {
-  moduleSkillsOffset = $('#skills').offset().top + window.innerHeight - 60;
+  moduleSkillsOffset = $('#skills').offset().top + window.innerHeight * 17/20;
 } else if (pageId === 'project-page') {
   projectPageImgOffset = window.innerHeight - 200;
 }

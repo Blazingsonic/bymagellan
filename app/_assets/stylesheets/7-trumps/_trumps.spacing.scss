@@ -27,6 +27,9 @@
 .u-mb-vr-1 {
 	margin-bottom: vr(1);
 }
+.u-mb-vr-15 {
+  margin-bottom: vr(1.5);
+}
 .u-mb-vr-2 {
 	margin-bottom: vr(2);
 }
@@ -76,8 +79,16 @@
 
 /* Paddings -------------------- */
 
+.u-pt-vr-15 {
+  padding-top: vr(1.5);
+}
+
 .u-pb-0 {
   padding-bottom: 0;
+}
+
+.u-pb-vr-15 {
+  padding-bottom: vr(1.5);
 }
 
 .u-pr-vr-1 {
