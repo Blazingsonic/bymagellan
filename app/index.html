@@ -165,7 +165,7 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
               <p class="u-category {{ project.color }} u-mb-vr-033">{{ project.subtitle }}<span class="u-txt-grey-light">{{ project.client }}</span></p>
               <h4>{{ project.title }}</h4>
               <p class="u-mb-vr-05">{{ project.teasertext }}</p>
-              <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="{% if project.link == 'project-detail' %}{{ site.url }}{{ site.baseurl }}/{{ project.url }}{% else %}{{ project.link }}{% endif %}">
+              <a class="o-flex-start--center has-inline-flex u-link-grey u-mb-vr-1 g-underline" href="{% if project.link == 'project-detail' %}{{ project.url }}{% else %}{{ project.link }}{% endif %}">
                 <svg class="i-glasses u-mr-vr-033">
                   <use xlink:href="#glasses"></use>
                 </svg>

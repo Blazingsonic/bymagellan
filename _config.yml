@@ -2,7 +2,9 @@ ga_id: UA-XXXXXXXX-1
 
 source: app
 destination: public
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "bymagellan/"
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "bymagellan.co"
 url: ""
 
 compress_html:
