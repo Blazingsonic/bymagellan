@@ -4,7 +4,7 @@ title:  Modehaus
 subtitle: Gestaltung
 category: " m-category-gestaltung"
 color: u-txt-pink
-client: " Für: Profi-Homepage.de"
+client: " / Für: Profi-Homepage.de"
 teasertext: Eine Symphonie aus kontemporärer und klassischer UI, beeindruckende Bilderwelt und fein abgestimmte Farbwahl &amp; Details.
 link: "#modal-not-available"
 teaserimage: modehaus

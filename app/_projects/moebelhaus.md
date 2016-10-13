@@ -4,7 +4,7 @@ title:  Möbelhaus
 subtitle: Gestaltung
 category: " m-category-gestaltung"
 color: u-txt-gold
-client: " Für: Profi-Homepage.de"
+client: " / Für: Profi-Homepage.de"
 teasertext: Aufeinanderfolgend werden Produkt&shy;kategorien sowie Produkthightlights übersichtlich per Slider vorgestellt. Verschiedene Farbkombinationen.
 link: "#modal-not-available"
 teaserimage: moebelhaus

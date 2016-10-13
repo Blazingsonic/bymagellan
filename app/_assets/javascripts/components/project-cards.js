@@ -49,6 +49,7 @@ export function updateProjectCards(id, loadState) {
   let projectCardTlAdd = new TimelineMax();
   let $projectCards;
   let numItems;
+  let numItemsLoadState1;
 
   console.log(`load State ${loadState}`);
 
@@ -56,26 +57,30 @@ export function updateProjectCards(id, loadState) {
 
     if (id === 'bullet-web') {
       $projectCards = $('.m-category-web:lt(6)');
-      numItems = $('.m-category-web').length;
+      numItems = $('.m-category-web').length - 1;
+      $loadMore.hide();
     } else if (id === 'bullet-gestaltung') {
       $projectCards = $('.m-category-gestaltung:lt(6)');
       numItems = $('.m-category-gestaltung').length;
+      $loadMore.show();
     } else if (id === 'bullet-print') {
       $projectCards = $('.m-category-print:lt(6)');
       numItems = $('.m-category-print').length;
+      $loadMore.hide();
     } else if (id === 'bullet-etc') {
       $projectCards = $('.m-category-etc:lt(6)');
       numItems = $('.m-category-etc').length;
+      $loadMore.hide();
     }
 
     projectCardTl
-    .staggerTo($cards, 0.7, {x: '+= 30', autoAlpha: 0}, 0.1)
+    .staggerTo($cards, 0.6, {x: '+= 30', autoAlpha: 0}, 0.1)
     .add('hidden')
-    .set($cards, {x: 0, display: 'none'}, 'hidden')
-    .set($projectCards, {x: '-=30'}, 'hidden')
-    .set($projectCards, {display: 'flex'}, 'hidden')
+    .set($cards, {x: 0, display: 'none'}, 'hidden-=0.2')
+    .set($projectCards, {x: '-=30'}, 'hidden-=0.2')
+    .set($projectCards, {display: 'flex'}, 'hidden-=0.2')
     .add('ready')
-    .staggerTo($projectCards, 0.7, {x: '+= 30', autoAlpha: 1}, 'ready');
+    .staggerTo($projectCards, 0.6, {x: '+= 30', autoAlpha: 1}, 'ready-=0.2');
 
     // Show the number of elements with the corresponding class class
     if (numItems > 6) {
@@ -90,18 +95,18 @@ export function updateProjectCards(id, loadState) {
 
     if (id === 'bullet-web') {
       $projectCards = $('.m-category-web');
-      numItems = $('.m-category-web').length;
+      numItemsLoadState1 = $('.m-category-web').length;
     } else if (id === 'bullet-gestaltung') {
-      numItems = $('.m-category-gestaltung').length;
-      let numItemsAdded = numItems - 6;
+      numItemsLoadState1 = $('.m-category-gestaltung').length;
+      let numItemsAdded = numItemsLoadState1 - 6;
       $projectCards = $('.m-category-gestaltung').slice(-numItemsAdded);
       console.log($projectCards);
     } else if (id === 'bullet-print') {
       $projectCards = $('.m-category-print');
-      numItems = $('.m-category-print').length;
+      numItemsLoadState1 = $('.m-category-print').length;
     } else if (id === 'bullet-etc') {
       $projectCards = $('.m-category-etc');
-      numItems = $('.m-category-etc').length;
+      numItemsLoadState1 = $('.m-category-etc').length;
     }
 
     projectCardTlAdd
@@ -110,7 +115,9 @@ export function updateProjectCards(id, loadState) {
       .add('ready')
       .staggerTo($projectCards, 0.7, {x: '+= 30', autoAlpha: 1},'+=0.5');
 
-    $('#current-displayed-items').text(numItems);
+    $('#current-displayed-items').text(numItemsLoadState1);
+
+    loadState = 0;
 
   }
 }
