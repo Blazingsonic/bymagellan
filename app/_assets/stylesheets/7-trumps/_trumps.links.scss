@@ -58,6 +58,25 @@
   }
 }
 
+// Light Grey links
+.u-link-grey-lightest {
+
+  &.is-active {
+
+  }
+
+  &:link {
+      color: #b0b0b0;
+      text-decoration: none;
+  }
+  &:visited {
+      color: #b0b0b0;
+  }
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
 // Black links
 .u-link-dark {
 

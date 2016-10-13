@@ -39,7 +39,7 @@ $('.site-overlay').click(function() {
   }
 
   if ($(window).width() < 1113) {
-    $('#fixed-nav .i-search').toggle();
+    // $('#fixed-nav .i-search').toggle();
   }
 });
 
@@ -49,16 +49,16 @@ $('.gh-svg-wrapper').click(function() {
 
 $('.c-nav-right__menu-wrap .gh-svg-wrapper').click(function() {
   if ($(window).width() < 1113) {
-    $('#fixed-nav .i-search').toggle();
+    // $('#fixed-nav .i-search').toggle();
   }
 });
 
 $(window).resize(function() {
   if ($(window).width() < 1113) {
-    $('.c-nav-fixed .i-search').hide();
+    // $('.c-nav-fixed .i-search').hide();
     $('.c-nav-right__menu-wrap').addClass('is-mobile');
   } else {
-    $('.i-search').show();
+    // $('.i-search').show();
     $('.c-nav-right__menu-wrap').removeClass('is-mobile');
   }
 });

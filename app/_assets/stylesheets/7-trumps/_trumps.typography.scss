@@ -25,6 +25,7 @@
   @include typi($serif-sm-map);
   letter-spacing: 0.09rem;
   text-transform: uppercase;
+  text-rendering: initial;
 }
 
 /* Type Misc ------------------ */

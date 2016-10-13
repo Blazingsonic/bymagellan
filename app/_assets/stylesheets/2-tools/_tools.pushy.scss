@@ -1,3 +1,4 @@
+
 /*! Pushy - v1.0.0 - 2016-3-1
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
 * https://github.com/christophery/pushy/
@@ -20,12 +21,15 @@ $menu_width: 250px !default;
 
     a {
         display: block;
-        // color: #b3b3b1;
+        font-family: 'Montserrat';
+        font-size: 0.975rem;
+        color: #ebebeb;
         padding: 0.4rem;
         text-decoration: none;
         outline: 0;
         text-transform: uppercase;
         text-align: center;
+        text-rendering: geometricPrecision;
     }
 
     a:hover{
@@ -93,7 +97,7 @@ $menu_width: 250px !default;
     transform: translate(-50%, -10%);
     width: 100%;
 
-    @include mappy-bp(medium) {
+    @include mappy-bp(small) {
       top: 50%;
       bottom: initial;
       transform: translate(-50%, -50%);

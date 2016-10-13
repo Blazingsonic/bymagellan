@@ -16,7 +16,7 @@
 
 	.c-sub-skills__item {
 		margin-right: 1.5rem;
-		cursor: pointer;
+		// cursor: pointer;
 
 		&.is-active {
 			color: $black;
@@ -38,7 +38,7 @@
 		flex-flow: column nowrap;
 		align-items: center;
 		width: 100%;
-		cursor: pointer;
+		// cursor: pointer;
 		margin-bottom: vr(1);
 
 		@include mappy-bp(medium){

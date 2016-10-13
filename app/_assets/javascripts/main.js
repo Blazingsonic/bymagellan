@@ -115,8 +115,8 @@ let svgPath;
 
 // Load SVG sprite
 if (pageId === 'index-page') {
-  svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy gh pages
-  // svgPath = '../../assets/images/sprite/svg.svg' // local
+  // svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy gh pages
+  svgPath = '../../assets/images/sprite/svg.svg' // local
 } else {
   svgPath = '../../assets/images/sprite/svg.svg' // both
 }
@@ -199,16 +199,25 @@ $(window).scroll(function (event) {
 
 // Set variables
 let $bulletItemImpr = $('#impressionen .o-bullet__item');
+let $loadMore = $('.c-card-proj__more');
+let loadState = 0;
 
 // Update Project Cards on click
 $(document).ready(function() {
   $bulletItemImpr.click(function() {
+    loadState = 0;
     let id = $(this).attr('id');
     $bulletItemImpr.removeClass('is-active');
     $(this).addClass('is-active');
     if (pageId === 'index-page') {
-      updateProjectCards(id);
+      updateProjectCards(id, loadState);
     }
+  });
+  $loadMore.click(function(e) {
+    e.preventDefault();
+    loadState += 1;
+    let id = $('#impressionen .o-bullet__item.is-active').attr('id');
+    updateProjectCards(id, loadState);
   });
 });
 

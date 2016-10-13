@@ -16,6 +16,10 @@
 .c-global-sep--tiny {
   height: 2px;
   background-color: $vanilla;
+
+  &.has-dark-bg {
+    background-color: #777;
+  }
 }
 
 .c-global-sep {

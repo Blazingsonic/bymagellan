@@ -7,9 +7,10 @@ html {
 	font-weight: normal;
 	letter-spacing: 0.12rem;
 	color: $color-text-base;
+  // text-rendering: geometricPrecision;
 }
 
-body {	
+body {
 	background: #fff;
 	position: relative;
 }

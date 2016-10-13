@@ -22,6 +22,7 @@ h1 {
 	color: $color-text-light;
 	margin-top: vr(1);
 	margin-bottom: vr(0.25);
+  text-rendering: geometricPrecision;
 
 	@include mappy-bp(medium) {
 		letter-spacing: 0.6rem;
@@ -42,6 +43,7 @@ h2,
 	letter-spacing: 0.5rem;
 	color: $color-text-dark;
 	margin-bottom: vr(1);
+  // text-rendering: geometricPrecision;
 
 	@include mappy-bp(medium) {
 		letter-spacing: 0.75rem;
@@ -58,6 +60,8 @@ h3,
 	font-weight: normal;
 	letter-spacing: 0.25rem;
 	text-transform: uppercase;
+  // color: #696969;
+  // text-rendering: geometricPrecision;
 }
 
   // bigger margins when last line of subtitle
@@ -83,6 +87,8 @@ h4,
 	letter-spacing: 0.12rem;
 	color: $color-text-dark;
 	margin-bottom: vr(1/3);
+  // -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
 }
 
 // Default Text
@@ -90,6 +96,14 @@ p,
 .e-serif-def {
 	@include typi($default-map);
 	letter-spacing: 0.06rem;
+  text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: antialiased;
+  // text-rendering: geometricPrecision;
+
+  i {
+    // text-rendering: geometricPrecision;
+    color: #909090;
+  }
 }
 
 

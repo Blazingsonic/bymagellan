@@ -4,7 +4,7 @@
 .c-nav-fixed {
   position: fixed;
   width: 100%;
-  height: 52px;
+  height: 51px;
   top: 0;
   // padding: 0 2rem;
   z-index: 100;
@@ -15,15 +15,19 @@
   }
 
   @include mappy-bp(1113px) {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.87);
   }
 
   @include mappy-bp(wide) {
-    height: 55px;
+    height: 54px;
   }
 
   @include mappy-bp(mega) {
-    height: 58px;
+    height: 57px;
+  }
+
+  @include mappy-bp(ultra) {
+    height: 59px;
   }
 
   .c-nav-right {
@@ -38,6 +42,7 @@
 }
 
 .c-main-nav {
+  text-rendering: geometricPrecision;
 
   @include mappy-bp(0 1113px) {
     display: none;
@@ -45,7 +50,7 @@
 }
 
 	.c-main-nav__item {
-    // font-family: Montserrat;
+    font-family: Montserrat;
     @include typi($main-nav-map);
   	letter-spacing: 0.28rem;
     margin-top: 0.75rem;
