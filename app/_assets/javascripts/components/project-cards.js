@@ -1,5 +1,6 @@
 
 import $ from 'jquery';
+import _ from 'lodash';
 
 let pageId = $('main').attr('id');
 console.log(pageId);
@@ -36,13 +37,13 @@ if (numItemsDefault > 6) {
 $('#all-items-of-category').text(numItemsDefault);
 
 // Animate when user scrolls to a certain point
-$(window).scroll(function (event) {
+$(window).scroll(_.debounce(function (event) {
   let scroll = $(window).scrollTop();
   if (scroll > moduleImpressionenOffset + 300 && !impressionenScroll) {
     TweenMax.staggerTo($defaultCards, 1,  {x: '0', autoAlpha: 1}, 0.25);
     impressionenScroll = true;
   }
-});
+}, 100));
 
 export function updateProjectCards(id, loadState) {
   let projectCardTl = new TimelineMax();

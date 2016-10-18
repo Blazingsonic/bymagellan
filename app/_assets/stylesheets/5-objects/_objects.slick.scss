@@ -22,6 +22,36 @@
   // transition: min-height 0.5s;
 }
 
+.o-slick .jsg {
+  background: url($path-img + '/bg/header-jsg-karlsruhe-mobil-min.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // transition: min-height 0.5s;
+
+  @include mappy-bp(medium) {
+    background: url($path-img + '/bg/header-jsg-karlsruhe-min.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.o-slick .moebel {
+  background: url($path-img + '/bg/header-moebeltemplate-mobil-min.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // transition: min-height 0.5s;
+
+  @include mappy-bp(medium) {
+    background: url($path-img + '/bg/header-moebeltemplate-min.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .o-slick-slide {
   position: absolute;
   width: 100%;

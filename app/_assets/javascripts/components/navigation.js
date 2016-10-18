@@ -1,5 +1,6 @@
 
 import $ from 'jquery';
+import _ from 'lodash';
 
 let pageId = $('main').attr('id');
 console.log(pageId);
@@ -77,7 +78,7 @@ if (pageId === 'index-page') {
   projectPageImgOffset = window.innerHeight - 200;
 }
 
-$(window).scroll(function (event) {
+$(window).scroll(_.debounce(function (event) {
   let scroll = $(window).scrollTop();
   if (scroll > moduleSkillsOffset || scroll > projectPageImgOffset) {
     TweenMax.to($('.c-nav-fixed'), 0.7, {y: '0', autoAlpha: 1, ease: Power3.easeInOut});
@@ -85,7 +86,7 @@ $(window).scroll(function (event) {
   } else {
     TweenMax.to($('.c-nav-fixed'), 0.7, {y: '-=80px', autoAlpha: 0, ease: Power3.easeInOut});
   }
-});
+}, 100));
 
 /* Petel Hover -------------------- */
 
@@ -105,7 +106,7 @@ $('.c-nav-fixed .g-petel').click(function() {
 let $window = $(window);
 let isScrolling = false;
 
-$window.scroll(function (event) {
+$window.scroll(_.debounce(function (event) {
 
   if (pageId === 'index-page') {
 
@@ -167,4 +168,4 @@ $window.scroll(function (event) {
     }
   }
 
-});
+}, 100));

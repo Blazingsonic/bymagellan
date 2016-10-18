@@ -80,77 +80,77 @@ let seoText = 'Als Seo einer Website oder App wird zusammenfassend alles kategor
 let skillsState = 'init';
 
 // Open skills and show details
-$(document).ready(function() {
+// $(document).ready(function() {
 
-  // If overview element is clicked, show detailed information
-  $('.c-show-skills__figure').on('click', function() {
-    let $elem = $(this);
-    let $allElems = $('.c-show-skills__figure');
-    let openSkillsTl = new TimelineMax();
+//   // If overview element is clicked, show detailed information
+//   $('.c-show-skills__figure').on('click', function() {
+//     let $elem = $(this);
+//     let $allElems = $('.c-show-skills__figure');
+//     let openSkillsTl = new TimelineMax();
 
-    openSkillsTl
-      .to($allElems, 0.5, {x: '+=50', autoAlpha: 0, display: 'none'})
-      .to($elem, 0.2, {autoAlpha: 0, ease:Power4.easeInOut}, '-=0.4')
-      // remove init classes
-      //.set($('.c-skills'), {className: '-=c-skills--init'}) // no class given
-      .set($('.c-sub-skills'), {className: '-=is-initial', height: 'initial', autoAlpha: 1})
-      .set($('.c-show-skills'), {className: '-=is-initial'})
-      .set($elem, {x: 0, display: ''})
-      .to($elem, 1, {autoAlpha: 1, ease: Power4.easeInOut})
-      .to($desc, 1, {autoAlpha: 1, ease: Power4.easeInOut}, '-=0.4');
+//     openSkillsTl
+//       .to($allElems, 0.5, {x: '+=50', autoAlpha: 0, display: 'none'})
+//       .to($elem, 0.2, {autoAlpha: 0, ease:Power4.easeInOut}, '-=0.4')
+//       // remove init classes
+//       //.set($('.c-skills'), {className: '-=c-skills--init'}) // no class given
+//       .set($('.c-sub-skills'), {className: '-=is-initial', height: 'initial', autoAlpha: 1})
+//       .set($('.c-show-skills'), {className: '-=is-initial'})
+//       .set($elem, {x: 0, display: ''})
+//       .to($elem, 1, {autoAlpha: 1, ease: Power4.easeInOut})
+//       .to($desc, 1, {autoAlpha: 1, ease: Power4.easeInOut}, '-=0.4');
 
-    skillsState = 'opened';
-  });
+//     skillsState = 'opened';
+//   });
 
-  // If sub link of skills is clicked, switch out the information shown
-  $('.c-sub-skills__item').on('click', function() {
-    let descTextTl = new TimelineMax();
-    let descNewText = 'description text';
+//   // If sub link of skills is clicked, switch out the information shown
+//   $('.c-sub-skills__item').on('click', function() {
+//     let descTextTl = new TimelineMax();
+//     let descNewText = 'description text';
 
-    $(this).siblings().removeClass('is-active');
-    $(this).addClass('is-active');
+//     $(this).siblings().removeClass('is-active');
+//     $(this).addClass('is-active');
 
-    if ($(this).text().toLowerCase() == 'frontend') {
-      descNewText = frontendText;
-    }
-    if ($(this).text().toLowerCase() == 'backend') {
-      descNewText = backendText;
-    }
-    if ($(this).text().toLowerCase() == 'performance') {
-      descNewText = performanceText;
-    }
-    if ($(this).text().toLowerCase() == 'seo') {
-      descNewText = seoText;
-    }
+//     if ($(this).text().toLowerCase() == 'frontend') {
+//       descNewText = frontendText;
+//     }
+//     if ($(this).text().toLowerCase() == 'backend') {
+//       descNewText = backendText;
+//     }
+//     if ($(this).text().toLowerCase() == 'performance') {
+//       descNewText = performanceText;
+//     }
+//     if ($(this).text().toLowerCase() == 'seo') {
+//       descNewText = seoText;
+//     }
 
-    descTextTl
-      .to($desc, 0.5, {x: '+=50', autoAlpha: 0, ease:Power4.easeInOut})
-      .set($desc, {x: 0, text: descNewText})
-      .to($desc, 0.75, {autoAlpha: 1});
-  });
+//     descTextTl
+//       .to($desc, 0.5, {x: '+=50', autoAlpha: 0, ease:Power4.easeInOut})
+//       .set($desc, {x: 0, text: descNewText})
+//       .to($desc, 0.75, {autoAlpha: 1});
+//   });
 
-  // If main link of skills is clicked, switch out sub menu links and the information shown
-  $('#skills-bullet .o-bullet__item').on('click', function() {
-    let switchSkillsTl = new TimelineMax();
+//   // If main link of skills is clicked, switch out sub menu links and the information shown
+//   $('#skills-bullet .o-bullet__item').on('click', function() {
+//     let switchSkillsTl = new TimelineMax();
 
-    $('#skills-bullet .o-bullet__item').removeClass('is-active');
-    $(this).addClass('is-active');
+//     $('#skills-bullet .o-bullet__item').removeClass('is-active');
+//     $(this).addClass('is-active');
 
-    // If skills is in opened--state switch out sub links and information shown
-    if (skillsState == 'opened') {
-      console.log('was opened');
-      switchSkillsTl
-        .to($('.c-show-skills'), 0.25, {autoAlpha: 0})
-        // .set($('.c-show-skills__desc u-m-0'), {text: "vev evewv ewvev"})
-        .to($('.c-show-skills'), 0.25, {autoAlpha: 1}, '+=0.35')
-    }
+//     // If skills is in opened--state switch out sub links and information shown
+//     if (skillsState == 'opened') {
+//       console.log('was opened');
+//       switchSkillsTl
+//         .to($('.c-show-skills'), 0.25, {autoAlpha: 0})
+//         // .set($('.c-show-skills__desc u-m-0'), {text: "vev evewv ewvev"})
+//         .to($('.c-show-skills'), 0.25, {autoAlpha: 1}, '+=0.35')
+//     }
 
-    // If skills is in init--state just switch out the overviews
-    if (skillsState == "init") {
-      console.log('was init');
-      switchSkillsTl
-        .to($('.c-show-skills__figure'), 0.5, {x: '+=50', autoAlpha: 0, display: 'none', ease: Power4.easeInOut})
-        .to($('.c-show-skills__figure'), 0.5, {x: 0, autoAlpha: 1, display: '', ease: Power4.easeInOut}, '-=0.05');
-    }
-  });
-});
+//     // If skills is in init--state just switch out the overviews
+//     if (skillsState == "init") {
+//       console.log('was init');
+//       switchSkillsTl
+//         .to($('.c-show-skills__figure'), 0.5, {x: '+=50', autoAlpha: 0, display: 'none', ease: Power4.easeInOut})
+//         .to($('.c-show-skills__figure'), 0.5, {x: 0, autoAlpha: 1, display: '', ease: Power4.easeInOut}, '-=0.05');
+//     }
+//   });
+// });

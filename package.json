@@ -39,7 +39,7 @@
     "gulp-svgstore": "^6.0.0",
     "gulp-util": "^3.0.7",
     "imports-loader": "^0.6.5",
-    "lodash": "^4.6.1",
+    "lodash": "^4.16.4",
     "mappy-breakpoints": "^0.2.3",
     "mocha": "^2.4.5",
     "remodal": "^1.1.0",

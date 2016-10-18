@@ -11,6 +11,7 @@ import { setMinHeight } from './components/min-height';
 import { lineAnimationSetAll, lineAnimationExcecuteAll } from './components/skills';
 import { contactItemClick } from './components/contact';
 import remodal from 'remodal';
+import _ from 'lodash';
 // import stickykit from 'sticky-kit';
 
 // ==========================================================================
@@ -115,8 +116,8 @@ let svgPath;
 
 // Load SVG sprite
 if (pageId === 'index-page') {
-  // svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy gh pages
-  svgPath = '../../assets/images/sprite/svg.svg' // local
+  svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy gh pages
+  // svgPath = '../../assets/images/sprite/svg.svg' // local
 } else {
   svgPath = '../../assets/images/sprite/svg.svg' // both
 }
@@ -181,7 +182,7 @@ let skillsScroll = false;
 lineAnimationSetAll();
 
 // Animate lines when user scrolls to a certain point
-$(window).scroll(function (event) {
+$(window).scroll(_.debounce(function (event) {
 
   let scroll = $(window).scrollTop();
 
@@ -190,7 +191,7 @@ $(window).scroll(function (event) {
     lineAnimationExcecuteAll();
     skillsScroll = true;
   }
-});
+}, 100));
 
 
 // ==========================================================================
