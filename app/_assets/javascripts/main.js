@@ -226,25 +226,27 @@ $(document).ready(function() {
 // Contact Module
 // ==========================================================================
 
-let itemRotating = false;
-
 $('.c-contact__item').on('click', function() {
-  itemRotating = true;
-  let id = $(this).attr('id');
-  contactItemClick(id);
 
-  $('.c-contact__item').removeClass('is-active');
-  $(this).addClass('is-active');
 
-  if ($(window).width() < 595) {
-    $('html,body').animate({scrollTop: $('#card-contact-container').offset().top - 150},'slow');
+  if (!$('#card-contact-container').hasClass('is-animating')) {
+    console.log('should not have a class');
+    $('#card-contact-container').addClass('is-animating');
+    let id = $(this).attr('id');
+    contactItemClick(id);
+
+    $('.c-contact__item').removeClass('is-active');
+    $(this).addClass('is-active');
+
+    if ($(window).width() < 595) {
+      $('html,body').animate({scrollTop: $('#card-contact-container').offset().top - 150},'slow');
+    }
+
+    _.delay(function() {
+      $('#card-contact-container').removeClass('is-animating');
+    }, 1000)
   }
 });
-
-function scrollToAnchor(aid){
-    var aTag = $("a[name='"+ aid +"']");
-
-}
 
 
 // ==========================================================================
