@@ -34,7 +34,7 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
     <div class="js-min-height moebel">
       <div class="o-slick-slide">
         <div class="o-slick-slide__title">
-          <h1>Moebeltemplate</h1>
+          <h1>Möbelhaus</h1>
           <h3 class="u-txt-white">Ein Frontend-Design &amp; Konzeptions Projekt</h3>
         </div>
       </div>
@@ -166,14 +166,15 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
       <section class="o-flex-center--center has-wrap u-centered u-mb-vr-2">
 
 
-        {% for project in site.projects %}
+        {% assign projects = site.projects | sort: 'date' %}
+        {% for project in projects reversed %}
 
           <article class="o-card c-card-proj u-txt-left js-card {{ project.category }}">
             <div class="c-card-proj__left">
               <p class="u-category {{ project.color }} u-mb-vr-033">{{ project.subtitle }}<span class="u-txt-grey-light">{{ project.client }}</span></p>
               <h4>{{ project.title }}</h4>
               <p class="u-mb-vr-05">{{ project.teasertext }}</p>
-              <a class="o-flex-start--center has-inline-flex u-link-grey-light u-mb-vr-1 g-underline" href="{% if project.link == 'project-detail' %}{{ project.url }}{% else %}{{ project.link }}{% endif %}">
+              <a class="o-flex-start--center has-inline-flex u-link-grey-light u-mb-vr-1 g-underline" href="{% if project.link == 'project-detail' %}{{ project.url }}{% else %}{{ project.link }}{% endif %}" target="{% if project.link != 'project-detail' and project.link != '#modal-not-available' %}_blank{% endif %}">
                 <svg class="i-glasses u-mr-vr-033">
                   <use xlink:href="#glasses"></use>
                 </svg>
@@ -304,7 +305,7 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
 
       <div class="o-flex-center--center">
 
-        <div class="c-card-contact-container">
+        <div id="card-contact-container" class="c-card-contact-container">
 
           <article class="o-card c-card-proj c-card-proj--front u-txt-left u-m-0">
             <div class="c-card-proj__left">

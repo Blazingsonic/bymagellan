@@ -5,7 +5,7 @@
 .c-dot {
   display: none;
 
-  @include mappy-bp(450px) {
+  @include mappy-bp(830px) {
     display: flex;
   }
 }

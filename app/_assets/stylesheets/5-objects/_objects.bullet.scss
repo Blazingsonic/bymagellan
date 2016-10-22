@@ -29,9 +29,22 @@
 		letter-spacing: 0.3rem; // sollte das beibehalten werden?
 		cursor: pointer;
     width: 100%;
+    margin-bottom: 1rem;
 
-    @include mappy-bp(450px) {
+
+
+    @include mappy-bp(600px) {
       width: initial;
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
+      // margin-bottom: 0;
+    }
+
+    @include mappy-bp(830px) {
+      width: initial;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
     }
 
 		&.is-active {
@@ -54,6 +67,10 @@
 
 		&:last-child {
 			margin-right: 0;
+
+      @include mappy-bp(0 600px) {
+        margin-bottom: 0;
+      }
 		}
 
 		&:hover {

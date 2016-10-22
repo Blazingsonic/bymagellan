@@ -5,7 +5,7 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
 ---
 
 <!-- Begin Hero -->
-<header class="js-min-height">
+<header class="e-header js-min-height">
 
   <div class="js-min-height {{ page.headerclass }}">
 
@@ -37,11 +37,11 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
         <p class="u-serif-sm u-mb-vr-05">{{ page.subtitle }}</p>
         <h4 class="u-txt-white">{{ page.headerdate }}</h4>
         <p>{{ page.headertext }}</p>
-        <a href="#modal-not-available" class="o-flex-start--center has-inline-flex btn-white-bg has-no-hover">
+        <a href="{{ page.projectlink }}" target="_blank" class="o-flex-start--center has-inline-flex btn-white-bg has-no-hover">
           <svg class="i-glasses u-mr-vr-033">
             <use xlink:href="#glasses"></use>
           </svg>
-          <p class="u-mb-0">{{ page.cta }}</p>
+          <p class="u-mb-0">{{ page.projectcta }}</p>
         </a>
       </div>
 

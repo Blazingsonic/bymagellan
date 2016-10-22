@@ -21,8 +21,8 @@ export function setMinHeight(windowHeightInitial) {
  //  }
 
   if (pageId === 'project-page') {
-    if (window.innerHeight < 890) {
-      minheight = 890 * 13/14;
+    if (window.innerHeight < 380) {
+      minheight = windowHeightInitial;
     }
   }
 

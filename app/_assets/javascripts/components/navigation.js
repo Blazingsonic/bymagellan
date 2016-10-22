@@ -45,7 +45,7 @@ $('.site-overlay').click(function() {
 });
 
 $('.gh-svg-wrapper').click(function() {
-  $(this).toggleClass('is-active');
+  $('.gh-svg-wrapper').toggleClass('is-active');
 });
 
 $('.c-nav-right__menu-wrap .gh-svg-wrapper').click(function() {

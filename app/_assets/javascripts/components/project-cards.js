@@ -15,7 +15,7 @@ if (pageId === 'index-page') {
 }
 let impressionenScroll = false;
 let $cards = $('#impressionen .o-card');
-let $defaultCards = $('#impressionen .o-card.m-category-web');
+let $defaultCards = $('.m-category-web:lt(6)');
 let numItemsDefault = $('.m-category-web').length - 1;
 let $loadMore = $('.c-card-proj__more');
 
@@ -95,8 +95,10 @@ export function updateProjectCards(id, loadState) {
   } else if (loadState == 1) {
 
     if (id === 'bullet-web') {
-      $projectCards = $('.m-category-web');
       numItemsLoadState1 = $('.m-category-web').length;
+      let numItemsAdded = numItemsLoadState1 - 6;
+      $projectCards = $('.m-category-web').slice(-numItemsAdded);
+      console.log($projectCards);
     } else if (id === 'bullet-gestaltung') {
       numItemsLoadState1 = $('.m-category-gestaltung').length;
       let numItemsAdded = numItemsLoadState1 - 6;
@@ -111,13 +113,14 @@ export function updateProjectCards(id, loadState) {
     }
 
     projectCardTlAdd
-      .set($projectCards, {x: '-=30', height: '0', clearProps: 'display'})
+      .set($projectCards, {x: '-30', height: '0', clearProps: 'display'})
       .to($projectCards, 0.4, {height: 'initial'})
       .add('ready')
       .staggerTo($projectCards, 0.7, {x: '+= 30', autoAlpha: 1},'+=0.5');
 
-    $('#current-displayed-items').text(numItemsLoadState1);
+    $('#current-displayed-items').text(numItemsLoadState1 - 1);
 
+    $loadMore.hide();
     loadState = 0;
 
   }

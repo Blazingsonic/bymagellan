@@ -94,17 +94,17 @@ button {
   position: absolute;
   height: 4rem;
   width: 4rem;
-  // right: -1.2rem;
+  right: -1.2rem;
   transform: translateZ(0) rotate(0deg);
   transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
 
   .c-nav-fixed .gh-svg-wrapper {
-    // left: initial;
-    // right: initial;
+    left: initial;
+    right: initial;
 
-    @indclude mappy-bp(1113px) {
-      right: -1.8rem;
+    @include mappy-bp(1113px) {
+      right: -1.2rem;
     }
   }
 

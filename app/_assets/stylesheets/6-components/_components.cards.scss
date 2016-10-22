@@ -74,9 +74,17 @@
 /* Blog Previews -------------------- */
 
 .c-card-blog {
-  max-width: 19rem;
+  // max-width: 22rem;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 2rem;
   box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.18);
+
+  @include mappy-bp(small) {
+    max-width: 20rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
   div[class^=c-card-blog__img] {
