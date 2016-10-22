@@ -2,7 +2,7 @@
 layout: project
 title:  Möbelhaus
 subtitle: Gestaltung
-category: " m-category-gestaltung"
+category: " m-category-web"
 color: u-txt-gold
 client: " / Für: Profi-Homepage.de"
 teasertext: Aufeinanderfolgend werden Produkt&shy;kategorien sowie Produkthightlights übersichtlich per Slider vorgestellt. Verschiedene Farbkombinationen.

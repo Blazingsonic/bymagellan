@@ -2,7 +2,7 @@
 layout: project
 title:  MSK Snow Tech.
 subtitle: Gestaltung, Text &amp; Entwicklung
-category: " m-category-web m-category-gestaltung"
+category: " m-category-web"
 color: u-txt-carbon
 client: ""
 teasertext: Durch besonderen Stil soll der neue Webauftritt Premium-Kunden weltweit ansprechen und über die einzigartigen Produkte informieren.

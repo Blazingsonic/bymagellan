@@ -25,6 +25,7 @@
 }
 
 	.o-bullet__item {
+    position: relative;
 		letter-spacing: 0.3rem; // sollte das beibehalten werden?
 		cursor: pointer;
     width: 100%;
@@ -35,6 +36,20 @@
 
 		&.is-active {
 			color: $black;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2.75rem;
+        left: -0.5rem;
+        top: -0.5rem;
+        background: url(../images/title-petels.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 10;
+      }
 		}
 
 		&:last-child {

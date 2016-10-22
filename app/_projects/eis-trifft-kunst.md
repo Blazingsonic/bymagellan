@@ -2,7 +2,7 @@
 layout: project
 title:  Eis trifft Kunst
 subtitle: Gestaltung &amp; Entwicklung
-category: " m-category-web m-category-gestaltung"
+category: " m-category-web"
 color: u-txt-turquoise
 client: ""
 teasertext: Aufeinanderfolgend werden Produkt&shy;kategorien sowie Produkthightlights übersichtlich per Slider vorgestellt. Verschiedene Farbkombinationen.

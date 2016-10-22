@@ -2,7 +2,7 @@
 layout: project
 title:  Ristorante
 subtitle: Gestaltung
-category: " m-category-gestaltung"
+category: " m-category-web"
 color: u-txt-gold
 client: " / Für: Profi-Homepage.de"
 teasertext: Typographie &amp; großflächiger Einsatz von Bilder sowie edle Farb&shy;wahl ergeben ein stimmiges, durchdachtes Gesamtbild.

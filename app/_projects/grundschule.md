@@ -2,7 +2,7 @@
 layout: project
 title:  Grundschule
 subtitle: Gestaltung &amp; Entwicklung
-category: " m-category-web m-category-gestaltung"
+category: " m-category-web"
 color: u-txt-business-blue
 client: ""
 teasertext: Modern, flach sowie benutzer&shy;freundlich und mobiltauglich informiert diese WordPress&shy;-Seite täglich Eltern &amp; Interessierte.

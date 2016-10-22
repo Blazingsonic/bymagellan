@@ -41,6 +41,15 @@
   width: 10rem;
 }
 
+  .c-nav-left__petel {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+  }
+
 .c-main-nav {
   text-rendering: geometricPrecision;
 

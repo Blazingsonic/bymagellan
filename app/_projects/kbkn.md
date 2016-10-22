@@ -2,7 +2,7 @@
 layout: project
 title:  KBKN
 subtitle: Gestaltung
-category: " m-category-gestaltung"
+category: " m-category-web"
 color: u-txt-dark-blue
 client: ""
 teasertext: Modern, flach sowie benutzer&shy;freundlich und mobiltauglich informiert diese WordPress&shy;-Seite täglich Eltern &amp; Interessierte.
