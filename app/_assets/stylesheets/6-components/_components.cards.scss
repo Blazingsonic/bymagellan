@@ -6,12 +6,16 @@
 .c-card-proj {
   display: flex;
   justify-content: flex-start;
-  max-width: 32rem;
+  max-width: 29rem;
   margin-bottom: 2rem;
   box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.18);
 
   &:last-child {
     // margin: 0;
+  }
+
+  @include mappy-bp(1311px) {
+    max-width: 32rem;
   }
 
   @include mappy-bp(1104px) { // tweakpoint
@@ -29,17 +33,23 @@
     padding-top: vr(1);
     padding-right: vr(1);
 
-    @include mappy-bp(small) {
+    @include mappy-bp(medium) {
+      width: 70%;
+    }
+    @include mappy-bp(1311px) {
       width: 60%;
     }
   }
 
   .c-card-proj__right {
     display:none;
-    width: 40%;
 
-    @include mappy-bp(small) {
-      display: block
+    @include mappy-bp(medium) {
+      display: block;
+      width: 30%;
+    }
+    @include mappy-bp(1311px) {
+      width: 40%;
     }
   }
 

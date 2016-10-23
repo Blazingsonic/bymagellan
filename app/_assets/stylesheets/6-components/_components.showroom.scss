@@ -19,13 +19,28 @@
   }
 }
 
-  .c-showroom__img {
+  .c-showroom__center {
     width: 100%;
-    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.18);
 
     @include mappy-bp(870px) {
       width: 65%;
     }
+  }
+
+  .c-showroom__top-text {
+    width: 95%;
+    max-width: 24rem;
+    // padding-left: vr(1);
+    margin-bottom: 2rem;
+
+    @include mappy-bp(870px) {
+      display: none;
+    }
+  }
+
+  .c-showroom__img {
+    width: 100%;
+    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.18);
   }
 
   .c-showroom__sidebar {

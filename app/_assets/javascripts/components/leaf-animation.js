@@ -3,13 +3,13 @@ import $ from 'jquery';
 
 /* Leaf Animation -------------------- */
 
-let density = 26,
-  speed = 0.6,
+let density = 27,
+  speed = 0.5,
   winWidth = $(window).width(),
   winHeight = $(window).height(),
-  end = {yMin:-winHeight/50-25, yMax:-winHeight/50-25, xMin:600, xMax:750, scaleMin:0.3, scaleMax:0.6, opacityMin:0, opacityMax:0},
-  mid = {yMin:-winHeight/50-500, yMax:-winHeight/50-400, xMin:220, xMax:600, scaleMin:0.3, scaleMax:0.6, opacityMin:0.1, opacityMax:0.25},
-  start = {yMin:-winHeight/50-790, yMax:-winHeight/50-900, xMin:-100, xMax:-20, scaleMin:0.3, scaleMax:0.6, opacityMin:0.05, opacityMax:0.15};
+  end = {yMin:-winHeight/50-350, yMax:-winHeight/50-350, xMin:520, xMax:610, scaleMin:0.3, scaleMax:0.6, opacityMin:0, opacityMax:0},
+  mid = {yMin:-winHeight/50-500, yMax:-winHeight/50-400, xMin:220, xMax:480, scaleMin:0.3, scaleMax:0.6, opacityMin:0.1, opacityMax:0.25},
+  start = {yMin:-winHeight/50-740, yMax:-winHeight/50-900, xMin:-120, xMax:-20, scaleMin:0.3, scaleMax:0.55, opacityMin:0.05, opacityMax:0.15};
 
 export function range(map, prop) {
   let min = map[prop + "Min"],
@@ -45,11 +45,11 @@ function randomIntFromInterval(min,max)
 
 $(window).ready(function() {
   console.log($(window).height());
-  if ($(window).width() > 760) {
+  if ($(window).width() > 800) {
     let body = $(".header"),
     i, particle;
     for (i = 0; i < density; i++) {
-      spawn( $("<div />", {id:"particle"+i}).addClass("i-particle").appendTo('header') );
+      // spawn( $("<div />", {id:"particle"+i}).addClass("i-particle").appendTo('header') );
     }
   }
 });

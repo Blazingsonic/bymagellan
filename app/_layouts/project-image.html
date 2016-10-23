@@ -29,18 +29,25 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
 <main id="project-page">
 
   <section class="o-flex-between--start c-showroom u-centered">
+    <article class="c-showroom__center">
+      <div class="c-showroom__top-text u-txt-white">
+      <p class="u-serif-sm u-mb-vr-05">{{ page.subtitle }}</p>
+      <h4 class="u-txt-white">{{ page.headerdate }}</h4>
+      <p class="u-mb-vr-05">{{ page.headertext }}</p>
+      <a class="u-link-grey-lightest" href="{{ page.projectlink }}" target="_blank">
+        <p class="u-mb-0">{{ page.projectcta }}</p>
+      </a>
+    </div>
     <img class="c-showroom__img" src="{{ site.baseurl }}/assets/images/projects/{{ page.projectimage }}" alt="project image">
+    </article>
 
     <article class="c-showroom__sidebar">
 
       <div class="u-txt-white">
         <p class="u-serif-sm u-mb-vr-05">{{ page.subtitle }}</p>
         <h4 class="u-txt-white">{{ page.headerdate }}</h4>
-        <p>{{ page.headertext }}</p>
-        <a href="{{ page.projectlink }}" target="_blank" class="o-flex-start--center has-inline-flex btn-white-bg has-no-hover">
-          <svg class="i-glasses u-mr-vr-033">
-            <use xlink:href="#glasses"></use>
-          </svg>
+        <p class="u-mb-vr-05">{{ page.headertext }}</p>
+        <a class="u-link-grey-lightest" href="{{ page.projectlink }}" target="_blank">
           <p class="u-mb-0">{{ page.projectcta }}</p>
         </a>
       </div>
@@ -53,18 +60,40 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
   <script>
     console.log('hello');
 
-    $('#widget-font').fixTo('body', {
-      top: 150
+    $(document).ready(function() {
+      let windowHeight = $(document).height();
+    let sidebarHeight = windowHeight - $('.e-footer').innerHeight();
+    console.log('sidebarheight' + sidebarHeight);
+
+    $('.c-showroom__sidebar').css('height', sidebarHeight);
+
+    $('#widget-font').fixTo('.c-showroom__sidebar', {
+      top: 140
     });
-    $('#widget-color').fixTo('body', {
-      top: 400
+    $('#widget-color').fixTo('.c-showroom__sidebar', {
+      top: 410
     });
+    $('#widget-video').fixTo('.c-showroom__sidebar', {
+      top: 565
+    });
+    });
+
+   //  $(window).scroll(function (event) {
+   //  let scroll = $(window).scrollTop();
+   //  if (scroll > 2500) {
+
+   //    console.log('scrooled too far');
+   //   $('#widget-color, #widget-font').fixTo('stop');
+   // } else {
+   //  $('#widget-color, #widget-font').fixTo('refresh');
+   // }
+   //  });
 
   </script>
 
-  {% include facts.html %}
-
   {% include remodal-not-available.html %}
+
+  {% include project-footer-nav.html %}
 
 </main>
 <!-- End Main -->

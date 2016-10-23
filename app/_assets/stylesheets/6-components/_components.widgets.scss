@@ -3,12 +3,31 @@
 
 .fixedsticky { top: 0; }
 
+// margins
+#widget-font {
+  margin-top: 19rem;
+}
+#widget-color {
+  margin-top: 1rem;
+}
+#widget-video {
+  margin-top: 25rem;
+  padding: 0;
+  width: 15.9rem;
+
+  .c-widget__heading {
+    margin-top: vr(1);
+    margin-left: vr(1.3);
+    margin-right: vr(1.3);
+  }
+}
+
 .c-widget {
   font-family: 'Montserrat';
   position: relative;
-  width: 8rem;
+  width: 12rem;
   left: 10%;
-  margin-top: 17rem;
+  // margin-top: 17rem;
   padding: vr(1) vr(1.3);
   background-color: #FFF;
   box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.18);
@@ -21,10 +40,12 @@
   }
 
   .c-widget__aa {
-    font-size: 6rem;
-    line-height: 0.7;
-    font-weight: normal;
-    margin-bottom: 1rem;
+    // font-size: 6rem;
+    // line-height: 0.7;
+    // font-weight: normal;
+    width: 100%;
+    height: 5rem;
+    margin-bottom: vr(1);
   }
 
   .c-widget__subtitle {
@@ -34,6 +55,15 @@
 
   .c-widget__palette {
 
+  }
+
+  .c-widget__video {
+    width: 100%;
+    height: 17.25rem;
+    background: url($path-img + '/projects/mockup-oculus-videopopup-min.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .c-widget__color {
@@ -56,3 +86,10 @@
       background-color: #b6b6b6;
     }
   }
+
+.oculus-aa {
+  background: url($path-img + '/projects/font-oculus.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

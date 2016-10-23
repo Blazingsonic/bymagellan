@@ -33,11 +33,7 @@ $('.i-menu--mobile').click(function() {
 
 $('.site-overlay').click(function() {
 
-  if ($(window).scrollTop() > 300) {
-    $('#fixed-nav .gh-svg-wrapper').toggleClass('is-active');
-  } else {
-    $('#default-nav .gh-svg-wrapper').toggleClass('is-active');
-  }
+  $('.gh-svg-wrapper').toggleClass('is-active');
 
   if ($(window).width() < 1113) {
     // $('#fixed-nav .i-search').toggle();
