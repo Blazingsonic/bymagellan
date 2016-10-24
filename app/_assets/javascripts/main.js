@@ -75,14 +75,20 @@ $('.site-overlay, .i-menu, .i-menu--mobile').click(function() {
 // Project Page Showroomm Offset
 // ==========================================================================
 
+let windowHeightPage = window.innerHeight;
+
 $(document).ready(function() {
 
 if (pageId === 'project-page') {
   let heroStaticTitleOffset = $('.c-hero--static__title').offset().top;
   let heroStaticTitleHeight = $('.c-hero--static__title').height();
-  let windowHeightPage = window.innerHeight;
   let showRoomTop = heroStaticTitleOffset + 200;
   console.log('showrromtop' + showRoomTop);
+
+  if (windowHeightPage < 800) {
+    showRoomTop = showRoomTop - windowHeightPage / 7;
+    console.log('smaaaall');
+  }
 
   $('.c-showroom').offset({top: showRoomTop});
 }
@@ -94,9 +100,13 @@ $(window).resize(function() {
 if (pageId === 'project-page') {
   let heroStaticTitleOffset = $('.c-hero--static__title').offset().top;
   let heroStaticTitleHeight = $('.c-hero--static__title').height();
-  let windowHeightPage = window.innerHeight;
   let showRoomTop = heroStaticTitleOffset + 200;
   console.log('showrromtop' + showRoomTop);
+
+  if (windowHeightPage < 800) {
+    showRoomTop = showRoomTop - windowHeightPage / 7;
+    console.log('smaaaall');
+  }
 
   $('.c-showroom').offset({top: showRoomTop});
 }

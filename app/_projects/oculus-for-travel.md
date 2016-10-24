@@ -7,7 +7,7 @@ headerdate: Sommer 2016
 headertext: Im Rahmen einer Veranstaltung an der Hochschule Furtwangen Uni. ist das Konzept "Oculus Rift &amp; Virtual Reality für Reisebüros" entstanden.
 projectimage: mockup-oculus-landingpage-min.png
 title: Oculus For Travel
-subtitle: Konzeption, Gestaltung &amp; Umsetzung
+subtitle: Gestaltung &amp; Umsetzung
 category: " m-category-web"
 color: u-txt-dark-grey
 client: ""

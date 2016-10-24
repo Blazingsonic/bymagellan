@@ -7,11 +7,18 @@
   display: flex;
   justify-content: flex-start;
   max-width: 29rem;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 2rem;
   box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.18);
 
   &:last-child {
     // margin: 0;
+  }
+
+  @include mappy-bp(800px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   @include mappy-bp(1311px) {
@@ -69,9 +76,16 @@
 
 .c-card-prof {
   max-width: 19.5rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
   margin-bottom: 2rem;
   padding: vr(1.25);
   backface-visibility: hidden;
+
+  @include mappy-bp(800px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
   .c-card-prof__img {
