@@ -49,3 +49,16 @@
 		}
 	}
 
+  .o-wrapper__module--slim {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: vr(1) 0;
+
+    @include mappy-bp(medium) {
+      padding: vr(2) 0;
+    }
+    @include mappy-bp(wide) {
+      padding: vr(3) 0;
+    }
+  }
+

@@ -21,7 +21,7 @@
 .modehaus {
 
   @include mappy-bp(small) {
-    background: url($path-img + '/projects/teaser-modehaus.png');
+    background: url($path-img + '/projects/teaser-modehaus-min.png');
     background-size: cover;
     background-position: center;
   }
@@ -30,7 +30,7 @@
 .architekturbuero {
 
   @include mappy-bp(small) {
-    background: url($path-img + '/projects/teaser-architekturbuero.png');
+    background: url($path-img + '/projects/teaser-architekturbuero-min.png');
     background-size: cover;
     background-position: center;
   }
@@ -39,7 +39,7 @@
 .eis-trifft-kunst {
 
   @include mappy-bp(small) {
-    background: url($path-img + '/projects/teaser-eis-trifft-kunst.png');
+    background: url($path-img + '/projects/teaser-eis-trifft-kunst-min.png');
     background-size: cover;
     background-position: center;
   }
@@ -48,7 +48,7 @@
 .grundschule {
 
   @include mappy-bp(small) {
-    background: url($path-img + '/projects/teaser-grundschule.png');
+    background: url($path-img + '/projects/teaser-grundschule-min.png');
     background-size: cover;
     background-position: center;
   }
@@ -57,7 +57,7 @@
 .msk {
 
   @include mappy-bp(small) {
-    background: url($path-img + '/projects/teaser-msk.png');
+    background: url($path-img + '/projects/teaser-msk-min.png');
     background-size: cover;
     background-position: center;
   }
@@ -66,7 +66,7 @@
 .oculus {
 
   @include mappy-bp(small) {
-    background: url($path-img + '/projects/teaser-oculus.png');
+    background: url($path-img + '/projects/teaser-oculus-min.png');
     background-size: cover;
     background-position: center;
   }
@@ -75,7 +75,7 @@
 .ristorante {
 
   @include mappy-bp(small) {
-    background: url($path-img + '/projects/teaser-ristorante.png');
+    background: url($path-img + '/projects/teaser-ristorante-min.png');
     background-size: cover;
     background-position: center;
   }
@@ -84,7 +84,7 @@
 .roentgenapp {
 
   @include mappy-bp(small) {
-    background: url($path-img + '/projects/teaser-roentgenapp.png');
+    background: url($path-img + '/projects/teaser-roentgenapp-min.png');
     background-size: cover;
     background-position: center;
   }
@@ -93,7 +93,16 @@
 .moebelhaus {
 
   @include mappy-bp(small) {
-    background: url($path-img + '/projects/teaser-moebelhaus.png');
+    background: url($path-img + '/projects/teaser-moebelhaus-min.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.jsg {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-jsg-min.png');
     background-size: cover;
     background-position: center;
   }

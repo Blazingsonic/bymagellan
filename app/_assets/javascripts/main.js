@@ -91,6 +91,9 @@ if (pageId === 'project-page') {
   }
 
   $('.c-showroom').offset({top: showRoomTop});
+
+  let sidebarOffset = windowHeightPage - $('.c-showroom__sidebar-head').height() * 1.8;
+  $('.c-showroom__sidebar').offset({top: sidebarOffset});
 }
 
 });
@@ -109,6 +112,9 @@ if (pageId === 'project-page') {
   }
 
   $('.c-showroom').offset({top: showRoomTop});
+
+  let sidebarOffset = windowHeightPage - $('.c-showroom__sidebar-head').height() * 1.8;
+  $('.c-showroom__sidebar').offset({top: sidebarOffset});
 }
 });
 
@@ -121,8 +127,8 @@ let svgPath;
 
 // Load SVG sprite
 if (pageId === 'index-page') {
-  svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy gh pages
-  // svgPath = '../../assets/images/sprite/svg.svg' // local
+  // svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy gh pages
+  svgPath = '../../assets/images/sprite/svg.svg' // local
 } else {
   svgPath = '../../assets/images/sprite/svg.svg' // both
 }

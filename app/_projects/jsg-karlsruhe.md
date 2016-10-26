@@ -6,22 +6,22 @@ headersubtitle: Template
 headerdate: September 2016
 headertext: Aufeinanderfolgend werden Produkt&shy;kategorien sowie Produkt&shy;highlights übersichtlich per Slider vorgestellt. Verschiedene Farbkombinationen.
 projectimage: mockup-moebelhaus-min.png
-title: Möbelhaus
+title: JSG Karlsruhe
 subtitle: Gestaltung
 category: " m-category-web"
-color: u-txt-gold
-client: " / Für: Profi-Homepage.de"
-teasertext: Aufeinanderfolgend werden Produkt&shy;kategorien sowie Produkthightlights übersichtlich per Slider vorgestellt. Verschiedene Farbkombinationen.
-link: project-detail
+color: u-txt-dark-blue
+client: ""
+teasertext: Die Juristische Studiengesellschaft Karlsruhe bat uns um die Umsetzung Ihrer ersten Seite. Übersichtlich, leicht zu pflegen und mobilfähig.
+link: "#modal-not-available"
 projectlink: "http://www.carro-brautmoden.de/"
-teaserimage: moebelhaus
-cta: Gestaltung betrachten
+teaserimage: jsg
+cta: Seite besuchen
 projectcta: Für Profi-Homepage
 date: 2016-10-13
 tags: [jekyll, liquid, templates]
 ---
 <!-- Widgets -->
-<!-- <section id="widget-font" class="o-flex-center--center has-column c-widget">
+<section id="widget-font" class="o-flex-center--center has-column c-widget">
   <p class="c-widget__heading u-txt-grey-lightest u-uppercase">Schriftfamilie</p>
   <div class="c-widget__aa u-txt-black oculus-aa"></div>
   <p class="c-widget__subtitle u-txt-black">Avenir</p>
@@ -41,4 +41,4 @@ tags: [jekyll, liquid, templates]
 <section id="widget-video" class="o-flex-center--center has-column c-widget">
   <div><p class="c-widget__heading u-txt-grey-lightest u-uppercase">Videomodus</p></div>
   <div class="c-widget__video"></div>
-</section> -->
+</section>

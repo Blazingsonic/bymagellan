@@ -46,13 +46,15 @@
   }
 
 .i-logo--symbol {
+  position: relative;
   width: 3.1rem;
   height: 3.1rem;
-    fill: #fff;
-top: 0.65rem;
-    position: relative;
+  top: 0.65rem;
+  fill: #fff;
 
-
+  @include mappy-bp(0 1113px) {
+    display: none;
+  }
 }
 
 // Search
@@ -323,6 +325,22 @@ a:hover .i-dribbble,
 a:hover .i-bulb,
 a:hover .i-pen {
     fill: $color-link-hover;
+}
+
+/* Project Icons -------------------- */
+
+// Exit
+.i-exit {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.i-exit--flipped {
+  transform: rotate(90deg);
+}
+
+.e-footer--project__link:hover .i-exit {
+  fill: $color-link-hover;
 }
 
 /* Misc Icons -------------------- */

@@ -38,16 +38,23 @@
 }
 
 .c-nav-left {
+  position: relative;
   width: 10rem;
 }
 
   .c-nav-left__petel {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 73%;
     display: block;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 0.18rem;
+    left: -0.6rem;
     z-index: 2000;
+    background: url(../images/petels-white-min.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
   }
 
 .c-main-nav {

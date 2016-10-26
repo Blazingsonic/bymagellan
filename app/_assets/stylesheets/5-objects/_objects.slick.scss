@@ -15,7 +15,7 @@
   }
 }
 
-.e-header .moebel {
+.e-header--index .moebel {
   background: url($path-img + '/bg/header-moebeltemplate-mobil-min.jpg');
   background-position: center;
   background-size: cover;
@@ -24,6 +24,21 @@
 
   @include mappy-bp(medium) {
     background: url($path-img + '/bg/header-moebeltemplate-min.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.e-header--project .moebel {
+  // background: url($path-img + '/bg/header-moebeltemplate-mobil-min.jpg');
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // transition: min-height 0.5s;
+
+  @include mappy-bp(medium) {
+    background: url($path-img + '/bg/header-moebeltemplate-project.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

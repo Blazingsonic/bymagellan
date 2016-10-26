@@ -21,7 +21,7 @@ date: 2016-10-21
 tags: [jekyll, liquid, templates]
 ---
 <!-- Widgets -->
-<section id="widget-font" class="o-flex-center--center has-column c-widget">
+<!-- <section id="widget-font" class="o-flex-center--center has-column c-widget">
   <p class="c-widget__heading u-txt-grey-lightest u-uppercase">Schriftfamilie</p>
   <div class="c-widget__aa u-txt-black oculus-aa"></div>
   <p class="c-widget__subtitle u-txt-black">Avenir</p>
@@ -41,4 +41,4 @@ tags: [jekyll, liquid, templates]
 <section id="widget-video" class="o-flex-center--center has-column c-widget">
   <div><p class="c-widget__heading u-txt-grey-lightest u-uppercase">Videomodus</p></div>
   <div class="c-widget__video"></div>
-</section>
+</section> -->
