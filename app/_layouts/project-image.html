@@ -38,7 +38,12 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
         <p class="u-mb-0">{{ page.projectcta }}</p>
       </a>
     </div>
-    <img class="c-showroom__img" src="{{ site.baseurl }}/assets/images/projects/{{ page.projectimage }}" alt="project image">
+
+
+    {% for image in page.projectimage %}
+    <img class="c-showroom__img" src="{{ site.baseurl }}/assets/images/projects/{{ image }}" alt="project image">
+    {% endfor %}
+
     </article>
 
     <article class="c-showroom__sidebar">

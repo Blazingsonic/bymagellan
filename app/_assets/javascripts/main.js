@@ -85,14 +85,14 @@ if (pageId === 'project-page') {
   let showRoomTop = heroStaticTitleOffset + 200;
   console.log('showrromtop' + showRoomTop);
 
-  if (windowHeightPage < 800) {
+  if (windowHeightPage < 800 && $(window).width() < 870) {
     showRoomTop = showRoomTop - windowHeightPage / 7;
     console.log('smaaaall');
   }
 
   $('.c-showroom').offset({top: showRoomTop});
 
-  let sidebarOffset = windowHeightPage - $('.c-showroom__sidebar-head').height() * 1.8;
+  let sidebarOffset = window.innerHeight - $('.c-showroom__sidebar-head').height() * 1.8;
   $('.c-showroom__sidebar').offset({top: sidebarOffset});
 }
 
@@ -106,14 +106,14 @@ if (pageId === 'project-page') {
   let showRoomTop = heroStaticTitleOffset + 200;
   console.log('showrromtop' + showRoomTop);
 
-  if (windowHeightPage < 800) {
+  if (windowHeightPage < 800 && $(window).width() < 870) {
     showRoomTop = showRoomTop - windowHeightPage / 7;
     console.log('smaaaall');
   }
 
   $('.c-showroom').offset({top: showRoomTop});
 
-  let sidebarOffset = windowHeightPage - $('.c-showroom__sidebar-head').height() * 1.8;
+  let sidebarOffset = window.innerHeight - $('.c-showroom__sidebar-head').height() * 1.8;
   $('.c-showroom__sidebar').offset({top: sidebarOffset});
 }
 });

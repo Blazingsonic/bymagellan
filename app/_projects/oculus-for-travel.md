@@ -5,7 +5,7 @@ headertitle: Oculus Travel
 headersubtitle: Studentisches Projekt
 headerdate: Sommer 2016
 headertext: Im Rahmen einer Veranstaltung an der Hochschule Furtwangen Uni. ist das Konzept "Oculus Rift &amp; Virtual Reality für Reisebüros" entstanden.
-projectimage: mockup-oculus-landingpage-min.png
+projectimage: [mockup-oculus-landingpage-min.png, mockup-oculus-cta-min.png, mockup-oculus-videobib-min.png]
 title: Oculus For Travel
 subtitle: Gestaltung &amp; Umsetzung
 category: " m-category-web"
@@ -30,11 +30,12 @@ tags: [jekyll, liquid, templates]
 <section id="widget-color" class="o-flex-center--center has-column c-widget">
   <p class="c-widget__heading u-txt-grey-lightest u-uppercase">Farbkomposition</p>
   <div class="o-flex-center--center c-widget__palette u-txt-black">
-    <span class="c-widget__color is-red"></span>
+    <!-- <span class="c-widget__color is-red"></span> -->
     <span class="c-widget__color is-black"></span>
-    <span class="c-widget__color is-blue"></span>
+    <!-- <span class="c-widget__color is-blue"></span> -->
     <span class="c-widget__color is-grey"></span>
-    <span class="c-widget__color is-grey-light"></span>
+    <!-- <span class="c-widget__color is-grey-light"></span> -->
+    <span class="c-widget__color is-white"></span>
   </div>
 </section>
 

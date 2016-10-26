@@ -54,7 +54,7 @@
   }
 
   .c-widget__palette {
-
+    border: 1px solid #666;
   }
 
   .c-widget__video {
@@ -84,6 +84,9 @@
     }
     &.is-grey-light {
       background-color: #b6b6b6;
+    }
+    &.is-white {
+      background-color: #fff;
     }
   }
 
