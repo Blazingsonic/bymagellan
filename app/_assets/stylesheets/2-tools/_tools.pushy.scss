@@ -30,6 +30,7 @@ $menu_width: 250px !default;
         text-transform: uppercase;
         text-align: center;
         text-rendering: geometricPrecision;
+        -webkit-font-smoothing: antialiased;
     }
 
     a:hover{

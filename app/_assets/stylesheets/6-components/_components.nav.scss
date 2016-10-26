@@ -40,6 +40,7 @@
 .c-nav-left {
   position: relative;
   width: 10rem;
+  -webkit-font-smoothing: antialiased;
 }
 
   .c-nav-left__petel {
@@ -59,6 +60,7 @@
 
 .c-main-nav {
   text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 
   @include mappy-bp(0 1113px) {
     display: none;

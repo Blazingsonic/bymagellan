@@ -6,9 +6,9 @@ category: " m-category-web"
 color: u-txt-carbon
 client: ""
 teasertext: Durch besonderen Stil soll der neue Webauftritt Premium-Kunden weltweit ansprechen und über die einzigartigen Produkte informieren.
-link: "#modal-not-available"
+link: "http://www.msk-snow.com/"
 teaserimage: msk
-cta: Beitrag lesen
+cta: Online ansehen
 date: 2016-10-04
 tags: [jekyll, liquid, templates]
 ---

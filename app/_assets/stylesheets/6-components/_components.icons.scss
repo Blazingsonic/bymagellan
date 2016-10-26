@@ -22,6 +22,7 @@
 .i-logo {
   width: 4.4rem;
   height: 4.4rem;
+  -webkit-font-smoothing: antialiased;
   // transform-origin: top center;
 
   @include mappy-bp(medium) {
