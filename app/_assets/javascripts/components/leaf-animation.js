@@ -54,3 +54,55 @@ $(window).ready(function() {
   }
 });
 
+/* Leaf Animation Menu -------------------- */
+
+let densityMenu = 12,
+  speedMenu = 0.55,
+  winWidthMenu = $(window).width(),
+  winHeightMenu = $(window).height(),
+  endMenu = {yMin:-60, yMax:-45, xMin:135, xMax:150, scaleMin:0.21, scaleMax:0.21, opacityMin:0, opacityMax:0},
+  midMenu = {yMin:-85, yMax:-50, xMin:65, xMax:125, scaleMin:0.21, scaleMax:0.21, opacityMin:0.1, opacityMax:0.25},
+  startMenu = {yMin:-90, yMax:-50, xMin:-25, xMax:10, scaleMin:0.21, scaleMax:0.21, opacityMin:0, opacityMax:0};
+
+export function rangeMenu(map, prop) {
+  let min = map[prop + "Min"],
+    max = map[prop + "Max"];
+  return min + (max - min) * Math.random();
+}
+
+export function spawnMenu(particle) {
+  let wholeDuration = (10 / speedMenu) * (0.7 + Math.random() * 0.4),
+    delay = wholeDuration * Math.random(),
+    partialDuration = (wholeDuration + 1) * (0.3 + Math.random() * 0.4);
+
+  //set the starting values
+  TweenLite.set(particle, {y:rangeMenu(startMenu, "y"), x:rangeMenu(startMenu, "x"), scale:rangeMenu(startMenu, "scale"), opacity:rangeMenu(startMenu, "opacity"), visibility:"hidden"});
+
+  //the y tween should be continuous and smooth the whole duration
+  TweenLite.to(particle, wholeDuration, {delay:delay, rotation: '+=900', y:rangeMenu(endMenu, "y"), ease:Linear.easeNone});
+
+  //now tween the x independently so that it looks more randomized (rather than linking it with scale/opacity changes too)
+  TweenLite.to(particle, partialDuration, {delay:delay, x:rangeMenu(midMenu, "x"), ease:Power1.easeOut});
+  TweenLite.to(particle, wholeDuration - partialDuration, {delay:partialDuration + delay, x:rangeMenu(endMenu, "x"), ease:Power1.easeIn});
+
+  //now create some random scale and opacity changes
+  partialDuration = wholeDuration * (0.5 + Math.random() * 0.3);
+  TweenLite.to(particle, partialDuration, {delay:delay, scale:rangeMenu(midMenu, "scale"), autoAlpha:rangeMenu(midMenu, "opacity"), ease:Linear.easeNone});
+  TweenLite.to(particle, wholeDuration - partialDuration, {delay:partialDuration + delay, scale:rangeMenu(endMenu, "scale"), autoAlpha:rangeMenu(endMenu, "opacity"), ease:Linear.easeNone, onComplete:spawnMenu, onCompleteParams:[particle]});
+}
+
+function randomIntFromIntervalMenu(min,max)
+{
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+$(window).ready(function() {
+  console.log($(window).height());
+  if ($(window).width() > 800) {
+    let body = $(".header"),
+    i, particle;
+    for (i = 0; i < densityMenu; i++) {
+      spawnMenu( $("<div />", {id:"particle"+i}).addClass("i-particle").appendTo('.c-nav-fixed') );
+    }
+  }
+});
