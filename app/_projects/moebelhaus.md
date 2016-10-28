@@ -10,7 +10,7 @@ title: Möbelhaus
 subtitle: Gestaltung
 category: " m-category-web"
 color: u-txt-gold
-client: " / Für: Profi-Homepage.de"
+client: " / Für: Profi-Homepage"
 teasertext: Aufeinanderfolgend werden Produkt&shy;kategorien sowie Produkthightlights übersichtlich per Slider vorgestellt. Verschiedene Farbkombinationen.
 link: project-detail
 projectlink: "http://www.carro-brautmoden.de/"

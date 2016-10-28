@@ -1,15 +1,23 @@
 ---
-layout: project
+layout: project-image
+headerclass: " architekturbuero"
+headertitle: Architekturbüro
+headersubtitle: WordPress-Template
+headerdate: Dezember 2014
+headertext: Konzeption, Gestaltung &amp; Ent&shy;wicklung einer komplexen und responsiven WordPress-Theme für ein Konstanzer Architektur&shy;büro.
+projectimage: mockup-moebelhaus-min.png
 title: Architekturbüro
-subtitle: Gestaltung &amp; Entwicklung
+subtitle: Gestaltung &amp; Umsetzung
 category: " m-category-web"
 color: u-txt-dark-blue
-client: " / Für: Profi-Homepage.de"
+client: " / Für: Profi-Homepage"
 teasertext: Konzeption, Gestaltung &amp; Ent&shy;wicklung einer komplexen und responsiven WordPress-Theme.
-link: "#modal-not-available"
+link: project-detail
+projectlink: "http://www.carro-brautmoden.de/"
 teaserimage: architekturbuero
-cta: Online ansehen
+cta: Gestaltung ansehen
+projectcta: Für Profi-Homepage
 date: 2016-09-09
 tags: [jekyll, liquid, templates]
 ---
-Getting started with Jekyll is relatively simple, although perhaps not *quite* as simple as their documentation would have you believe. There are a number of dependencies and requirements you have to satisfy before installing and using Jekyll. Let’s explore those dependencies and talk about the process of getting started with Jekyll.
+

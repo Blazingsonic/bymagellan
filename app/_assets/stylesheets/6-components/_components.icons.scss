@@ -20,10 +20,16 @@
 
 // Logo
 .i-logo {
-  width: 4.4rem;
-  height: 4.4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   -webkit-font-smoothing: antialiased;
   // transform-origin: top center;
+
+  @include mappy-bp(tiny) {
+    // transform: scale(1.2);
+    width: 4.3rem;
+    height: 4.3rem;
+  }
 
   @include mappy-bp(medium) {
     // transform: scale(1.2);

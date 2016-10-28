@@ -1,9 +1,13 @@
 
 .c-showroom {
   position: relative;
-  width: calc(100% - 4rem);
+  width: calc(100% - 3rem);
   max-width: 80rem;
   // top: -25rem;
+
+  @include mappy-bp(600px) {
+    width: calc(100% - 4rem);
+  }
 
   @include mappy-bp(870px) {
     // top: -28rem;

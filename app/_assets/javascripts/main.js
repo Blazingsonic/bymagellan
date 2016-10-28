@@ -85,8 +85,11 @@ if (pageId === 'project-page') {
   let showRoomTop = heroStaticTitleOffset + 200;
   console.log('showrromtop' + showRoomTop);
 
-  if (windowHeightPage < 800 && $(window).width() < 870) {
-    showRoomTop = showRoomTop - windowHeightPage / 7;
+  if (windowHeightPage < 600 && $(window).width() < 330) {
+    showRoomTop = showRoomTop - windowHeightPage / 11;
+    console.log('smaaaall fef');
+  } else if (windowHeightPage < 800 && $(window).width() < 870) {
+    showRoomTop = showRoomTop - windowHeightPage / 9;
     console.log('smaaaall');
   }
 
@@ -106,8 +109,11 @@ if (pageId === 'project-page') {
   let showRoomTop = heroStaticTitleOffset + 200;
   console.log('showrromtop' + showRoomTop);
 
-  if (windowHeightPage < 800 && $(window).width() < 870) {
-    showRoomTop = showRoomTop - windowHeightPage / 7;
+  if (windowHeightPage < 600 && $(window).width() < 330) {
+    showRoomTop = showRoomTop - windowHeightPage / 11;
+    console.log('smaaaall');
+  } else if (windowHeightPage < 800 && $(window).width() < 870) {
+    showRoomTop = showRoomTop - windowHeightPage / 9;
     console.log('smaaaall');
   }
 
@@ -127,8 +133,8 @@ let svgPath;
 
 // Load SVG sprite
 if (pageId === 'index-page') {
-  svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy gh pages
-  // svgPath = '../../assets/images/sprite/svg.svg' // local
+  // svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy gh pages
+  svgPath = '../../assets/images/sprite/svg.svg' // local
 } else {
   svgPath = '../../assets/images/sprite/svg.svg' // both
 }

@@ -41,6 +41,10 @@
 
   .c-hero--static__title {
     position: relative;
-    top: 3rem;
+    top: 1.5rem;
+
+    @include mappy-bp(tiny) {
+      top: 3rem;
+    }
   }
 

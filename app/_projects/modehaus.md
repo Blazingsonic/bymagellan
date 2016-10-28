@@ -10,7 +10,7 @@ title:  Modehaus
 subtitle: Gestaltung
 category: " m-category-web"
 color: u-txt-pink
-client: " / Für: Profi-Homepage.de"
+client: " / Für: Profi-Homepage"
 teasertext: Eine Symphonie aus kontemporärer und klassischer UI, beeindruckende Bilderwelt und fein abgestimmte Farbwahl &amp; Details.
 link: project-detail
 projectlink: "http://www.carro-brautmoden.de/"

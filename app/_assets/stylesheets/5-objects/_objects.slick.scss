@@ -76,6 +76,14 @@
   // transition: min-height 0.5s;
 }
 
+.e-header .architekturbuero {
+  background: url($path-img + '/bg/header-architekturbuero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // transition: min-height 0.5s;
+}
+
 .o-slick-slide {
   position: absolute;
   width: 100%;
