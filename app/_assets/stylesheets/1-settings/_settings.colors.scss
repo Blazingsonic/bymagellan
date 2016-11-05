@@ -6,7 +6,7 @@ $black          : #000;
 
 $grey-dark      : rgba(0, 0, 0, 0.8);
 $grey-darkest   : rgba(0, 0, 0, 0.65);
-$grey           : #737373;
+$grey           : #818181;
 $grey-light		  : rgba(0, 0, 0, 0.5); // weiß verwenden?
 $grey-lightest  : rgba(0, 0, 0, 0.375);
 
@@ -21,13 +21,13 @@ $color-prim         : red;
 $color-sec          : blue;
 $color-ter          : grey;
 
-$grey-light-no-trans: #b3b3b1;
-$grey-lightest-no-trans: #8d8d8d;
+$grey-light-no-trans: #b7b7b7;
+$grey-lightest-no-trans: #909090;
 $blue-light         : #89b0c7;
 
 // Text
 $color-text-light   : $white;
-$color-text-base    : $grey;
+$color-text-base    : #6d6d6d;
 $color-text-dark    : $black;
 
 // Links

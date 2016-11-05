@@ -183,7 +183,7 @@ button {
 .i-glasses {
     width: 1.5rem;
     height: 0.5rem;
-    padding-top: 0.1rem;
+    // padding-top: 0.1rem;
     fill: $grey-light;
 }
 
@@ -410,6 +410,17 @@ a:hover .i-pen {
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
+}
+
+// Right Arrow
+.i-right-arrow {
+  width: 0.9rem;
+  height: 0.9rem;
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.g-underline:hover .i-right-arrow {
+  fill: $color-link-hover;
 }
 
 

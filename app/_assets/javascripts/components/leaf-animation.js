@@ -60,7 +60,7 @@ let densityMenu = 12,
   speedMenu = 0.55,
   winWidthMenu = $(window).width(),
   winHeightMenu = $(window).height(),
-  endMenu = {yMin:-60, yMax:-45, xMin:135, xMax:150, scaleMin:0.21, scaleMax:0.21, opacityMin:0, opacityMax:0},
+  endMenu = {yMin:-80, yMax:-45, xMin:135, xMax:150, scaleMin:0.21, scaleMax:0.21, opacityMin:0, opacityMax:0},
   midMenu = {yMin:-85, yMax:-50, xMin:65, xMax:125, scaleMin:0.21, scaleMax:0.21, opacityMin:0.1, opacityMax:0.25},
   startMenu = {yMin:-90, yMax:-50, xMin:-25, xMax:10, scaleMin:0.21, scaleMax:0.21, opacityMin:0, opacityMax:0};
 
@@ -102,7 +102,7 @@ $(window).ready(function() {
     let body = $(".header"),
     i, particle;
     for (i = 0; i < densityMenu; i++) {
-      spawnMenu( $("<div />", {id:"particle"+i}).addClass("i-particle").appendTo('.c-nav-fixed') );
+      // spawnMenu( $("<div />", {id:"particle"+i}).addClass("i-particle").appendTo('.c-nav-fixed') );
     }
   }
 });

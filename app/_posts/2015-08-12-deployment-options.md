@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Unser Logo"
+title:  "Unser Blog"
 datumformatiert: 31.07.2016
-teasertext: Wie ist unser Logo entstanden? Wie sind wir ausgerechnet auf "Magellan" gekommen? Ein Einblick in den Kreativprozess.
+teasertext: ist bald online. Was Sie bis dahin machen können? Vielleicht ein gutes Buch lesen. Wie wäre es mit Deamon, Water oder Blackout?
 lesezeit: 4 Minuten
 date:   2015-07-09
 tags: [jekyll, web design, yaml]

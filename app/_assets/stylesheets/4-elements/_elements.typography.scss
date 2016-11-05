@@ -99,11 +99,16 @@ h4,
 // Default Text
 p,
 .e-serif-def {
+  font-family: 'Abhaya Libre', serif;
 	@include typi($default-map);
-	letter-spacing: 0.06rem;
+	letter-spacing: 0.05rem;
   text-rendering: optimizeLegibility;
   // -webkit-font-smoothing: antialiased;
   // text-rendering: geometricPrecision;
+
+  @include mappy-bp(small) {
+    letter-spacing: 0.06rem;
+  }
 
   i {
     // text-rendering: geometricPrecision;

@@ -66,21 +66,29 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
     console.log('hello');
 
     $(document).ready(function() {
+
+      let fontSize = window.getComputedStyle(document.body).getPropertyValue('font-size');
+      let fontSizeStripped = fontSize.replace(/[^-\d\.]/g, '');
+
+      let marginOfFontSize = fontSizeStripped * 8.24;
+
+      console.log(marginOfFontSize);
+
       let windowHeight = $(document).height();
-    let sidebarHeight = windowHeight - $('.e-footer').innerHeight();
-    console.log('sidebarheight' + sidebarHeight);
+      let sidebarHeight = windowHeight - $('.e-footer').innerHeight();
+      console.log('sidebarheight' + sidebarHeight);
 
-    $('.c-showroom__sidebar').css('height', sidebarHeight);
+      $('.c-showroom__sidebar').css('height', sidebarHeight);
 
-    $('#widget-font').fixTo('.c-showroom__sidebar', {
-      top: 140
-    });
-    $('#widget-color').fixTo('.c-showroom__sidebar', {
-      top: 410
-    });
-    $('#widget-video').fixTo('.c-showroom__sidebar', {
-      top: 565
-    });
+      $('#widget-font').fixTo('.c-showroom__sidebar', {
+        top: marginOfFontSize
+      });
+      $('#widget-color').fixTo('.c-showroom__sidebar', {
+        top: marginOfFontSize + $('#widget-font').height() + fontSizeStripped * 4
+      });
+      $('#widget-video').fixTo('.c-showroom__sidebar', {
+        top: marginOfFontSize + $('#widget-font').height() + $('#widget-color').height() + fontSizeStripped * 8
+      });
     });
 
    //  $(window).scroll(function (event) {

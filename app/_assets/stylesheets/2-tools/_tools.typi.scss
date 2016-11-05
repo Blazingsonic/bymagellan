@@ -55,19 +55,25 @@ $h3-map: (
 // H4 Map: TANDEM NETWORKS
 $h4-map: (
 	null: (1.1rem, vr(1)),
-  tiny: (1.25rem, vr(1))
+  tiny: (1.2rem, vr(1)),
+  medium: (1.25rem, vr(1))
 );
 
 // Default Text Map: Ein normaler Text
 $default-map: (
-  null: (0.89rem, vr(0.94))
+  null: (0.98rem, vr(0.8)),
+  small: (0.98rem, vr(0.94)),
+  medium: (1rem, vr(0.94)),
+  wide: (1rem, vr(0.94))
 );
 
 /* Class Maps -------------------- */
 
 // Serif Small Map: INSTAGRAM
 $serif-sm-map: (
-  null: (0.69rem, vr(0.75))
+  null: (0.72rem, vr(0.75)),
+  medium: (0.72rem, vr(0.75)),
+  wide: (0.8rem, vr(0.75))
 );
 
 // Sans Small Map: Unser Ziel

@@ -27,7 +27,8 @@ export function contactItemClick(elem) {
     console.log('mail');
     $(cardToChange + ' p:first-of-type').text('e-mail');
     $(cardToChange + ' h4').text('mail@magellan.de');
-    $(cardToChange + ' a p').text('Schreiben Sie uns eine Mail!');
+    $(cardToChange + ' a p').text('Schreiben Sie uns!');
+    $(cardToChange + ' a').attr('href', 'mailto:ahoy@magellan.de');
     // $(cardToChange + svg).removeClass('i-double-tick-indicator');
     // $(cardToChange + svg).addClass('i-glasses');
     $(cardToChange + ' .c-card-proj__right').removeClass('letter-contact');
@@ -43,6 +44,7 @@ export function contactItemClick(elem) {
     $(cardToChange + ' p:first-of-type').text('Mobilfunk');
     $(cardToChange + ' h4').text('0176 392 00032');
     $(cardToChange + ' a p').text('Auch WhatsApp möglich');
+    $(cardToChange + ' a').attr('href', 'tel:+0176 392 00032');
     $(cardToChange + ' .c-card-proj__right').removeClass('letter-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('telephone-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('formular-contact');
@@ -55,7 +57,7 @@ export function contactItemClick(elem) {
     console.log('formular');
     $(cardToChange + ' p:first-of-type').text('Formular');
     $(cardToChange + ' h4').text('Online-Formular');
-    $(cardToChange + ' a p').text('Jetzt online ausfüllen!');
+    $(cardToChange + ' a p').text('Fast wie auf echtem Papier!');
     $(cardToChange + ' .c-card-proj__right').removeClass('letter-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('telephone-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('formular--contact');
@@ -82,16 +84,30 @@ function flipCard() {
 }
 
 // Show Confirmed Message when submit button is clicked
-$('.c-contact-form__submit').click(function(e) {
+// $('.c-contact-form__submit').click(function(e) {
 
+//   let inst = $('[data-remodal-id=modal-contact]').remodal();
+//   inst.close();
+//   e.preventDefault();
+//   toastr.success('Wurde erfolgreich an Magellan verschickt!', 'Online-Formular');
+
+// });
+
+var message = "";
+
+$("#send-message").on("click", function() {
+    message = $("#contact-form").serialize();
+    $.ajax({
+        url: "//formspree.io/saiersebastian@gmail.com",
+        method: "POST",
+        data: {message: message},
+        dataType: "json"
+    });
   let inst = $('[data-remodal-id=modal-contact]').remodal();
   inst.close();
-  e.preventDefault();
   toastr.success('Wurde erfolgreich an Magellan verschickt!', 'Online-Formular');
-
+    return false;
 });
-
-
 
 
 

@@ -27,6 +27,17 @@
     }
   }
 
+.remodal-contact {
+  padding: 3rem 1rem;
+
+  @include mappy-bp(large) {
+    padding: 4rem 2rem;
+  }
+  @include mappy-bp(wide) {
+    padding: 5rem 3rem;
+  }
+}
+
 .c-contact-form {
 }
 
@@ -39,6 +50,11 @@
   }
 
   .c-contact-form__input {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;;
+    text-transform: uppercase;
+    color: $black;
     margin-bottom: 0;
   }
 

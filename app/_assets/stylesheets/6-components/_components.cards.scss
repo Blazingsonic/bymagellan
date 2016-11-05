@@ -36,9 +36,15 @@
 
   .c-card-proj__left {
     width: 100%;
-    padding-left: vr(1);
-    padding-top: vr(1);
-    padding-right: vr(1);
+    padding-left: vr(0.75);
+    padding-top: vr(0.75);
+    padding-right: vr(0.75);
+
+    @include mappy-bp(small) {
+      padding-left: vr(1);
+      padding-top: vr(1);
+      padding-right: vr(1);
+    }
 
     @include mappy-bp(medium) {
       width: 70%;
@@ -76,11 +82,17 @@
 
 .c-card-prof {
   max-width: 19.5rem;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 2rem;
-  padding: vr(1.25);
+  padding: vr(1);
   backface-visibility: hidden;
+
+  @include mappy-bp(small) {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    padding: vr(1.25);
+  }
 
   @include mappy-bp(800px) {
     margin-left: 1rem;
@@ -105,9 +117,10 @@
   box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.18);
 
   @include mappy-bp(small) {
-    max-width: 20rem;
+    max-width: 19.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 0;
   }
 }
 
@@ -116,12 +129,20 @@
     height: 10rem;
   }
   .c-card-blog__img--magellan {
-    background: url($path-img + '/speed.jpg');
+    background-color: #79a4be;
     background-size: cover;
   }
 
   .c-card-blog__body {
-    padding: vr(1/2) vr(1.5) vr(1);
+    padding: vr(1/2) vr(0.75) vr(1);
+
+    @include mappy-bp(small) {
+      padding: vr(1/2) vr(1) vr(1);
+    }
+
+    @include mappy-bp(large) {
+      padding: vr(1/2) vr(1) vr(1);
+    }
   }
 
   .c-card-blog__bottom {

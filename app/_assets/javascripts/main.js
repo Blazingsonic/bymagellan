@@ -126,7 +126,7 @@ if (pageId === 'project-page') {
 
 
 // ==========================================================================
-// SVG
+// SVG & Images
 // ==========================================================================
 
 let svgPath;
@@ -147,6 +147,18 @@ $.get(svgPath, function(data) {
 });
 
 
+// Preload Images
+function preloadImages() {
+    for(var i=0; i<arguments.length; i++) {
+        (new Image).src = arguments[i];
+    }
+}
+
+window.onload = function() {
+    preloadImages('../bymagellan/assets/images/letter-contact.jpg', '../bymagellan/assets/images/formular-contact.jpg', '../bymagellan/assets/images/telephone-contact.jpg'); // deploy gh pages
+};
+
+
 // ==========================================================================
 // Smoothscroll
 // ==========================================================================
@@ -164,6 +176,21 @@ $(function() {
       }
     }
   });
+});
+
+// Scroll when hash is defined in url
+if ( window.location.hash ) scroll(0,0);
+// void some browsers issue
+// setTimeout( function() { scroll(0,0); }, 1);
+
+$(document).ready(function() {
+  if(window.location.hash) {
+        // smooth scroll to the anchor id
+        console.log(window.location.hash);
+        $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top - $(window).height() * 1.9
+        }, 1200);
+    }
 });
 
 
