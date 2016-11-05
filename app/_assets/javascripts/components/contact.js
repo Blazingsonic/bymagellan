@@ -1,6 +1,7 @@
 
 import $ from 'jquery';
 import toastr from 'toastr';
+import parsley from 'parsleyjs';
 
 // Set variables
 let front = true;
@@ -118,8 +119,9 @@ function flipCard() {
 
 var message = "";
 
-$("#send-message").on("click", function() {
-    message = $("#contact-form").serialize();
+$("#contact-form").parsley().on("form:submit", function() {
+
+  message = $("#contact-form").serialize();
     $.ajax({
         url: "//formspree.io/saiersebastian@gmail.com",
         method: "POST",
@@ -129,7 +131,9 @@ $("#send-message").on("click", function() {
   let inst = $('[data-remodal-id=modal-contact]').remodal();
   inst.close();
   toastr.success('Wurde erfolgreich an Magellan verschickt!', 'Online-Formular');
-    return false;
+
+  return false;
+
 });
 
 

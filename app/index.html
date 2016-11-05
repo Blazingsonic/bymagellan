@@ -350,22 +350,22 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
           <button data-remodal-action="close" class="remodal-close"></button>
           <h2 class="u-mb-vr-1">Formular</h2>
           <h3 class="u-mb-vr-2">Füllen Sie die folgenden Felder aus</h3>
-          <form method="POST" id="contact-form" class="c-contact-form" action="https://formspree.io/saiersebastian@gmail.com">
+          <form data-parsley-validate="" method="POST" id="contact-form" class="c-contact-form" action="">
             <div class="c-contact-form__item-wrap u-mb-vr-05">
               <p class="u-serif-sm u-mb-vr-033">Vor- &amp; Nachname</p>
-              <input class="c-contact-form__input" name="name" type="text" placeholder="Max Musterman">
+              <input required="" data-parsley-error-message="Dieses Feld muss ausgefüllt sein." class="c-contact-form__input" name="name" type="text" placeholder="Max Musterman">
             </div>
             <div class="c-contact-form__item-wrap u-mb-vr-05">
               <p class="u-serif-sm u-mb-vr-033">Unternehmen</p>
-              <input class="c-contact-form__input" name="unternehmen" type="text" placeholder="Ihr Unternehmen">
+              <input required="" data-parsley-error-message="Dieses Feld muss ausgefüllt sein." class="c-contact-form__input" name="unternehmen" type="text" placeholder="Ihr Unternehmen">
             </div>
             <div class="c-contact-form__item-wrap u-mb-vr-05">
               <p class="u-serif-sm u-mb-vr-033">Email</p>
-              <input class="c-contact-form__input" name="email" type="email" placeholder="maxmusterman@mail.de">
+              <input data-parsley-trigger="change" required="" data-parsley-error-message="Keine gültige E-Mail-Adresse." class="c-contact-form__input" name="email" type="email" placeholder="maxmusterman@mail.de">
             </div>
             <div class="c-contact-form__item-wrap u-mb-vr-2">
               <p class="u-serif-sm u-mb-vr-033">Nachricht</p>
-              <textarea class="c-contact-form__input" cols="50" rows="8" name="nachricht" placeholder="Haben Sie eine Nachricht an uns?"></textarea>
+              <textarea data-parsley-trigger="keyup" data-parsley-maxlength="400" class="c-contact-form__input" cols="50" rows="8" name="nachricht" placeholder="Haben Sie eine Nachricht an uns?"></textarea>
             </div>
             <div class="o-flex-center--center has-inline-flex c-contact-form__submit-wrap">
               <svg class="i-send-form u-mr-vr-025">
