@@ -3,14 +3,18 @@ import $ from 'jquery';
 
 /* Leaf Animation -------------------- */
 
-let density = 27,
-  speed = 0.5,
+$(document).ready(function() {
+
+});
+
+let density = 24,
+  speed = 0.4,
   winWidth = $(window).width(),
   winHeight = $(window).height(),
-  end = {yMin:-winHeight/50-350, yMax:-winHeight/50-350, xMin:520, xMax:610, scaleMin:0.3, scaleMax:0.6, opacityMin:0, opacityMax:0},
-  mid = {yMin:-winHeight/50-500, yMax:-winHeight/50-400, xMin:220, xMax:480, scaleMin:0.3, scaleMax:0.6, opacityMin:0.1, opacityMax:0.25},
-  start = {yMin:-winHeight/50-740, yMax:-winHeight/50-900, xMin:-120, xMax:-20, scaleMin:0.3, scaleMax:0.55, opacityMin:0.05, opacityMax:0.15};
-
+  end = {yMin:-winHeight/2.1, yMax:-winHeight/2.6, xMin:490, xMax:580, scaleMin:0.3, scaleMax:0.48, opacityMin:0, opacityMax:0},
+  mid = {yMin:-winHeight/1.5, yMax:-winHeight/2, xMin:160, xMax:400, scaleMin:0.3, scaleMax:0.48, opacityMin:0.1, opacityMax:0.25},
+  start = {yMin:-winHeight - (winHeight/8), yMax:-winHeight + (winHeight/8), xMin:-120, xMax:-20, scaleMin:0.3, scaleMax:0.48, opacityMin:0.05, opacityMax:0.15};
+console.log(`header ${winHeight}`);
 export function range(map, prop) {
   let min = map[prop + "Min"],
     max = map[prop + "Max"];
@@ -49,7 +53,7 @@ $(window).ready(function() {
     let body = $(".header"),
     i, particle;
     for (i = 0; i < density; i++) {
-      // spawn( $("<div />", {id:"particle"+i}).addClass("i-particle").appendTo('header') );
+      // spawn( $("<div />", {id:"particle"+i}).addClass("i-particle").appendTo('.e-header') );
     }
   }
 });

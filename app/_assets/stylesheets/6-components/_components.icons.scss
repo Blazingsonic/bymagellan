@@ -197,6 +197,10 @@ button {
     fill: $grey-light;
 }
 
+a:hover .i-plane {
+  fill: $color-link-hover;
+}
+
 .i-clock {
     width: 1.1rem;
     height: 0.65rem;
@@ -323,8 +327,10 @@ button {
 }
 
 .i-pen {
-    width: 1.2rem;
-    height: 1.2rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  fill: $grey-lightest-no-trans;
+  // padding-bottom: 0.1rem;
 }
 
 a:hover .i-instagram,

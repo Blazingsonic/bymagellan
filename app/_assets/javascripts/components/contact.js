@@ -29,8 +29,14 @@ export function contactItemClick(elem) {
     $(cardToChange + ' h4').text('mail@magellan.de');
     $(cardToChange + ' a p').text('Schreiben Sie uns!');
     $(cardToChange + ' a').attr('href', 'mailto:ahoy@magellan.de');
-    // $(cardToChange + svg).removeClass('i-double-tick-indicator');
-    // $(cardToChange + svg).addClass('i-glasses');
+    $(cardToChange + ' a > svg').attr('class', 'i-plane u-mr-vr-05');
+    $(cardToChange + ' a > svg use').remove();
+    var useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    $(cardToChange + ' a > svg').append(useElement);
+    useElement.setAttributeNS(
+        'http://www.w3.org/1999/xlink', // xlink NS URI
+        'href',                         // attribute (no 'xlink:')
+        '#plane');
     $(cardToChange + ' .c-card-proj__right').removeClass('letter-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('telephone-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('formular-contact');
@@ -45,6 +51,14 @@ export function contactItemClick(elem) {
     $(cardToChange + ' h4').text('0176 392 00032');
     $(cardToChange + ' a p').text('Auch WhatsApp möglich');
     $(cardToChange + ' a').attr('href', 'tel:+0176 392 00032');
+    $(cardToChange + ' a > svg').attr('class', 'i-double-tick-indicator u-mr-vr-033');
+    $(cardToChange + ' a > svg use').remove();
+    var useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    $(cardToChange + ' a > svg').append(useElement);
+    useElement.setAttributeNS(
+        'http://www.w3.org/1999/xlink', // xlink NS URI
+        'href',                         // attribute (no 'xlink:')
+        '#double-tick-indicator');
     $(cardToChange + ' .c-card-proj__right').removeClass('letter-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('telephone-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('formular-contact');
@@ -58,6 +72,15 @@ export function contactItemClick(elem) {
     $(cardToChange + ' p:first-of-type').text('Formular');
     $(cardToChange + ' h4').text('Online-Formular');
     $(cardToChange + ' a p').text('Fast wie auf echtem Papier!');
+    $(cardToChange + ' a').attr('href', '#modal-contact');
+    $(cardToChange + ' a > svg').attr('class', 'i-pen u-mr-vr-05');
+    $(cardToChange + ' a > svg use').remove();
+    var useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    $(cardToChange + ' a > svg').append(useElement);
+    useElement.setAttributeNS(
+        'http://www.w3.org/1999/xlink', // xlink NS URI
+        'href',                         // attribute (no 'xlink:')
+        '#pen');
     $(cardToChange + ' .c-card-proj__right').removeClass('letter-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('telephone-contact');
     $(cardToChange + ' .c-card-proj__right').removeClass('formular--contact');

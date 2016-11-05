@@ -8,6 +8,23 @@
 
   .e-footer__item {
     max-width: 62rem;
+
+    & > p {
+      text-align: center;
+
+      @include mappy-bp(large) {
+        text-align: left;
+      }
+    }
+
+    ul li {
+
+      &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+        width: 100%;
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
   }
 
   .e-footer__adress {

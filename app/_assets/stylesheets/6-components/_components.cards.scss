@@ -6,7 +6,7 @@
 .c-card-proj {
   display: flex;
   justify-content: flex-start;
-  max-width: 29rem;
+  max-width: 22rem;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 2rem;
@@ -14,6 +14,10 @@
 
   &:last-child {
     // margin: 0;
+  }
+
+  @include mappy-bp(small) {
+    max-width: 29rem;
   }
 
   @include mappy-bp(800px) {
@@ -110,7 +114,7 @@
 /* Blog Previews -------------------- */
 
 .c-card-blog {
-  // max-width: 22rem;
+  max-width: 20rem;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 2rem;
