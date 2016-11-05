@@ -3,23 +3,36 @@
 
 .c-hero {
 	position: absolute;
-  width: 90%; /* fallback if needed */
-  width: calc(100% - 4rem);
+  width: 100%;
+  // width: calc(100% - 4rem);
   // max-width: 80rem;
   top: 2rem;
-  left: 51%;
-  transform: translate(-51%, 0%);
+  left: 0;
+  // transform: translate(-51%, 0%);
   z-index: 99;
 
   @include mappy-bp(medium) {
-    width: calc(100% - 6rem);
+    // width: calc(100% - 6rem);
     top: 3rem;
   }
   @include mappy-bp(wide) {
-    width: calc(100% - 8rem);
+    // width: calc(100% - 8rem);
     top: 3.25rem;
   }
 }
+
+  .body-index-page #default-nav {
+    width: 90%; /* fallback if needed */
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+
+    @include mappy-bp(medium) {
+      width: calc(100% - 6rem);
+    }
+    @include mappy-bp(wide) {
+      width: calc(100% - 8rem);
+    }
+  }
 
 .c-hero--static {
   position: relative;

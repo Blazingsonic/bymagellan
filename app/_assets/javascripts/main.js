@@ -24,6 +24,10 @@ import _ from 'lodash';
 const pageId = $('main').attr('id');
 console.log(pageId);
 
+if (pageId === 'index-page') {
+  $('body').addClass('body-index-page');
+}
+
 // let currentUrl = document.location.pathname.match(/[^\/]+$/)[0];
 
 

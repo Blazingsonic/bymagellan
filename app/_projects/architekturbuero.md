@@ -11,7 +11,7 @@ subtitle: Gestaltung &amp; Umsetzung
 category: " m-category-web"
 color: u-txt-dark-blue
 client: " / Für: Profi-Homepage"
-teasertext: Konzeption, Gestaltung &amp; Ent&shy;wicklung einer komplexen und responsiven WordPress-Theme.
+teasertext: Konzeption, Gestaltung &amp; Ent&shy;wicklung einer komplexen und responsiven WordPress-Theme für ein Konstanzer Architektur&shy;büro.
 link: project-detail
 projectlink: "http://www.carro-brautmoden.de/"
 teaserimage: architekturbuero

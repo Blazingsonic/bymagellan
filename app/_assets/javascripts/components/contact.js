@@ -4,6 +4,7 @@ import toastr from 'toastr';
 import parsley from 'parsleyjs';
 
 // Set variables
+let pageId = $('main').attr('id');
 let front = true;
 
 export function contactItemClick(elem) {
@@ -117,24 +118,26 @@ function flipCard() {
 
 // });
 
-var message = "";
+if (pageId === 'index-page') {
+  var message = "";
 
-$("#contact-form").parsley().on("form:submit", function() {
+  $("#contact-form").parsley().on("form:submit", function() {
 
-  message = $("#contact-form").serialize();
-    $.ajax({
-        url: "//formspree.io/saiersebastian@gmail.com",
-        method: "POST",
-        data: {message: message},
-        dataType: "json"
-    });
-  let inst = $('[data-remodal-id=modal-contact]').remodal();
-  inst.close();
-  toastr.success('Wurde erfolgreich an Magellan verschickt!', 'Online-Formular');
+    message = $("#contact-form").serialize();
+      $.ajax({
+          url: "//formspree.io/saiersebastian@gmail.com",
+          method: "POST",
+          data: {message: message},
+          dataType: "json"
+      });
+    let inst = $('[data-remodal-id=modal-contact]').remodal();
+    inst.close();
+    toastr.success('Wurde erfolgreich an Magellan verschickt!', 'Online-Formular');
 
-  return false;
+    return false;
 
-});
+  });
+}
 
 
 
