@@ -38,6 +38,35 @@
   }
 }
 
+.c-card-proj--small {
+  max-width: 22rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mappy-bp(small) {
+    max-width: 20.5rem;
+  }
+  @include mappy-bp(883px) {
+    margin-bottom: 0;
+  }
+
+  .c-card-proj--small__body {
+    width: 100%;
+
+    padding-left: vr(0.75);
+    padding-top: vr(0.75);
+    padding-right: vr(0.75);
+
+    @include mappy-bp(small) {
+      padding-left: vr(1);
+      padding-top: vr(1);
+      padding-right: vr(1);
+    }
+  }
+}
+
   .c-card-proj__left {
     width: 100%;
     padding-left: vr(0.75);

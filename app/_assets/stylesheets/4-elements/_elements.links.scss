@@ -4,6 +4,9 @@
 /* Pseudo-classes ------------------ */
 
 a {
+  outline:0;
+  border:none;
+
 	&:link {
 	    color: $color-link-default;
 	    text-decoration: none;
@@ -14,6 +17,10 @@ a {
 	&:hover {
 	    color: $color-link-hover;
 	}
+  &:active {
+    outline:0;
+    border:none;
+  }
 
   &.has-no-hover:hover {
     color: $black;

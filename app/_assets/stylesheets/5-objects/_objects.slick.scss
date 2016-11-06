@@ -1,5 +1,20 @@
 
 // object specific styles
+.e-header .magellan {
+  background: url($path-img + '/bg/header-magellan-team-min.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: min-height 0.5s;
+
+  // @include mappy-bp(medium) {
+  //   background: url($path-img + '/bg/header-magellan-team-min.jpg');
+  //   background-position: center;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  // }
+}
+
 .e-header .jsg {
   background: url($path-img + '/bg/header-jsg-karlsruhe-mobil-min.jpg');
   background-position: center;

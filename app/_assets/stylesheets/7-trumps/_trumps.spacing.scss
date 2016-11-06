@@ -42,6 +42,9 @@
 .u-mb-vr-4 {
   margin-bottom: vr(4);
 }
+.u-mb-vr-45 {
+  margin-bottom: vr(4.5);
+}
 
 // Single Direction Margins: Margin Right
 .u-mr-0 {
@@ -70,6 +73,17 @@
 }
 .u-mr-vr-3 {
   margin-right: vr(3);
+}
+
+// Margin Top (nur Ausnahmen)
+.u-mt-vr-1 {
+  margin-top: vr(1);
+}
+.u-mt-vr-2 {
+  margin-top: vr(2);
+}
+.u-mt-vr-3 {
+  margin-top: vr(3);
 }
 
 // Margin Left (nur Ausnahmen)

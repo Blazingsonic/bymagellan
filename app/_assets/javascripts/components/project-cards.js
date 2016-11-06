@@ -14,7 +14,7 @@ if (pageId === 'index-page') {
   moduleImpressionenOffset = $('#impressionen').offset().top;
 }
 let impressionenScroll = false;
-let $cards = $('#impressionen .o-card');
+let $cards = $('#impressionen .js-card-wrapper .o-card');
 let $defaultCards = $('.m-category-web:lt(6)');
 let numItemsDefault = $('.m-category-web').length - 1;
 let $loadMore = $('.c-card-proj__more');

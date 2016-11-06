@@ -31,27 +31,44 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
       </div>
     </div> -->
 
+    <div class="js-min-height magellan">
+      <div class="o-slick-slide">
+        <div class="o-slick-slide__title">
+          <a href="#team">
+            <h1>Enthusiastisch, Flexibel, Zeitgemäß</h1>
+          </a>
+          <h3 class="u-txt-white">Die neue Medienagentur im Schwarzwald</h3>
+        </div>
+      </div>
+    </div>
+
     <div class="js-min-height moebel">
       <div class="o-slick-slide">
         <div class="o-slick-slide__title">
-          <h1>Möbelhaus</h1>
-          <h3 class="u-txt-white">Ein Frontend-Design &amp; Konzeptions Projekt</h3>
+          <a href="#impressionen">
+            <h1>Möbelhaus</h1>
+          </a>
+          <h3 class="u-txt-white">Übersichtlich, Intuitiv, Hochwertig</h3>
         </div>
       </div>
     </div>
     <div class="js-min-height jsg">
       <div class="o-slick-slide">
         <div class="o-slick-slide__title">
-          <h1>JSG Karlsruhe</h1>
-          <h3 class="u-txt-white">Ein Frontend-Design &amp; Entwicklungs Projekt</h3>
+          <a href="#impressionen">
+            <h1>JSG Karlsruhe</h1>
+          </a>
+          <h3 class="u-txt-white">DIY. Einfach. WordPress.</h3>
         </div>
       </div>
     </div>
     <div class="js-min-height oculus">
       <div class="o-slick-slide">
         <div class="o-slick-slide__title">
-          <h1>Oculus Travel</h1>
-          <h3 class="u-txt-white">Studentisches Projekt</h3>
+          <a href="#impressionen">
+            <h1>Oculus Travel</h1>
+          </a>
+          <h3 class="u-txt-white">Ein Frontend-Design &amp; Konzeptions Projekt</h3>
         </div>
       </div>
     </div>
@@ -171,7 +188,7 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
       </ul>
 
       <!-- Cards Wrapper -->
-      <section class="o-flex-center--center has-wrap u-centered u-mb-vr-2">
+      <section class="o-flex-center--center has-wrap u-centered u-mb-vr-2 js-card-wrapper">
 
 
         {% assign projects = site.projects | sort: 'date' %}
@@ -206,6 +223,47 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
           <p class="u-link-dark u-uppercase">Mehr laden</p>
         </a>
       </section>
+
+      <div class="o-flex-center--center u-mt-vr-3 u-mb-vr-3">
+        <li class="c-dot"><svg class="i-dot"><use xlink:href="#dot"></use></svg></li>
+        <h3 class="u-mb-0">Aktuelle Projekte</h3>
+        <li class="c-dot"><svg class="i-dot"><use xlink:href="#dot"></use></svg></li>
+      </div>
+
+      <section class="o-flex-center--center has-wrap u-centered u-mb-vr-15">
+
+          <article class="o-card c-card-proj c-card-proj--small u-txt-left">
+            <div class="c-card-proj--small__body">
+              <p class="u-category u-txt-black u-mb-vr-033">Gestaltung &amp; Entwicklung</p>
+              <h4>Tariffuxx</h4>
+              <p class="u-mb-vr-05">tariffuxx.de ist marktführender B2B-&shy;Dienstleister für Tarifvergleiche in der Kommunikations&shy;branche. Zeit für frischen Wind!</p>
+              <a class="o-flex-start--center has-inline-flex u-link-grey-light u-mb-vr-1 g-underline" href="#modal-not-available">
+                <svg class="i-layers u-mr-vr-033">
+                  <use xlink:href="#layers"></use>
+                </svg>
+                <p class="u-mb-0">Work in Progress</p>
+              </a>
+            </div>
+            <!-- <div class="c-card-proj__right oculus"></div> -->
+          </article>
+
+          <article class="o-card c-card-proj c-card-proj--small u-txt-left">
+            <div class="c-card-proj--small__body">
+              <p class="u-category u-txt-black u-mb-vr-033">Gestaltung &amp; Entwicklung</p>
+              <h4>Messmer Pen GmbH</h4>
+              <p class="u-mb-vr-05">Wir arbeiten mit der Mesmmer Pen GmbH in Emmendingen nahe Freiburg mit über 100 Mitarbeitern und 30.000 Kunden.</p>
+              <a class="o-flex-start--center has-inline-flex u-link-grey-light u-mb-vr-1 g-underline" href="#modal-not-available">
+                <svg class="i-layers u-mr-vr-033">
+                  <use xlink:href="#layers"></use>
+                </svg>
+                <p class="u-mb-0">Work in Progress</p>
+              </a>
+            </div>
+            <!-- <div class="c-card-proj__right oculus"></div> -->
+          </article>
+
+      </section>
+
     </article>
   </div>
   <!-- End Impressionen -->

@@ -28,7 +28,7 @@ export function contactItemClick(elem) {
 
     console.log('mail');
     $(cardToChange + ' p:first-of-type').text('e-mail');
-    $(cardToChange + ' h4').text('mail@magellan.de');
+    $(cardToChange + ' h4').text('ahoy@magellan.de');
     $(cardToChange + ' a p').text('Schreiben Sie uns!');
     $(cardToChange + ' a').attr('href', 'mailto:ahoy@magellan.de');
     $(cardToChange + ' a > svg').attr('class', 'i-plane u-mr-vr-05');

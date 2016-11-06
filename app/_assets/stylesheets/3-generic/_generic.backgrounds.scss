@@ -63,6 +63,15 @@
   }
 }
 
+.codematch {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-codematch-min.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 .oculus {
 
   @include mappy-bp(small) {
@@ -112,19 +121,19 @@
 
 .sebastian {
     background: url($path-img + '/sebastian.jpg');
-    background-size: 309px;
-    background-position: 134px 205px;
+    background-size: 270px;
+    background-position: 127px 178px;
   }
 
 .jonathan {
-  background: url($path-img + '/jonathan.jpg');
-  background-size: 120px;
-  background-position: 111px 225px;
+  background: url($path-img + '/jonathan.png');
+  background-size: 97px;
+  background-position: 96px 192px;
 
   @include mappy-bp(1800px) {
-    background: url($path-img + '/jonathan.jpg');
-    background-size: 117px;
-    background-position: 111px 225px;
+    background: url($path-img + '/jonathan.png');
+    background-size: 97px;
+    background-position: 96px 192px;
   }
 }
 
