@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="branding-text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.91 128.56">
+  <title>branding-text</title>
+  <g id="magellan">
+    <text transform="translate(0 101.64)" font-size="17" fill="#fff" font-family="PlayfairDisplaySC-Regular, Playfair Display SC" letter-spacing="0.41em" style="isolation: isolate">M<tspan x="21.8" y="0" letter-spacing="0.4em">A</tspan><tspan x="39.32" y="0">GELL</tspan><tspan x="109.56" y="0" letter-spacing="0.39em">A</tspan><tspan x="126.92" y="0">N</tspan></text>
+    <text transform="translate(38.71 125.43)" font-size="13" fill="#fff" font-family="PlayfairDisplaySC-Regular, Playfair Display SC" letter-spacing="0.38em" style="isolation: isolate">ME<tspan x="29.22" y="0" letter-spacing="0.38em">D</tspan><tspan x="43.5" y="0" letter-spacing="0.38em">IA</tspan></text>
+  </g>
+  <g id="MLL">
+    <path d="M132,77.35c-6.62-.28-7.91-1.24-7.91-8.1V22.5c0-6.86,1.29-7.82,7.91-8.1l-.29-1.52H81.18c-5.93,0-14.54,0-20.28,0s-19.12,0-28,0l-.29,1.59c6.62.28,7.91,1.24,7.91,8.1V69.33c0,6.86-1.29,7.82-7.91,8.1l-.47,1.72c2.72,0,7.78,0,12.83,0,4.48,0,9.8,0,12.83,0l-.32-1.72c-6.62-.28-7.91-1.24-7.91-8.1V22.58c0-6.86,1.29-7.82,7.91-7.82h7.14C76.81,14.76,79,18.92,80.43,32H84.2C85.58,18.92,87.82,14.68,100,14.68h7.14c6.62,0,7.91,1,7.91,7.82V69.25c0,6.86-1.29,7.82-7.91,8.1l-.32,1.8c3,0,8.35,0,12.83,0,5,0,10.09,0,12.83,0Z" transform="translate(-12.14 -12.87)" fill="#fff"/>
+  </g>
+</symbol>
 <symbol id="branding-small-bigger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169.98 138.31">
   <title>branding-small-bigger</title>
   <g id="magellan">
