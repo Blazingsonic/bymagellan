@@ -60,9 +60,4 @@
 
   .c-contact-form__submit-wrap {
     display: flex-inline;
-    border-bottom: 1px solid $black;
-
-    &:hover {
-      border-color: $color-link-hover;
-    }
   }

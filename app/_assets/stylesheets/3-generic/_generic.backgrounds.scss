@@ -72,6 +72,15 @@
   }
 }
 
+.best {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-best-min.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 .oculus {
 
   @include mappy-bp(small) {
@@ -127,13 +136,13 @@
 
 .jonathan {
   background: url($path-img + '/jonathan.png');
-  background-size: 97px;
-  background-position: 96px 192px;
+  background-size: 100px;
+  background-position: center center;
 
   @include mappy-bp(1800px) {
     background: url($path-img + '/jonathan.png');
-    background-size: 97px;
-    background-position: 96px 192px;
+    background-size: 115px;
+    background-position: center center;
   }
 }
 

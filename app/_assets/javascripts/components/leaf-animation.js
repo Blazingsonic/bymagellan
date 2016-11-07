@@ -3,13 +3,13 @@ import $ from 'jquery';
 
 /* Leaf Animation -------------------- */
 
-let density = 24,
+let density = 16,
   speed = 0.42,
   winWidth = $(window).width(),
   winHeight = $(window).height(),
-  end = {yMin:-winHeight/2.1, yMax:-winHeight/2.6, xMin:winWidth/2.6, xMax:winWidth/2.3, scaleMin:0.3, scaleMax:0.48, opacityMin:0, opacityMax:0},
-  mid = {yMin:-winHeight/1.5, yMax:-winHeight/2, xMin:winWidth/5.5, xMax:winWidth/4.4, scaleMin:0.3, scaleMax:0.48, opacityMin:0.1, opacityMax:0.25},
-  start = {yMin:-winHeight - (winHeight/10), yMax:-winHeight + (winHeight/8), xMin:-winWidth/10, xMax:-winWidth/15, scaleMin:0.3, scaleMax:0.48, opacityMin:0.05, opacityMax:0.15};
+  end = {yMin:-winHeight/1.08, yMax:-winHeight/1.35, xMin:winWidth/8.9, xMax:winWidth/7.8, scaleMin:0.3, scaleMax:0.4, opacityMin:0, opacityMax:0},
+  mid = {yMin:-winHeight/0.35, yMax:-winHeight/1.08, xMin:winWidth/21, xMax:winWidth/11.1, scaleMin:0.3, scaleMax:0.35, opacityMin:0.35, opacityMax:0.35},
+  start = {yMin:-winHeight - (winHeight/10), yMax:-winHeight + (winHeight/8), xMin:-winWidth/12, xMax:-winWidth/15, scaleMin:0.3, scaleMax:0.35, opacityMin:0, opacityMax:0};
 console.log(`header ${winHeight}`);
 export function range(map, prop) {
   let min = map[prop + "Min"],

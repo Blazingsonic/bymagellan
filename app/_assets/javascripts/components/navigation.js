@@ -177,14 +177,14 @@ if (pageId === 'index-page') {
 } else if (pageId === 'project-page') {
   // Main Nav
   $('.c-main-nav__item:first-child a').attr('href', 'https://bymagellan.co/#start');
-  $('.c-main-nav__item:nth-child(2) a').attr('href', 'https://bymagellan.co/#kompetenzen');
+  $('.c-main-nav__item:nth-child(2) a').attr('href', 'https://bymagellan.co/#skills');
   $('.c-main-nav__item:nth-child(3) a').attr('href', 'https://bymagellan.co/#impressionen');
   $('.c-main-nav__item:nth-child(4) a').attr('href', 'https://bymagellan.co/#team');
   $('.c-main-nav__item:nth-child(5) a').attr('href', 'https://bymagellan.co/#kontakt');
 
   // Pushy Menu
   $('.pushy-link:first-child a').attr('href', 'https://bymagellan.co/#start');
-  $('.pushy-link:nth-child(2) a').attr('href', 'https://bymagellan.co/#kompetenzen');
+  $('.pushy-link:nth-child(2) a').attr('href', 'https://bymagellan.co/#skills');
   $('.pushy-link:nth-child(3) a').attr('href', 'https://bymagellan.co/#impressionen');
   $('.pushy-link:nth-child(4) a').attr('href', 'https://bymagellan.co/#team');
   $('.pushy-link:nth-child(5) a').attr('href', 'https://bymagellan.co/#kontakt');

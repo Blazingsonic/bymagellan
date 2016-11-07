@@ -20,32 +20,41 @@
 
 // Logo
 .i-logo {
-  width: 3.5rem;
-  height: 3.5rem;
-  -webkit-font-smoothing: antialiased;
+  width: 3.8rem;
+  height: 3.8rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: auto;
   // transform-origin: top center;
 
   @include mappy-bp(tiny) {
     // transform: scale(1.2);
-    width: 4.3rem;
-    height: 4.3rem;
+    width: 4.6rem;
+    height: 4.6rem;
   }
 
   @include mappy-bp(medium) {
     // transform: scale(1.2);
-    width: 5.2rem;
-    height: 5.2rem;
-  }
-  @include mappy-bp(wide) {
-    // transform: scale(1.2);
     width: 5.5rem;
     height: 5.5rem;
   }
+  @include mappy-bp(wide) {
+    // transform: scale(1.2);
+    width: 6rem;
+    height: 6rem;
+  }
   @include mappy-bp(mega) {
     // transform: scale(1.2);
-    width: 5.75rem;
-    height: 5.75rem;
+    width: 6.5rem;
+    height: 6.5rem;
   }
+}
+
+.i-logo-png {
+  background: url($path-img + '/logoklein.png');
+  background-size: cover;
+  background-position: center;
+  width: 5.5rem;
+  height: 5.5rem;
 }
 
   .c-nav-fixed .i-logo {
@@ -268,6 +277,7 @@ a:hover .i-layers {
 .i-send-form {
   width: 1.5rem;
   height: 1rem;
+  padding-bottom: 0.2rem;
 }
 
   .c-contact-form__submit-wrap:hover .i-send-form {

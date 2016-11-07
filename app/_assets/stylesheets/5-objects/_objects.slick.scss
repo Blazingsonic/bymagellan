@@ -1,18 +1,18 @@
 
 // object specific styles
 .e-header .magellan {
-  background: url($path-img + '/bg/header-magellan-team-min.jpg');
+  background: url($path-img + '/bg/header-magellan-mobile-min.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   transition: min-height 0.5s;
 
-  // @include mappy-bp(medium) {
-  //   background: url($path-img + '/bg/header-magellan-team-min.jpg');
-  //   background-position: center;
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
-  // }
+  @include mappy-bp(medium) {
+    background: url($path-img + '/bg/header-magellan-min.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .e-header .jsg {
@@ -93,6 +93,14 @@
 
 .e-header .architekturbuero {
   background: url($path-img + '/bg/header-architekturbuero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // transition: min-height 0.5s;
+}
+
+.e-header .codematch {
+  background: url($path-img + '/bg/header-codematch-min.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

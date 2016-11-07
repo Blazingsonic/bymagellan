@@ -137,8 +137,8 @@ let svgPath;
 
 // Load SVG sprite
 if (pageId === 'index-page') {
-  svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy gh pages
-  // svgPath = '../../assets/images/sprite/svg.svg' // local
+  // svgPath = '../bymagellan/assets/images/sprite/svg.svg' // deploy gh pages
+  svgPath = '../../assets/images/sprite/svg.svg' // local
 } else {
   svgPath = '../../assets/images/sprite/svg.svg' // both
 }
@@ -159,7 +159,7 @@ function preloadImages() {
 }
 
 window.onload = function() {
-    preloadImages('../bymagellan/assets/images/letter-contact.jpg', '../bymagellan/assets/images/formular-contact.jpg', '../bymagellan/assets/images/telephone-contact.jpg'); // deploy gh pages
+    preloadImages('../assets/images/letter-contact.jpg', '../assets/images/formular-contact.jpg', '../assets/images/telephone-contact.jpg'); // deploy gh pages
 };
 
 
@@ -192,7 +192,7 @@ $(document).ready(function() {
         // smooth scroll to the anchor id
         console.log(window.location.hash);
         $('html, body').animate({
-            scrollTop: $(window.location.hash).offset().top - $(window).height() * 1.9
+            scrollTop: $(window.location.hash).offset().top - $(window).height() * 2.5
         }, 1200);
     }
 });
