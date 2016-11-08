@@ -117,31 +117,37 @@ button {
   position: absolute;
   height: 4rem;
   width: 4rem;
-  right: -1.2rem;
-  transform: translateZ(0) rotate(0deg);
+  // right: -1.2rem;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg);
   transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
 
+  #default-nav .gh-svg-wrapper {
+    left: 83%;
+  }
+
   .c-nav-fixed .gh-svg-wrapper {
-    left: initial;
-    right: initial;
+    // left: initial;
+    // right: initial;
 
     @include mappy-bp(1113px) {
-      right: -1.2rem;
+      // right: -1.2rem;
     }
   }
 
 .gh-svg-wrapper.is-active {
-  transform: translateZ(0) rotate(90deg);
+  transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(90deg);
   transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
 
 .gh-svg {
   position: absolute;
-  left: 0rem;
-  top: 0;
+  // left: 0rem;
+  // top: 0;
   fill: $white;
-  transform: translateZ(0) rotate(0deg);
+  transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg);
   transition: transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
 
@@ -150,12 +156,12 @@ button {
   }
 
 .gh-svg-wrapper.is-active .gh-svg {
-  transform: translateZ(0) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(45deg);
   transition: 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
 
 .gh-svg-wrapper.is-active .gh-svg-bottom {
-  transform: translateZ(0) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(-45deg);
 }
 
 .gh-svg-rect {

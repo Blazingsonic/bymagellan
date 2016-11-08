@@ -188,6 +188,13 @@
   height: 14rem;
   margin-bottom: vr(3);
   /*border: solid 2px #fff;*/
+  perspective-origin:'50% 50% 0px';
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+    backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
 }
 
 .c-card-proj--front, .c-card-proj--back
@@ -197,6 +204,8 @@
   // height: 100%;
   top: 0;
   left: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;

@@ -2,7 +2,7 @@
 layout: post
 title:  "Unser Blog"
 datumformatiert: 31.07.2016
-teasertext: ist bald online. Was Sie bis dahin machen können? Vielleicht ein gutes Buch lesen. Wie wäre es mit Deamon, Water oder Blackout?
+teasertext: ist bald online. Was Sie bis dahin machen können? Vielleicht ein gutes Buch lesen. Wie wäre es mit Daemon, Water oder Blackout?
 lesezeit: 4 Minuten
 date:   2015-07-09
 tags: [jekyll, web design, yaml]

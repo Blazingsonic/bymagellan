@@ -12,6 +12,7 @@ import { lineAnimationSetAll, lineAnimationExcecuteAll } from './components/skil
 import { contactItemClick } from './components/contact';
 import remodal from 'remodal';
 import _ from 'lodash';
+import imagesLoaded from 'imagesloaded';
 // import stickykit from 'sticky-kit';
 
 // ==========================================================================
@@ -73,59 +74,6 @@ $(window).resize(function(windowHeightInitial) {
 // Animate menu icon on click events
 $('.site-overlay, .i-menu, .i-menu--mobile').click(function() {
   animateMenuIcon();
-});
-
-// ==========================================================================
-// Project Page Showroomm Offset
-// ==========================================================================
-
-let windowHeightPage = window.innerHeight;
-
-$(document).ready(function() {
-
-if (pageId === 'project-page') {
-  let heroStaticTitleOffset = $('.c-hero--static__title').offset().top;
-  let heroStaticTitleHeight = $('.c-hero--static__title').height();
-  let showRoomTop = heroStaticTitleOffset + 200;
-  console.log('showrromtop' + showRoomTop);
-
-  if (windowHeightPage < 600 && $(window).width() < 330) {
-    showRoomTop = showRoomTop - windowHeightPage / 11;
-    console.log('smaaaall fef');
-  } else if (windowHeightPage < 800 && $(window).width() < 870) {
-    showRoomTop = showRoomTop - windowHeightPage / 9;
-    console.log('smaaaall');
-  }
-
-  $('.c-showroom').offset({top: showRoomTop});
-
-  let sidebarOffset = window.innerHeight - $('.c-showroom__sidebar-head').height() * 1.8;
-  $('.c-showroom__sidebar').offset({top: sidebarOffset});
-}
-
-});
-
-$(window).resize(function() {
-
-if (pageId === 'project-page') {
-  let heroStaticTitleOffset = $('.c-hero--static__title').offset().top;
-  let heroStaticTitleHeight = $('.c-hero--static__title').height();
-  let showRoomTop = heroStaticTitleOffset + 200;
-  console.log('showrromtop' + showRoomTop);
-
-  if (windowHeightPage < 600 && $(window).width() < 330) {
-    showRoomTop = showRoomTop - windowHeightPage / 11;
-    console.log('smaaaall');
-  } else if (windowHeightPage < 800 && $(window).width() < 870) {
-    showRoomTop = showRoomTop - windowHeightPage / 9;
-    console.log('smaaaall');
-  }
-
-  $('.c-showroom').offset({top: showRoomTop});
-
-  let sidebarOffset = window.innerHeight - $('.c-showroom__sidebar-head').height() * 1.8;
-  $('.c-showroom__sidebar').offset({top: sidebarOffset});
-}
 });
 
 
@@ -332,6 +280,147 @@ $('.c-contact__item').on('click', function() {
 
 // $("#widget-font").stick_in_parent();
 
+// ==========================================================================
+// Project Page Showroomm Offset
+// ==========================================================================
+
+let windowHeightPage = window.innerHeight;
+
+$(document).ready(function() {
+
+if (pageId === 'project-page') {
+  let heroStaticTitleOffset = $('.c-hero--static__title').offset().top;
+  let heroStaticTitleHeight = $('.c-hero--static__title').height();
+  let showRoomTop = heroStaticTitleOffset + 200;
+  console.log('showrromtop' + showRoomTop);
+
+  if (windowHeightPage < 600 && $(window).width() < 330) {
+    showRoomTop = showRoomTop - windowHeightPage / 11;
+    console.log('smaaaall fef');
+  } else if (windowHeightPage < 800 && $(window).width() < 870) {
+    showRoomTop = showRoomTop - windowHeightPage / 9;
+    console.log('smaaaall');
+  }
+
+  $('.c-showroom').offset({top: showRoomTop});
+
+  let sidebarOffset = window.innerHeight - $('.c-showroom__sidebar-head').height() * 1.8;
+  $('.c-showroom__sidebar').offset({top: sidebarOffset});
+}
+
+});
+
+$(window).resize(function() {
+
+if (pageId === 'project-page') {
+  let heroStaticTitleOffset = $('.c-hero--static__title').offset().top;
+  let heroStaticTitleHeight = $('.c-hero--static__title').height();
+  let showRoomTop = heroStaticTitleOffset + 200;
+  console.log('showrromtop' + showRoomTop);
+
+  if (windowHeightPage < 600 && $(window).width() < 330) {
+    showRoomTop = showRoomTop - windowHeightPage / 11;
+    console.log('smaaaall');
+  } else if (windowHeightPage < 800 && $(window).width() < 870) {
+    showRoomTop = showRoomTop - windowHeightPage / 9;
+    console.log('smaaaall');
+  }
+
+  $('.c-showroom').offset({top: showRoomTop});
+
+  let sidebarOffset = window.innerHeight - $('.c-showroom__sidebar-head').height() * 1.8;
+  $('.c-showroom__sidebar').offset({top: sidebarOffset});
+}
+});
+
+let showRoomHeightInitial;
+let showRoomSidebarHeightInitial;
+
+$(document).ready(function() {
+
+  imagesLoaded( '.c-showroom__center', function() {
+    // images have loaded
+          showRoomHeightInitial = $('.c-showroom').height();
+      showRoomSidebarHeightInitial = $('.c-showroom__sidebar').height();
+
+      let showRoomTop = parseInt($('.c-showroom').css('top'), 10);
+
+      if (pageId === 'project-page') {
+        let heroStaticTitleOffsetHeight = $('.c-hero--static__title').offset().top;
+        let offsetAddValue;
+
+        if ($(window).width() < 400) {
+          offsetAddValue = 50;
+        } else if ($(window).width() >= 400 && $(window).width() < 600) {
+          offsetAddValue = 400;
+        } else if ($(window).width() >= 600 && $(window).width() < 800) {
+          offsetAddValue = -30;
+        } else if ($(window).width() >= 870 && $(window).width() < 1100) {
+          offsetAddValue = 400;
+        } else if ($(window).width() >= 1100 && $(window).width() < 1400) {
+          offsetAddValue = 470;
+        } else if ($(window).width() >= 1400 && $(window).width() < 1700) {
+          offsetAddValue = 520;
+        } else if ($(window).width() >= 1700 && $(window).width() < 2100) {
+          offsetAddValue = 580;
+          console.log('fuck it');
+        } else if ($(window).width() >= 2100) {
+          offsetAddValue = 560;
+        }
+
+        if ($(window).width() > 1600) {
+          showRoomTop = showRoomTop + 40;
+        }
+
+        console.log('lecken' + $('.c-showroom__center').height());
+
+        $('.c-showroom').height($('.c-showroom__center').height() + showRoomTop + 40);
+        $('.c-showroom__sidebar').height($('.c-showroom__center').height() + showRoomTop + 40);
+      }
+  });
+});
+
+$(window).resize(function() {
+
+  imagesLoaded( '.c-showroom__center', function() {
+    // images have loaded
+
+      let showRoomTop = parseInt($('.c-showroom').css('top'), 10);
+
+      if (pageId === 'project-page') {
+        let heroStaticTitleOffsetHeight = $('.c-hero--static__title').offset().top;
+        let offsetAddValue;
+
+        if ($(window).width() < 400) {
+          offsetAddValue = 50;
+        } else if ($(window).width() >= 400 && $(window).width() < 600) {
+          offsetAddValue = 400;
+        } else if ($(window).width() >= 600 && $(window).width() < 800) {
+          offsetAddValue = -30;
+        } else if ($(window).width() >= 870 && $(window).width() < 1100) {
+          offsetAddValue = 400;
+        } else if ($(window).width() >= 1100 && $(window).width() < 1400) {
+          offsetAddValue = 470;
+        } else if ($(window).width() >= 1400 && $(window).width() < 1700) {
+          offsetAddValue = 520;
+        } else if ($(window).width() >= 1700 && $(window).width() < 2100) {
+          offsetAddValue = 580;
+          console.log('fuck it');
+        } else if ($(window).width() >= 2100) {
+          offsetAddValue = 560;
+        }
+
+        if ($(window).width() > 1600) {
+          showRoomTop = showRoomTop + 40;
+        }
+
+        console.log('lecken' + $('.c-showroom__center').height());
+
+        $('.c-showroom').height($('.c-showroom__center').height() + showRoomTop + 40);
+        $('.c-showroom__sidebar').height($('.c-showroom__center').height() + showRoomTop + 40);
+      }
+  });
+});
 
 // ==========================================================================
 // Misc
