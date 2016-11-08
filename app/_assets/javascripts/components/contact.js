@@ -28,9 +28,9 @@ export function contactItemClick(elem) {
 
     console.log('mail');
     $(cardToChange + ' p:first-of-type').text('e-mail');
-    $(cardToChange + ' h4').text('ahoy@magellan.de');
+    $(cardToChange + ' h4').text('ahoy@bymagellan.co');
     $(cardToChange + ' a p').text('Schreiben Sie uns!');
-    $(cardToChange + ' a').attr('href', 'mailto:ahoy@magellan.de');
+    $(cardToChange + ' a').attr('href', 'mailto:ahoy@bymagellan.co');
     $(cardToChange + ' a > svg').attr('class', 'i-plane u-mr-vr-05');
     $(cardToChange + ' a > svg use').remove();
     var useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use');
@@ -125,7 +125,7 @@ if (pageId === 'index-page') {
 
     message = $("#contact-form").serialize();
       $.ajax({
-          url: "//formspree.io/saiersebastian@gmail.com",
+          url: "https://formspree.io/me@jonathanarbely.de",
           method: "POST",
           data: {message: message},
           dataType: "json"

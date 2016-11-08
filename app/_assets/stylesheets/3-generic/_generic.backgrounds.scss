@@ -139,6 +139,12 @@
   background-size: 100px;
   background-position: center center;
 
+  @include mappy-bp(medium) {
+    background: url($path-img + '/jonathan.png');
+    background-size: 104px;
+    background-position: center center;
+  }
+
   @include mappy-bp(1800px) {
     background: url($path-img + '/jonathan.png');
     background-size: 115px;

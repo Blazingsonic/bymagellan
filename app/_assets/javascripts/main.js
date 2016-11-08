@@ -183,19 +183,20 @@ $(function() {
 });
 
 // Scroll when hash is defined in url
-if ( window.location.hash ) scroll(0,0);
+// if ( window.location.hash ) scroll(0,0);
 // void some browsers issue
 // setTimeout( function() { scroll(0,0); }, 1);
 
-$(document).ready(function() {
-  if(window.location.hash) {
-        // smooth scroll to the anchor id
-        console.log(window.location.hash);
-        $('html, body').animate({
-            scrollTop: $(window.location.hash).offset().top - $(window).height() * 2.5
-        }, 1200);
-    }
-});
+// $(document).ready(function() {
+//   if(window.location.hash) {
+//         // smooth scroll to the anchor id
+//         // $hash = $(window.location.hash);
+//         console.log('hash' + window.location.hash);
+//         $('html, body').animate({
+//             scrollTop: $(window.location.hash).offset().top - $hash.height()
+//         }, 1200);
+//     }
+// });
 
 
 // ==========================================================================

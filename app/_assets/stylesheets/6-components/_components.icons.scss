@@ -20,11 +20,16 @@
 
 // Logo
 .i-logo {
+  font-family: 'Playfair Display';
   width: 3.8rem;
   height: 3.8rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: auto;
   // transform-origin: top center;
+
+  svg {
+    font-family: 'Playfair Display';
+  }
 
   @include mappy-bp(tiny) {
     // transform: scale(1.2);

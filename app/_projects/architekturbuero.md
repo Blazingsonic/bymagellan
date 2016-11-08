@@ -5,7 +5,7 @@ headertitle: Architekturbüro
 headersubtitle: WordPress-Template
 headerdate: Dezember 2014
 headertext: Konzeption, Gestaltung &amp; Ent&shy;wicklung einer komplexen und responsiven WordPress-Theme für ein Konstanzer Architektur&shy;büro.
-projectimage: mockup-moebelhaus-min.png
+projectimage: [mockup-architekturbuero-startseite.jpg, mockup-architekturbuero-unterseite.jpg]
 title: Architekturbüro
 subtitle: Gestaltung &amp; Umsetzung
 category: " m-category-web"

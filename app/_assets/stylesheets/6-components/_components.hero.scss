@@ -57,6 +57,9 @@
     top: 1.5rem;
 
     @include mappy-bp(tiny) {
+      top: 2rem;
+    }
+    @include mappy-bp(small) {
       top: 3rem;
     }
   }
