@@ -96,7 +96,7 @@ export function contactItemClick(elem) {
 CSSPlugin.defaultTransformPerspective = 1000;
 
 // We set the backface
-TweenMax.set($(".c-card-proj--back"), {rotationY:-180});
+TweenMax.set($(".c-card-proj--back"), {rotationY:+180, backfaceVisibility:"hidden"});
 
 function flipCard() {
   var frontCard = $(".c-card-proj--front"),
@@ -104,8 +104,8 @@ function flipCard() {
       tl = new TimelineMax();
 
   tl
-    .to(frontCard, 1, {rotationY: '+=180'})
-    .to(backCard, 1, {rotationY: '+=180'}, 0);
+    .to(frontCard, 1, {rotationY: '+=180', backfaceVisibility:"hidden"})
+    .to(backCard, 1, {rotationY: '+=180', backfaceVisibility:"hidden"}, 0);
 }
 
 // Show Confirmed Message when submit button is clicked

@@ -11,9 +11,9 @@ subtitle: Gestaltung
 category: " m-category-web"
 color: u-txt-dark-blue
 client: ""
-teasertext: Die Juristische Studiengesellschaft Karlsruhe bat uns um die Umsetzung Ihrer ersten Seite. Übersichtlich, leicht zu pflegen und mobilfähig.
+teasertext: Die Juristische Studiengesellschaft Karlsruhe bat uns um die Umsetzung ihrer ersten Seite. Übersichtlich, leicht zu pflegen und mobilfähig.
 link: https://jsg-karlsruhe.de/
-projectlink: "http://www.carro-brautmoden.de/"
+projectlink: "https://jsg-karlsruhe.de/"
 teaserimage: jsg
 cta: Seite besuchen
 projectcta: Für Profi-Homepage

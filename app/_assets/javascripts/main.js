@@ -107,7 +107,7 @@ function preloadImages() {
 }
 
 window.onload = function() {
-    preloadImages('../assets/images/letter-contact.jpg', '../assets/images/formular-contact.jpg', '../assets/images/telephone-contact.jpg'); // deploy gh pages
+    preloadImages('../assets/images/letter-contact-min.jpg', '../assets/images/formular-contact-min.jpg', '../assets/images/telephone-contact-min.jpg'); // deploy gh pages
 };
 
 
@@ -153,8 +153,7 @@ $(function() {
 
 $(document).ready(function() {
   $('.js-slick').slick({
-    autoplay: false,
-    speed: 1000,
+    speed: 1200,
     dots: true,
     arrows: false
   });

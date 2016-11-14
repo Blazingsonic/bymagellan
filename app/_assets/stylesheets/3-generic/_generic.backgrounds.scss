@@ -130,8 +130,8 @@
 
 .sebastian {
     background: url($path-img + '/sebastian.jpg');
-    background-size: 270px;
-    background-position: 127px 178px;
+    background-size: 139px;
+    background-position: center top;
   }
 
 .jonathan {
@@ -155,19 +155,19 @@
 /* Contact -------------------- */
 
 .letter-contact {
-  background: url($path-img + '/letter-contact.jpg');
+  background: url($path-img + '/letter-contact-min.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .telephone-contact {
-  background: url($path-img + '/telephone-contact.jpg');
+  background: url($path-img + '/telephone-contact-min.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .formular-contact {
-  background: url($path-img + '/formular-contact.jpg');
+  background: url($path-img + '/formular-contact-min.jpg');
   background-size: cover;
   background-position: center;
 }
