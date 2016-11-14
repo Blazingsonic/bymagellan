@@ -13,7 +13,7 @@ color: u-txt-gold
 client: " / Für: Profi-Homepage"
 teasertext: Aufeinanderfolgend werden Produkt&shy;kategorien sowie Produkthightlights übersichtlich per Slider vorgestellt. Verschiedene Farbkombinationen.
 link: project-detail
-projectlink: "http://www.carro-brautmoden.de/"
+projectlink: ""
 teaserimage: moebelhaus
 cta: Gestaltung betrachten
 projectcta: Für Profi-Homepage

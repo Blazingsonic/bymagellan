@@ -52,9 +52,15 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
         <p class="u-serif-sm u-mb-vr-05">{{ page.subtitle }}</p>
         <h4 class="u-txt-white">{{ page.headerdate }}</h4>
         <p class="u-mb-vr-05">{{ page.headertext }}</p>
-        <a class="u-link-grey-lightest" href="{{ page.projectlink }}" target="_blank">
+
+        {% if page.projectlink == '' %}
           <p class="u-mb-0">{{ page.projectcta }}</p>
-        </a>
+        {% else %}
+          <a class="u-link-grey-lightest" href="{{ page.projectlink }}" target="_blank">
+            <p class="u-mb-0">{{ page.projectcta }}</p>
+          </a>
+        {% endif %}
+
       </div>
 
       {{ content }}

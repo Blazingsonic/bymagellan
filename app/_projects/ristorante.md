@@ -13,7 +13,7 @@ color: u-txt-gold
 client: " / Für: Profi-Homepage"
 teasertext: Typographie &amp; großflächiger Einsatz von Bildern sowie edle Farb&shy;wahl ergeben ein stimmiges, durchdachtes Gesamtbild.
 link: project-detail
-projectlink: "http://blazingsonic.github.io/website-prototyping"
+projectlink: ""
 teaserimage: ristorante
 cta: Gestaltung betrachten
 projectcta: Für Profi-Homepage
