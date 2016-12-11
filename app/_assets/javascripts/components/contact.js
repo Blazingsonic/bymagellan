@@ -13,10 +13,8 @@ export function contactItemClick(elem) {
   let temp;
 
   if (front === true) {
-    console.log('back to change');
     cardToChange = '.c-card-proj--back';
   } else {
-    console.log('front to change');
     cardToChange = '.c-card-proj--front';
   }
 
@@ -26,7 +24,6 @@ export function contactItemClick(elem) {
 
   if (elem === 'mail') {
 
-    console.log('mail');
     $(cardToChange + ' p:first-of-type').text('e-mail');
     $(cardToChange + ' h4').text('ahoy@bymagellan.co');
     $(cardToChange + ' a p').text('Schreiben Sie uns!');
@@ -48,7 +45,6 @@ export function contactItemClick(elem) {
 
   } else if (elem === 'telefon') {
 
-    console.log('telefon');
     $(cardToChange + ' p:first-of-type').text('Mobilfunk');
     $(cardToChange + ' h4').text('0176 392 00032');
     $(cardToChange + ' a p').text('Auch WhatsApp möglich');
@@ -70,7 +66,6 @@ export function contactItemClick(elem) {
 
   } else if (elem === 'formular') {
 
-    console.log('formular');
     $(cardToChange + ' p:first-of-type').text('Formular');
     $(cardToChange + ' h4').text('Online-Formular');
     $(cardToChange + ' a p').text('Fast wie auf echtem Papier!');

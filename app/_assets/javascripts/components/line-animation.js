@@ -6,7 +6,6 @@ export function lineAnimationSet(elem) {
 
   const pageId = $('main').attr('id');
 
-  console.log(`line animation set ${elem}`);
   let length;
   if (pageId === 'index-page') {
     length = elem.getTotalLength();
@@ -17,7 +16,6 @@ export function lineAnimationSet(elem) {
 
 export function lineAnimation(elem) {
 
-  console.log('animating lines');
   let tl = new TimelineMax();
   tl
     .to(elem, 2.3, {strokeDashoffset: '0px'})

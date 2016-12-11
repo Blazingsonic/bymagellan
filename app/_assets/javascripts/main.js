@@ -23,7 +23,6 @@ import imagesLoaded from 'imagesloaded';
 
 // URL
 const pageId = $('main').attr('id');
-console.log(pageId);
 
 if (pageId === 'index-page') {
   $('body').addClass('body-index-page');
@@ -37,7 +36,6 @@ if (pageId === 'index-page') {
 // ==========================================================================
 
 // Initial Test
-console.log('This is a test');
 
 /* Detect if user is on a mobile device (smartphone and tablet) -------------------- */
 
@@ -291,14 +289,12 @@ if (pageId === 'project-page') {
   let heroStaticTitleOffset = $('.c-hero--static__title').offset().top;
   let heroStaticTitleHeight = $('.c-hero--static__title').height();
   let showRoomTop = heroStaticTitleOffset + 200;
-  console.log('showrromtop' + showRoomTop);
 
   if (windowHeightPage < 600 && $(window).width() < 330) {
     showRoomTop = showRoomTop - windowHeightPage / 11;
-    console.log('smaaaall fef');
+
   } else if (windowHeightPage < 800 && $(window).width() < 870) {
     showRoomTop = showRoomTop - windowHeightPage / 9;
-    console.log('smaaaall');
   }
 
   $('.c-showroom').offset({top: showRoomTop});
@@ -315,14 +311,13 @@ if (pageId === 'project-page') {
   let heroStaticTitleOffset = $('.c-hero--static__title').offset().top;
   let heroStaticTitleHeight = $('.c-hero--static__title').height();
   let showRoomTop = heroStaticTitleOffset + 200;
-  console.log('showrromtop' + showRoomTop);
 
   if (windowHeightPage < 600 && $(window).width() < 330) {
     showRoomTop = showRoomTop - windowHeightPage / 11;
-    console.log('smaaaall');
+
   } else if (windowHeightPage < 800 && $(window).width() < 870) {
     showRoomTop = showRoomTop - windowHeightPage / 9;
-    console.log('smaaaall');
+
   }
 
   $('.c-showroom').offset({top: showRoomTop});
@@ -371,8 +366,6 @@ $(document).ready(function() {
           showRoomTop = showRoomTop + 40;
         }
 
-        console.log('lecken' + $('.c-showroom__center').height());
-
         $('.c-showroom').height($('.c-showroom__center').height() + showRoomTop + 40);
         $('.c-showroom__sidebar').height($('.c-showroom__center').height() + showRoomTop + 40);
       }
@@ -404,7 +397,7 @@ $(window).resize(function() {
           offsetAddValue = 520;
         } else if ($(window).width() >= 1700 && $(window).width() < 2100) {
           offsetAddValue = 580;
-          console.log('fuck it');
+
         } else if ($(window).width() >= 2100) {
           offsetAddValue = 560;
         }
@@ -412,8 +405,6 @@ $(window).resize(function() {
         if ($(window).width() > 1600) {
           showRoomTop = showRoomTop + 40;
         }
-
-        console.log('lecken' + $('.c-showroom__center').height());
 
         $('.c-showroom').height($('.c-showroom__center').height() + showRoomTop + 40);
         $('.c-showroom__sidebar').height($('.c-showroom__center').height() + showRoomTop + 40);

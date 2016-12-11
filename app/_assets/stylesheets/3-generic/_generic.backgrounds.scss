@@ -132,6 +132,12 @@
     background: url($path-img + '/sebastian.jpg');
     background-size: 139px;
     background-position: center top;
+
+    @include mappy-bp(1800px) {
+      background: url($path-img + '/sebastian.jpg');
+      background-size: 145px;
+      background-position: center top;
+    }
   }
 
 .jonathan {

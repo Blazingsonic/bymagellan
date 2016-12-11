@@ -3,7 +3,6 @@ import $ from 'jquery';
 import _ from 'lodash';
 
 let pageId = $('main').attr('id');
-console.log(pageId);
 
 /* Animate Menu Icon -------------------- */
 
@@ -135,9 +134,6 @@ $window.scroll(_.debounce(function (event) {
 
       } else if (scroll >= impressionenOffset && scroll < (impressionenOffset + impressionenHeight)) { // Second section
 
-        console.log(scroll);
-        console.log(impressionenOffset);
-        console.log(impressionenHeight);
         $('.c-nav-fixed .c-main-nav__item .g-petel').removeClass('is-active');
         TweenMax.to($('.c-nav-fixed .g-petel__item'), 0.3, {y: '-=30px', autoAlpha: 0, ease: Power3.easeInOut});
         $('.c-nav-fixed .c-main-nav__item:nth-child(3) .g-petel').addClass('is-active');

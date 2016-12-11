@@ -9,7 +9,7 @@ export function setMinHeight(windowHeightInitial) {
   let minheight;
   let headerPadding = $('header.e-header').css('padding-top');
   let headerPaddingNumber = parseInt(headerPadding, 10);
-  console.log(`padding top is ${headerPadding}`);
+
   minheight = (windowHeightInitial - (2 * headerPaddingNumber));
 
   // if (window.innerWidth >= 1300) {

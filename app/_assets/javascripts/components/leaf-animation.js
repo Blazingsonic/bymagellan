@@ -10,7 +10,7 @@ let density = 16,
   end = {yMin:-winHeight/1.08, yMax:-winHeight/1.35, xMin:winWidth/8.9, xMax:winWidth/7.8, scaleMin:0.3, scaleMax:0.4, opacityMin:0, opacityMax:0},
   mid = {yMin:-winHeight/0.35, yMax:-winHeight/1.08, xMin:winWidth/21, xMax:winWidth/11.1, scaleMin:0.3, scaleMax:0.35, opacityMin:0.35, opacityMax:0.35},
   start = {yMin:-winHeight - (winHeight/10), yMax:-winHeight + (winHeight/8), xMin:-winWidth/12, xMax:-winWidth/15, scaleMin:0.3, scaleMax:0.35, opacityMin:0, opacityMax:0};
-console.log(`header ${winHeight}`);
+
 export function range(map, prop) {
   let min = map[prop + "Min"],
     max = map[prop + "Max"];
@@ -44,7 +44,7 @@ function randomIntFromInterval(min,max)
 }
 
 $(window).ready(function() {
-  console.log($(window).height());
+
   if ($(window).width() > 800) {
     let body = $(".header"),
     i, particle;
@@ -97,7 +97,7 @@ function randomIntFromIntervalMenu(min,max)
 }
 
 $(window).ready(function() {
-  console.log($(window).height());
+
   if ($(window).width() > 800) {
     let body = $(".header"),
     i, particle;

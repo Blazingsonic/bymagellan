@@ -3,7 +3,6 @@ import $ from 'jquery';
 import _ from 'lodash';
 
 let pageId = $('main').attr('id');
-console.log(pageId);
 
 /* Animate Cards on Scroll -------------------- */
 
@@ -18,8 +17,6 @@ let $cards = $('#impressionen .js-card-wrapper .o-card');
 let $defaultCards = $('.m-category-web:lt(6)');
 let numItemsDefault = $('.m-category-web').length - 1;
 let $loadMore = $('.c-card-proj__more');
-
-console.log(`num def ${numItemsDefault}`);
 
 // Set default for position of cards
 TweenMax.set($cards, {x: '-=50', autoAlpha: 0, display: 'none'});
@@ -51,8 +48,6 @@ export function updateProjectCards(id, loadState) {
   let $projectCards;
   let numItems;
   let numItemsLoadState1;
-
-  console.log(`load State ${loadState}`);
 
   if (loadState == 0) {
 
@@ -98,12 +93,12 @@ export function updateProjectCards(id, loadState) {
       numItemsLoadState1 = $('.m-category-web').length;
       let numItemsAdded = numItemsLoadState1 - 6;
       $projectCards = $('.m-category-web').slice(-numItemsAdded);
-      console.log($projectCards);
+
     } else if (id === 'bullet-gestaltung') {
       numItemsLoadState1 = $('.m-category-gestaltung').length;
       let numItemsAdded = numItemsLoadState1 - 6;
       $projectCards = $('.m-category-gestaltung').slice(-numItemsAdded);
-      console.log($projectCards);
+
     } else if (id === 'bullet-print') {
       $projectCards = $('.m-category-print');
       numItemsLoadState1 = $('.m-category-print').length;
