@@ -5,7 +5,7 @@ subtitle: Studentisches Projekt
 category: " m-category-web"
 color: u-txt-dark-grey
 client: ""
-teasertext: Im Rahmen der Veranstaltung "Ambient Media an der Hochschule Furtwangen University ist das App-Konzept "Röntgen" entstanden
+teasertext: Im Rahmen der Veranstaltung "Ambient Media" an der Hochschule Furtwangen University ist das App-Konzept "Röntgen" entstanden
 link: "#modal-not-available"
 teaserimage: roentgenapp
 cta: Screendesigns entdecken
