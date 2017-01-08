@@ -1,6 +1,6 @@
 ---
 layout: 'default'
-title: 'Made By Magellan'
+title: 'Die Medienagentur im Schwarzwald - Magellan Media'
 description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleistungen anzubieten. Das erreichen wir durch unsren breiten Wissenschatz und langjähriger Erfahrung sowie ständiger Weiterentwicklung. Wir möchten, dass Sie mit unseren Produkten und Dienstleistungen stets 100% zufrieden sind. Dafür geben wir auch gerne die Extrameile.'
 ---
 
@@ -34,7 +34,10 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
       <p class="u-serif-sm u-mb-vr-05">{{ page.subtitle }}</p>
       <h4 class="u-txt-white">{{ page.headerdate }}</h4>
       <p class="u-mb-vr-05">{{ page.headertext }}</p>
-      <a class="u-link-grey-lightest" href="{{ page.projectlink }}" target="_blank">
+      <a class="o-flex-center--center has-inline-flex c-showroom__link" href="{{ page.projectlink }}" target="_blank">
+        <svg class="i-glasses u-mr-vr-033">
+          <use xlink:href="#glasses"></use>
+        </svg>
         <p class="u-mb-0">{{ page.projectcta }}</p>
       </a>
     </div>
@@ -56,7 +59,10 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
         {% if page.projectlink == '' %}
           <p class="u-mb-0">{{ page.projectcta }}</p>
         {% else %}
-          <a class="u-link-grey-lightest" href="{{ page.projectlink }}" target="_blank">
+          <a class="o-flex-center--center has-inline-flex c-showroom__link" href="{{ page.projectlink }}" target="_blank">
+            <svg class="i-glasses u-mr-vr-033">
+              <use xlink:href="#glasses"></use>
+            </svg>
             <p class="u-mb-0">{{ page.projectcta }}</p>
           </a>
         {% endif %}

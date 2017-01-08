@@ -58,8 +58,30 @@
     }
   }
 
-  .c-showroom__desc {
+  .c-showroom__link {
+    padding: 0.25rem 0.5rem 0.2rem 0.5rem;
+    background-color: $white;
+    transition: none;
 
+    p {
+      line-height: 1;
+      transition: none;
+    }
+    svg {
+      fill: $black;
+      transition: none;
+    }
+
+    &:hover {
+      // background-color: #222;
+
+      svg {
+        fill: $color-link-hover;
+      }
+      p {
+        color: $color-link-hover;;
+      }
+    }
   }
 
 

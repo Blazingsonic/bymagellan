@@ -126,6 +126,24 @@
   }
 }
 
+.biesbuedie {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-biesbuedie-min.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.juedmuseum {
+
+  @include mappy-bp(small) {
+    background: url($path-img + '/projects/teaser-juedmuseum-min.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 /* Team -------------------- */
 
 .sebastian {
