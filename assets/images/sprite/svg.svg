@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="taurus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.9 31">
+  <title>taurus</title>
+  <path d="M15.5,31A9.52,9.52,0,1,1,25,21.47,9.54,9.54,0,0,1,15.5,31Zm0-18.05A8.53,8.53,0,1,0,24,21.47,8.53,8.53,0,0,0,15.5,12.95Z" transform="translate(-3.05 0)"/>
+  <path d="M15.5,12.95A6.48,6.48,0,0,1,9,6.47a.5.5,0,0,1,1,0,5.48,5.48,0,0,0,11,0,.5.5,0,1,1,1,0A6.48,6.48,0,0,1,15.5,12.95Z" transform="translate(-3.05 0)"/>
+  <path d="M21.48,7a.5.5,0,0,1-.5-.5A6.48,6.48,0,0,1,27.45,0a.5.5,0,1,1,0,1A5.48,5.48,0,0,0,22,6.47.5.5,0,0,1,21.48,7Z" transform="translate(-3.05 0)"/>
+  <path d="M9.52,7a.5.5,0,0,1-.5-.5A5.48,5.48,0,0,0,3.55,1a.5.5,0,0,1,0-1A6.48,6.48,0,0,1,10,6.47.5.5,0,0,1,9.52,7Z" transform="translate(-3.05 0)"/>
+</symbol>
 <symbol id="branding-text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.91 128.56">
   <title>branding-text</title>
   <g id="magellan">
