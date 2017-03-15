@@ -6,7 +6,7 @@ headersubtitle: Gestaltung &amp; Technik in perfektem Einklang
 headerdate: Oktober 2016
 headertext: Ein neuer Auftritt für den Schreib&shy;warenhersteller Messmer GmbH.<br>Anpsrechend, übersichtlich, klar und zum Unternehmen passend lädt diese Seite Interessierte ein, sich über eine Karriere im Innen-oder Außendienst zu informieren.
 projectimage: project-header-messmer.jpg
-title: Messmer GmBH
+title: Messmer GmbH
 subtitle: Konzeption, Gestaltung &amp; Umsetzung
 category: " m-category-web"
 color: u-txt-green
