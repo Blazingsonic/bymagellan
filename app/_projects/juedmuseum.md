@@ -12,7 +12,7 @@ category: " m-category-web"
 color: u-txt-light-blue
 client: ""
 teasertext: Eine performante, SEO-optimierte und mobilfähige Website auf Basis des ausgezeichneten "Twentsixteen" Themes für WordPress.
-link: http://www.juedisches-museum-emmendingen.de/der-verein/
+link: http://www.juedisches-museum-emmendingen.de
 projectlink: "https://jsg-karlsruhe.de/"
 teaserimage: juedmuseum
 cta: Seite besuchen

@@ -59,7 +59,7 @@
   }
 
   .c-showroom__link {
-    padding: 0.25rem 0.5rem 0.2rem 0.5rem;
+    padding: 0.32rem 0.5rem 0.22rem 0.5rem;
     background-color: $white;
     transition: none;
 
@@ -82,6 +82,26 @@
         color: $color-link-hover;;
       }
     }
+  }
+
+  .c-showroom__award {
+    display: inline-block;
+
+    div {
+      display: flex;
+      background-color: $white;
+      padding: 0.15rem 0.5rem 0.12rem 0.5rem;
+      align-items: center;
+    }
+
+    @include mappy-bp(0 1720) {
+      display: none
+    }
+  }
+
+  .i-taurus {
+    width: 1rem;
+    height: 0.8rem;
   }
 
 

@@ -56,6 +56,17 @@ description: 'Unser Ziel ist es, branchenbeste digitale Produkte und Dienstleist
         <h4 class="u-txt-white">{{ page.headerdate }}</h4>
         <p class="u-mb-vr-05">{{ page.headertext }}</p>
 
+        {% if page.title == 'Oculus For Travel' %}
+          <div class="c-showroom__award u-mb-vr-05">
+            <div>
+              <svg class="i-taurus u-mr-vr-033">
+                <use xlink:href="#taurus"></use>
+              </svg>
+              <p class="u-txt-black u-mb-0"><b>Nominiert für den Annual Multimedia Award 2017</b></p>
+            </div>
+          </div>
+        {% endif %}
+
         {% if page.projectlink == '' %}
           <p class="u-mb-0">{{ page.projectcta }}</p>
         {% else %}
