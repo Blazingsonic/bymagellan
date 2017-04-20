@@ -49,7 +49,7 @@ $(window).ready(function() {
     let body = $(".header"),
     i, particle;
     for (i = 0; i < density; i++) {
-      spawn( $("<div />", {id:"particle"+i}).addClass("i-particle").appendTo('.e-header') );
+      // spawn( $("<div />", {id:"particle"+i}).addClass("i-particle").appendTo('.e-header') );
     }
   }
 });
@@ -102,7 +102,7 @@ $(window).ready(function() {
     let body = $(".header"),
     i, particle;
     for (i = 0; i < densityMenu; i++) {
-      spawnMenu( $("<div />", {id:"particle"+i}).addClass("i-particle").appendTo('.c-nav-fixed') );
+      // spawnMenu( $("<div />", {id:"particle"+i}).addClass("i-particle").appendTo('.c-nav-fixed') );
     }
   }
 });

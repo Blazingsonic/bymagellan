@@ -118,11 +118,12 @@ if (pageId === 'index-page') {
 
   $("#contact-form").parsley().on("form:submit", function() {
 
-    message = $("#contact-form").serialize();
+    var data = {};
+    $("#contact-form").serializeArray().map(function(x){data[x.name] = x.value;});
       $.ajax({
           url: "https://formspree.io/me@jonathanarbely.de",
           method: "POST",
-          data: {message: message},
+          data: {message: data},
           dataType: "json"
       });
     let inst = $('[data-remodal-id=modal-contact]').remodal();
